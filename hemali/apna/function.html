@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+         console.log('welcome to pna college');
+         console.log('welcome are js lerning');
+        }
+        myfunction();
+
+
+        function myh(msg){
+            console.log(msg);
+        }
+        myh('i love js')
+
+        function sum(x,y){
+            console.log(5+9);
+        }
+        sum()
+
+        // return function
+       function sum(a,b){
+        s=a+b;
+        return s;
+       }
+       let val= sum(5,9)
+       console.log( val);
+
+    //    arrow function
+
+    const arrowmul=(p,s)=>{
+       console.log(p+s); 
+    }
+    arrowmul(10,10)
+
+    const mul=(a,t)=>{
+    console.log(a*t);
+
+         return a*t;
+    }
+    mul(5,5) 
+
+
+    function vovlels(str){
+      let count=0;
+      for (const  char of str) {
+        if(char==='a'||char==='e'||char==='i'||char==='o'||char==='u'){
+            count++;
+        }
+       
+      }
+      return count
+    }
+    </script>
+</body>
+</html>

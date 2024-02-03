@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+      }
+      h1 {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box">
+      <h1 id="main">0</h1>
+    </div>
+    <script>
+      // arrow function var name = () => {}
+
+        // setTimeout(() => {
+        //   document.getElementById('main').innerText = 1
+        // }, 3000)
+
+      // first example
+    //   var i = 0
+    //   var j = 0
+    //   var color = [
+    //     'red',
+    //     'green',
+    //     'pink',
+    //     'blue',
+    //     'orange',
+    //     'black',
+    //     'purple',
+    //     'yellow',
+    //     'brown',
+    //     'grey',
+    //   ]
+    //   setInterval(() => {
+    //     document.getElementById('main').innerText = i
+    //     if (j > 9) {
+    //       j = 0
+    //     }
+    //     document.getElementById('box').style.backgroundColor = color[j]
+    //     i++
+    //     j++
+    //   }, 1000)
+     
+
+    //   second example
+        var i = 0
+        var j = 0
+        var k = 9
+        var color = [
+          'red',
+          'green',
+          'pink',
+          'blue',
+          'orange',
+          'black',
+          'purple',
+          'yellow',
+          'brown',
+          'grey',
+        ]
+        setInterval(() => {
+          document.getElementById('main').innerText = i
+          if (j > 9) {
+            j = 0
+          }
+          if (k == 0) {
+            k = 9
+          }
+          document.getElementById('main').style.color = color[k]
+          document.getElementById('box').style.backgroundColor = color[j]
+          i++
+          j++
+          k--
+        }, 1000)
+    </script>
+  </body>
+</html>

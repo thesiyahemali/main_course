@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cum
+        voluptatem quae eligendi laudantium consectetur quas architecto, dolorum maiores a.</h1>
+
+        <p id="para">hii this is p tag</p>
+
+        <span class="a">hii class a</span>
+        <span class="a">hii class a</span>
+        <span class="b">hii class b</span>
+
+        <input type="text" id="input" value="5" />
+    <script>
+        // dom= document object model
+
+
+        console.log(document);
+
+        var head=document.getElementById('head').innerText
+        console.log(head);
+
+        var para=document.getElementById('para').innerText
+        console.log(para);
+
+        var span =document.getElementsByClassName('a')
+        console.log(span[1].innerText);
+
+         var input = document.getElementById('input').value
+     console.log(input)
+
+     var data = document.querySelector('.a').innerHTML
+      console.log(data)
+
+       var b = document.getElementsByClassName('b')
+       b[0].style.color = 'red'
+    </script>
+</body>
+
+</html>

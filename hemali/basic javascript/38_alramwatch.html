@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+      color: black;
+      height: 100px;
+      width: 300px;
+      border: 2px solid black;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      background-color: gray;
+      font-weight: bold;
+    }
+  </style>
+<body>
+    <input type="number" id="hours">
+    :
+    <input type="number" id="min">
+    :
+    <input type="number" id="sec">
+    <button onclick="setAlram()"> set Alram </button>
+
+    <div class="box">
+        <h1 id="timer">00:00:00</h1>
+      </div>
+    
+      <script>
+        function setAlram(){
+            let h = document.getElementById('hours').value
+            let m=document.getElementById('min').value
+            let s=document.getElementById('sec').value
+
+            document.getElementById('hours').value =''
+            document.getElementById('min').value =''
+            document.getElementById('sec').value =''
+
+            let [hours,minute,seconde]=[Number(h),Number(m),Number(s)]
+
+            setInterval(() => {
+                if(seconde<=0){
+                   if(minute<=0){
+                    minute=minute-1
+                    hours=hours-1
+                    minute=59
+                   }else{
+                    minute=minute-1
+                   }
+                   seconde=59
+                }else{
+                    seconde=seconde-1
+                }
+                document.getElementById('timer').innerText=hours + ':'+ minute + ':'+ seconde
+            }, 1000);
+
+        }
+      </script>
+</body>
+</html>

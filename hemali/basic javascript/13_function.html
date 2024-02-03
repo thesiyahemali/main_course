@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // same rules as varible
+        // parameter function
+          
+        function sub(a,b){
+            console.log(a-b);
+        }
+        sub(5,10)
+
+        // return function
+        function mul(a,b){
+            return a*b
+        }
+        var c=mul(5,4)
+        console.log(c);
+
+        function square(a){
+            console.log(a*a);
+        }
+        square(6)
+
+           // C = (°F - 32) × 5/9
+        function ferenToce(f){
+          console.log(((f-32)*5)/9);
+        }
+        ferenToce(100)
+
+        // var first=prompt('add first value')
+        // var seconde=prompt('add seconde value')
+        // sum1(parseInt(first),parseInt(seconde))
+        // console.log(sum1);
+
+
+        // type of fuction in jvscript
+
+        // 1.named function
+        function sum() {
+         console.log(4 + 5)
+        }
+
+        // anonymous function
+          var sum=function(){
+            console.log(5+5);
+          }
+          sum()
+          
+        //   immidate function
+        ;(function(a,b,c,d){
+            console.log(a+b+c+d);
+        })(5,5,5,5
+        )
+    </script>
+</body>
+</html>

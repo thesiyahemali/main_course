@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 300px;
+        width: 250px;
+        /* background-color: brown; */
+        margin: auto;
+        text-align: center;
+        background-color: #f4f4f4;
+        padding-top: 10px;
+        border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: #fff; */
+    }
+    .box{
+        /* border: 2px solid red; */
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .box2{
+        /* border: 2px solid red; */
+        width: 90%;
+        height: auto;
+      background-color:lightgrey;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 3%;
+      text-align: center;
+    }
+    input{
+        height: 25px;
+        border-radius: 8px;
+        border: none;
+    }
+    button{
+        padding: 5px 20px;
+        border-radius: 8px;
+        border: none;
+        background-color:lightpink;
+    }
+
+   
+</style>
+<body>
+    <div class="box1">
+        <h2 class="To-Do">To-Do List</h2>
+        <div class="box">
+            <input type="text" id="input">
+            <button onclick="addItem()">Add</button>
+        </div>
+        <div class="box2" id="data"></div>
+    </div>
+
+    <script>
+        let arr=[]
+        function addItem(){
+            let val=document.getElementById('input').value
+            arr.push(val)
+            createData(arr)
+            // console.log(val);
+        }
+
+        function createData(inp){
+            let list=document.getElementById('data')
+            document.getElementById('data').innerHTML=''
+        inp.forEach((data,i) => {
+           let displ=document.createElement('h1') 
+           displ.innerText=data
+           let delet=document.createElement('span')
+           delet.innerHTML='x'
+           delet.style.color='red'
+          delet.addEventListener('click',()=>{
+            deleteData(i)
+          })
+           list.appendChild(displ)
+           list.appendChild(delet)
+        });
+        document.getElementById('input').value=''
+        }
+        function deleteData(i){
+            arr.splice(i,1)
+            console.log(arr);
+            createData(arr)
+        }
+    </script>
+</body>
+</html>

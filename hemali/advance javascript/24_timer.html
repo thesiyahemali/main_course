@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        text-align: center;
+        /* border: 2px solid red; */
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(230, 184, 184);
+        color: white;
+        margin: auto;
+
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h1 id="time"> 00:00:00</h1>
+    </div>
+    <script>
+        // var hours=d.hours()
+        // var min=d.getminutes()
+        // var sec=d.getseconde()
+
+        setInterval(() => {
+            let d = new Date()
+            //    console.log(d.toLocaleString());
+            document.getElementById('time').innerHTML = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear()) + '<br>' + d.getHours() + '/' + d.getMinutes() + '/' + d.getSeconds()
+        }, 1000);
+    </script>
+</body>
+
+</html>

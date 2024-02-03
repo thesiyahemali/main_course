@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <!-- <button onclick="opentab()">colse new</button>
+ <button onclick="closetab()">colse tab</button> -->
+<body>
+    <script>
+
+        //    let newtab
+//    function opentab() {
+//     newtab=window.open()
+//    }
+
+//    function closetab(){
+//     newtab.close()
+//    }
+
+
+        class sum {
+            constructor(a, b) {
+                this.first = a;
+                this.seconde = b;
+            }
+            add() {
+                console.log(this.first + this.seconde);
+            }
+        }
+
+        class Multi extends sum {
+        constructor(a, b, c, d) {
+          super(c, d)
+          this.num1 = a
+          this.num2 = b
+        }
+
+            mul() {
+                // this.add()
+                console.log(this.num1 * this.num2);
+            }
+        }
+
+        class div extends Multi {
+            constructor(a, b, c, d, e, f) {
+                super(a, b, c, d)
+                this.n1 = e
+                this.n2 = f
+            }
+            divison() {
+                console.log(this.n1 / this.n2)
+            }
+        }
+        const obj = new div(2, 2, 2, 2, 2, 2)
+        obj.divison()
+        obj.mul()
+        obj.add()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+
+</html>

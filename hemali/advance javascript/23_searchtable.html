@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="search" onkeyup="findData(event)" />
+    <table border="1" rules="all" id="table">
+        <tr id="header">
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Jignesh</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Ramesh</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Hitesh</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Jigar</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Himesh</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <script>
+        function findData(e) {
+            let search = e.target.value
+            let table = document.getElementById('table')
+            let tr = table.getElementsByTagName('tr')
+            for (let i = 1; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[0]
+                let text = td.innerText
+                if (text.toLocaleLowerCase().indexOf(search) > -1) {
+                    tr[i].style.display = ''
+                } else {
+                    tr[i].style.display = 'none'
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

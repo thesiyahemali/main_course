@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid black;
+            height: 500px;
+            width: 33%;
+        }
+        label{
+            margin-left: 4%;
+        }
+        input{
+            margin-left: 25%;
+            font-size: 15px;
+        }
+        button{
+            margin-left: 46%;
+            padding: 6px 25px;
+            color: black;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="form" id="markForm">
+        <h3 style="margin-left: 4%;">Marksheet for Information Techonlogy</h3>
+        <p style="margin-left: 35%; font-size: 18px;">Enter Marks</p>
+        <label> 1. C language</label>
+        <input type="text" name="t1" id="" ><br><br>
+        <label> 2. C++ language</label>
+        <input type="text" name="t2" id="" style="margin-left: 21%;" ><br><br>
+        <label> 3. Database</label>
+        <input type="text" name="t3" id=""style="margin-left: 27%;" ><br><br>
+        <label> 4. HTML</label>
+        <input type="text" name="t4" id=""style="margin-left: 29%;" ><br><br>
+        <label> 5. CSS</label>
+        <input type="text" name="t5" id="" style="margin-left: 32%;"><br><br>
+        <label> 6. php</label>
+        <input type="text" name="t6" id="" style="margin-left: 33%;"><br><br>
+        <label> 7. core java</label>
+        <input type="text" name="t7" id=""style="margin-left: 26%;" ><br><br>
+        <button onclick="javascript:avg()">Result</button>
+        <p style="margin-left: 13%;" id="totalMarks" id="total" >Total is:/350</p>
+        <p style="margin-top: -40px; margin-left: 50%;" id="percentage" id="per">percentage is:</p>
+        
+    </form>
+
+    <script>
+        function avg() {
+            var a,b,c,e,d,f,e,p,s;
+            a=parseInt(entry.t1.value)
+            b=parseInt(entry.t2.value)
+            c=parseInt(entry.t3.value)
+            d=parseInt(entry.t4.value)
+            e=parseInt(entry.t5.value)
+            f=parseInt(entry.t6.value)
+            e=parseInt(entry.t7.value)
+            
+            total=(a+b+c+d+e+f+e)
+            per=(a+b+c+d+e+f+e)/5
+
+            entry.total.value=total;
+            entry.per.value=per;
+
+
+
+        }
+    </script>
+    
+   
+</body>
+</html>

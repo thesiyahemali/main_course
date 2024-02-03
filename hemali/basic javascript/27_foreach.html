@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head"></div>
+    <script>
+        let data=['bhadresh ','chirag','hitesh','ramesh']
+        // console.log(data);
+        // data.forEach((value,index)=>{
+        //     console.log(value,index);
+        //     let head=document.createElement('h1');
+        //     head.innerText=value
+        //     head=addEventListener('click',()=>{
+        //         deleteData(index)
+        //     })
+        //     document.getElementById('head').appendChild(head)
+        // })
+
+        dsiplayData()
+        function  dsiplayData(){
+            data.forEach((value,index)=>{
+                let head=document.createElement('h1')
+                head.innerText=value
+                head.addEventListener('click',()=>{
+                    deleteData(index)
+                })
+                document.getElementById('head').appendChild(head)
+            })
+        }
+        function deleteData(index){
+            data.splice(index,1)
+            document.getElementById('head').innerHTML=''
+            dsiplayData()
+        }
+    </script>
+</body>
+</html>

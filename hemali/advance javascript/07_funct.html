@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name='thesiya hemali'
+
+        // includes ma string ma koy vastu hoy to true aaeve baki false aaeve
+        let b=name.includes('thes')
+        console.log(b);
+
+        console.log(name.startsWith('t'));
+        console.log(name.endsWith('l'));
+
+        // from string array ma convert thaye  jaye and tuktda thaye jay
+        console.log(Array.from(name));
+
+        // array ma key find kare
+        const fruits = ['Banana', 'Orange', 'Apple', 'Mango']
+        const keys=fruits.keys()
+        // console.log(keys);
+        for (x of keys){
+            console.log(x);
+        }
+
+        // find first vale in array
+        let n=[3,4,3,4,5,6]
+        const found =n.find(checkage)
+        function checkage(age){
+           return age<=5
+        }
+        console.log(found);
+    </script>
+</body>
+</html>

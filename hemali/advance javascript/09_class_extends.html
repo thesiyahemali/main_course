@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // inheritnce -use one class inside onther
+        // constructor- define inital value of varible
+        // this keyord -we can use class members using this keyord
+        // oops-class,object,constructor,this,inheritance,types
+
+        class sum{
+            constructor(a,b){
+                this.first=a;
+                this.seconde=b;
+            }
+            
+            add(){
+                console.log(this.first+this.seconde);
+            }
+        }
+
+        class multi extends sum{
+            constructor(a,b,c,d){
+                super(c,d)
+                this.num1=a
+                this.num2=b
+            }
+            mul(){
+                console.log(this.num1*this.num2);
+            }
+        }
+        const obj=new multi(5,3 ,5,5)
+        obj.mul()
+        obj.add()
+
+        
+    </script>
+</body>
+</html>

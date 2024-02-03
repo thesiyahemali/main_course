@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // sum ->multi example 1
+
+        // function sum(a, b) {
+        //     return new Promise((reslove, reject) => {
+        //         reslove(a + b)
+        //     })
+        // }
+
+        // function multi(a, b) {
+        //     return new Promise((reslove, reject) => {
+        //         reslove(a * b)
+        //     })
+        // }
+
+        // sum(2, 4)
+        // .then((result) => {
+        //     return multi(result, 3)
+        // })
+        // .then((out)=>{
+        //     console.log(out);
+        // })
+
+        // sum-> multi->div->modulo example 2
+        
+        function sum(a,b){
+            return new Promise ((resolve,reject)=>{
+                resolve(a+b)
+            })
+        }
+
+        function multi(a,b){
+            return new Promise((resolve,reject)=>{
+                resolve(a*b)
+            })
+        }
+
+        function div(a,b){
+            return new Promise((resolve,reject)=>{
+                resolve(a/b)
+            })
+        }
+
+        function mod(a,b){
+            return new Promise ((resolve,reject)=>{
+                resolve(a%b)
+            })
+        }
+        sum(3,4)
+        .then((result)=>{
+            console.log(result);
+            return multi(result,3)
+        })
+        .then((res)=>{
+            console.log(res);
+            return div(res,3)
+        })
+        .then((rese)=>{
+            console.log(rese);
+            return mod(rese,3)
+        })
+        .then((oute)=>{
+          console.log(oute);
+        })
+
+
+        
+
+    </script>
+</body>
+
+</html>

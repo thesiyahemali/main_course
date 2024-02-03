@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['amit', 'mitu', 'kaju', 'hemu'];
+
+// Specify the value you want to remove
+var valueToRemove = 'mitu';
+
+// Find the index of the value in the array
+var index = arr.indexOf(valueToRemove);
+
+// Check if the value is in the array before removing to avoid an error
+if (index !== -1) {
+    // Remove the element at the found index
+    arr.splice(index, 1);
+    console.log("Removed '" + valueToRemove + "' from the array.");
+} else {
+    console.log("'" + valueToRemove + "' not found in the array.");
+}
+
+// Print the updated array
+console.log("Updated array:", arr);
+
+    </script>
+</body>
+</html>

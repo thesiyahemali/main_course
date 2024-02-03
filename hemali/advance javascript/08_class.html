@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class is blueprint of object
+        // rules:
+        /*           capital ,small
+                  no number
+                  special symbol no
+                  underscore spprot
+                  $ supprot */
+
+        //   class ni ander function hoy consructore hoy varible hoy 
+        //  ek class ma multiple object bani sake
+        // class sum{
+        //     constructor(a,b){
+        //         this.first=a
+        //         this.seconde=b
+        //     } 
+
+        //     add(){
+        //         console.log(this.first+this.seconde);
+        //     }
+        // }
+        // const s=new sum(2,3)
+        // s.add()
+
+        // const m=new sum(5,10)
+        // m.add()
+
+   class oddEven{
+       constructor(a){
+        this.num=a
+       }
+
+       check(){
+        if(this.num%2==0){
+            console.log('this is even number');
+        }else{
+            console.log('this is odd number');
+        }
+       }
+   }
+    var n=prompt('add number:')
+    const obj=new oddEven(Number(n))
+    obj.check()
+
+
+    
+    </script>
+</body>
+
+</html>

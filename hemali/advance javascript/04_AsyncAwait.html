@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // callback function mate use thaye
+        // example 1
+          
+       /*  const sum=async(a,b)=>{
+            let m=await multi (a+b,4)
+            let n=await div(m,4)
+            let o=await mod(n,3)
+            console.log(o);
+        }
+        function multi(a,b){
+           return  a*b
+        }
+        function div(a,b){
+           return a/b
+        }
+        function mod(a,b){
+            return a%b
+        }
+        sum(3,50) */
+
+        // example2
+        const sum1=async(a,b)=>{
+            let k=await multi(a+b,4)
+            let p=await div(k,5)
+            let t=await mod(p,10)
+            console.log(t);
+        }
+
+        function multi(a,b){
+            return a*b
+        }
+        function div(a,b){
+            return a/b
+        }
+        function mod(a,b){
+            return a%b
+        }
+        let a=prompt('a')
+        let b=prompt('b')
+        sum1(Number(a),Number(b))
+    </script>
+</body>
+</html>

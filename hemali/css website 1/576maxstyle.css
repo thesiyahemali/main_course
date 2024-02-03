@@ -1,0 +1,662 @@
+@media(max-width:576px){
+     /* header */
+     *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+     }
+
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: unset;
+    /* border: 1px solid red; */
+}
+.header .left {
+    width: 60%;
+}
+.header .left h2 {
+    
+    font-weight: 300;
+    opacity: .6;
+    text-align: center;
+    margin-top: 31px;
+    font-size: 28px;
+    
+}
+.header .right {
+    width: 69%;
+    
+    
+}
+.header .right ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    
+}
+.header .right ul li {
+   margin-top: 18px;
+   position: relative;
+   
+}
+.header .right ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+    
+}
+.header .right ul li i{
+    
+    color: blue;
+}
+
+.header .right ul li a:hover{
+    
+    color:blue;
+
+}
+
+/* drop */
+.header .drop {
+    position: relative;
+}
+.header .dropdown{
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    
+}
+.header .dropdown{
+    display: none;
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .dropdown ul{
+    display: inline-block;
+    width: 150px;
+    border: 1px solid white;
+}
+.header .drop:hover .dropdown{
+    display: block;
+}
+
+/* level */
+
+.header .level{
+    position: relative;
+}
+.header .leve{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    border: 1px solid white;
+    width: 100px;
+}
+.header .leve{
+    display: none;   
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .leve ul{
+    display: inline-block;  
+}
+.header .leve ul li a{
+    font-size:15px;   
+}
+.header .level:hover .leve{
+    display: block;  
+}
+
+/* levele */
+.header .levele{
+    position: relative;  
+}
+.header .levele2{
+    position: absolute;
+    top: -17px;
+    left: 40px;
+    border: 1px solid white;
+    width: 100px; 
+}
+.header .levele2{
+    display:none;
+    margin-left: 30px;
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .levele2 ul{
+    display:inline-block;
+}
+.header .levele:hover .levele2{
+    display: block;
+}
+.header .right {
+    display: none;   
+}
+
+/* section */
+.section1 .main{
+    position: relative;
+    /* border: 3px solid red; */
+
+}
+.section1 .main .image img{
+    width: 100%;
+    height:500px;
+    
+}
+.section1 .main .text{
+    position: absolute;
+    top: 50px;
+    left: 2%;
+    right: 2%;
+}
+.section1 .main .text h1{
+    font-size: 33px;
+    
+
+}
+.section1 .main .text p{
+    font-size: 13px;
+    margin-top: 30px;
+    
+}
+.section1 .main .text .btn{
+   display: flex;
+   margin-top: 50px;
+   flex-direction:column;
+   
+   justify-content: center;
+   
+
+}
+.section1 .main .text .read{
+    padding: 24px 55px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+     
+}
+.section1 .main .text .down {
+    padding: 20px 38px;
+       font-size: 12px;
+       margin-right: 50px;
+       margin-left: 50px;
+       
+}
+.section1 .main .text .down:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+/* section */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+
+}
+.section2 .left {
+    width: 100%;
+    /* border: 2px solid blue; */
+    
+}
+.section2 .left .com img{
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+.section2 .right {
+    width: 100%;
+     /* border: 2px solid red;  */
+    
+}
+.section2 .right h3{
+    font-size: 30px;
+    margin-top: -45px;
+     margin-left: 21px;
+    font-weight: 200;
+}
+.section2 .right p{
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: 21px; 
+    margin-right: 0px;
+    line-height: 27px;
+    opacity: .6;
+}
+.section2 .right button{
+    font-size: 15px;
+    padding: 20px 70px;
+    margin-top: 30px;
+     margin-left: 21px; 
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+/* .section3 */
+.section3 {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid tomato; */
+    
+
+}
+.section3 .left{
+    width: 100%;
+    /* border: 2px solid red ; */
+}
+.section3 .left .com h3 {
+    font-size: 30px; 
+    font-weight: 100; 
+    margin-top: 40px;
+    margin-left: 21px;
+    color: #0e1015;
+    
+
+}
+.section3 .left .com p {
+    font-size: 15px; 
+    font-weight: 100; 
+    margin-top: 40px;
+    margin-left: 21px;
+    margin-right: 0px;
+    line-height: 20px;
+
+}
+.section3 .left .com button {
+    font-size: 14px;
+    padding: 20px 70px;
+    margin-top: 40px;
+    margin-left: 21px;
+    margin-bottom: 20px;
+}
+.section3 .right{
+    width:100% ;
+    /* border: 2px solid blue; */
+}
+.section3 .right img{
+    height: 210px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+    /* .section4 */
+    .section4 .img1{
+        background-image: url(img/ice.jpg);
+        background-attachment: fixed;
+        height: 450px;
+        width: 100%;
+    }
+    .section4 .img1 .text {
+       padding-top: 100px;
+       /* border: 2px solid red; */
+       
+    }
+    .section4 .img1 .text h1{
+        font-size: 35px;
+        font-weight: 100;
+        
+    }
+    .section4 .img1 .text p{
+        font-size: 14px;
+        padding: 20px 0%;
+        line-height: 25px;
+        font-weight: 400;
+        
+    }
+    .section4 .img1 .text button{
+        font-size: 15px;
+        padding: 15px 55px;
+        line-height: 25px;
+        font-weight: 400;
+        /* padding-bottom: 20px; */
+        
+    }
+
+     /* .section5 */
+
+     .section5 .options{
+        width: 100%;
+        height: 300px;
+        /* border: 2px solid red; */
+    }
+    .section5 .options h1{
+        font-size: 30px;
+        
+        padding-top: 43px;
+        font-weight: 200;
+    }
+    .section5 .options p{
+        margin-top: 30px;
+        padding: 0px 3%;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .section5 .options button{
+        padding: 15px 50px;
+        margin-top: 30px;
+        
+    }
+
+    /* .section6 */
+.section6 .options{
+      
+    background-color: #f5f5f5;
+    /* border: 2px solid tomato; */
+   
+   /* width: 100%; */
+}
+.section6 .options img{
+   margin: 0px 0%;  
+   width: 100%;  
+   
+}
+/*.section7 */
+.section7 .text{
+    background-color: black;
+    /* border: 3px solid red ; */
+    padding: 80px 3%;
+    margin: 0px;
+}
+.section7 .text h1{
+    color: whitesmoke;
+    font-weight: 400;
+
+    
+}
+.section7 .text p{
+    color: whitesmoke;
+    font-weight: 400;
+    padding-top: 30px;
+    
+}
+/* .section7 */
+.section7 .gallary .paris{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 0px;
+    background-color: black;
+    
+}
+.section7 .gallary .paris .s1{
+    position: relative;
+    transition: .3s all ease;
+}
+.section7 .gallary .paris .s1 img{
+    height: 300px;
+    width: 100%;
+}
+.section7 .gallary .paris .s1 .top{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: linear-gradient(rgb(255,255,255,0),rgb(51,51,51,.9));
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: .6s all ease;
+}
+.section7 .gallary .paris .s1:hover .top{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    /* bottom: 0%; */
+}
+.section7 .gallary .paris .s1 p{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*.section8 */
+.section8 .text {
+    color: whitesmoke;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 1250px;
+ }
+ .section8 .text h2{
+     font-size: 25px;
+ }
+ .section8 .text p{
+     font-size: 17px;
+     padding: 30px 5%;
+     font-weight: 200;
+ }
+ .section8 .text img{
+     font-size: 17px;
+     padding: 5px 23%;
+     font-weight: 200;
+     border-radius: 50%;
+     height: 130PX;
+ }
+ .section8 .text h4{
+     font-size: 20px;
+ 
+     font-weight: 200;
+     border-radius: 50%;
+     height: 130PX;
+ }
+
+ /* .section9 */
+
+.section9 .options{
+    width: 100%;
+    /* border: 2px solid red ; */
+    height: 300px;
+}
+.section9 .options .text{
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 15%;
+    padding-top: 50px;
+
+}
+.section9 .options .icon .h1{
+    font-size: 20px;
+    padding-left: 25%;
+    padding-top: 30px;
+}
+.section9 .options .icon .c2{
+    font-size: 25px;
+    padding-left: 20%;
+    padding-top: 70px;
+}
+.section9 .options .icon1 .a1{
+    padding-left: 25%;
+    font-size: 55px;
+    
+}
+.section9 .options .icon1 .a2{
+    padding-left: 15%;
+    font-size: 60px;
+    
+}
+.section9 .options .icon1 .a3{
+    padding-left: 19%;
+    font-size: 60px;
+    
+}
+.section9 .options .icon1 .a4{
+    padding-left: 15%;
+    font-size: 60px;
+    
+}
+
+ 
+/* .section10 */
+.section10 .options{
+    display: flex;
+    flex-direction:column;
+    /* border: 1px solid black; */
+
+}
+.section10 .left { 
+    width: 100%;
+    /* border: 2px solid red; */
+
+}
+.section10 .right{
+  width: 100%;
+  /* border: 2px solid red; */
+
+}
+.section10 .left h2{
+    font-size: 30px;
+    margin-left: 9%;
+     margin-right: 5%;
+    margin-top: 13%;
+    line-height: 40px;
+
+}
+.section10 .right button{
+    font-size: 15px;
+    margin-left: 3%;
+    margin-top: 5%;
+    padding: 20px 25%
+
+}
+
+/* .section11 */
+
+.section11 .options {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 200px;
+     border: 1px solid rgb(34, 255, 0);
+    background-color: black;
+    color:whitesmoke;
+}
+.section11 .left { 
+    width: 100%;
+    /* border: 2px solid red; */
+
+}
+.section11 .right{
+  width: 100%;
+  /* border: 2px solid red; */
+
+}
+.section11 .left h2{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 25%;
+    font-weight: 200;
+}
+.section11 .right a i{
+    margin-left: 0%;
+    margin-top: 10%;
+    padding-left: 40px;
+    font-size: 14px;
+}
+/* blog */
+ /* header */
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+.header{
+display: flex;
+width: 100%;
+flex-direction: unset;
+/* border: 1px solid red; */
+}
+.header .left {
+width: 60%;
+}
+.header .left h2 {
+
+font-weight: 300;
+opacity: .6;
+text-align: center;
+margin-top: 31px;
+font-size: 28px;
+
+}
+.header .right {
+width: 69%;
+
+
+}
+.header .right ul {
+list-style: none;
+display: flex;
+width: 100%;
+justify-content:space-evenly;
+
+}
+.header .right ul li {
+margin-top: 18px;
+position: relative;
+
+}
+.header .right ul li a{
+text-decoration: none;
+font-size: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: black;
+
+
+}
+.header .right ul li i{
+
+color: blue;
+}
+
+.header .right ul li a:hover{
+
+color:blue;
+
+}
+/* section1 */
+.section1{
+    background-color:#f5f5f5;
+    width: 100%;
+    height: 230px;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+}
+.section1 h1{
+   font-weight: 200;
+   opacity: .8;
+   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   color: #0e1015;
+   font-size: 26px;
+   margin-left: 40%;
+   padding-top: 25%;
+}
+
+
+ 
+
+}

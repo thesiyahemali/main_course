@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // advance array method
+
+        // 1.array map
+            //   current array if you want to change any value thort array
+            // it wii  create new array
+
+            let std=[
+                {name: 'monika' , mark: 60 , age: 25},
+                {name: 'hemali' , mark: 45 , age: 21},
+                {name: 'mirali' , mark: 50 , age: 20},
+                {name: 'avni' , mark: 65 , age: 22},
+            ]
+
+            let newstd=std.map((result,index)=>{
+                // console.log(index,result);
+                if(result.name == 'monika'){
+                    return{
+                        name:result.name+'patel',
+                        mark:result.mark+10,
+                        age:result.age,
+                    }
+                }else if(result.name == 'mirali'){
+                    return{
+                        name:result.name+'moradiya',
+                        mark:result.mark+0,
+                        age:result.age+20,
+
+                    }
+
+                }
+                else{
+                    return result     
+                }
+                
+            })
+            console.log(newstd);
+            // // console.log(std);
+
+            // example1
+            let std1=[
+              {name:'parth', age:25 , marks:50},
+              {name:'akashe', age:28 , marks:55},
+              {name:'ashissh', age:27 , marks:60},
+              {name:'gopal', age:22 , marks:70}
+            ]
+            
+            let newstudy=std1.map((result,index)=>{
+                if(result.name == 'parth'){
+                    return{
+                        name:result.name +'kukadiya',
+                        mark:result.marks - 5,
+                        age:result.age *5,
+                        surname:'kukadiya'
+                    }
+                }else{
+                    return result
+                }
+            })
+            console.log(newstudy);
+                 
+
+            // 02:filter :for remove value index value from array using condtion
+            //    jate karlu exmple
+              let std2=[ 30,50,60,70,80]
+                 let num=std2.filter((result,index)=>{
+                    return result >=50
+                 })  
+                 console.log(std2);
+                 console.log(num);   
+            
+                //  example2
+                 var std3=[
+                    {name:'bali' , age:22 , marks:44},
+                    {name:'hitesh' , age:21 , marks:45},
+                    {name:'mayur' , age:22 , marks:49},
+                    {name:'haresh' , age:22 , marks:55},
+                 ]
+                         
+                 let news=std3.filter((result,index)=>{
+                    return result.marks > 44
+                 })
+                 console.log(news);
+
+                //  example3
+
+                var std4=[
+                    {name:'bali' , age:22 , marks:44},
+                    {name:'hitesh' , age:21 , marks:45},
+                    {name:'mayur' , age:25 , marks:49},
+                    {name:'haresh' , age:30 , marks:55},
+                 ]
+
+                 let newe=std4.filter((result,index)=>{
+                    return result.age >=22 && result.marks >=45
+                 })
+                 console.log(newe);
+
+
+                //  example4
+                
+                 let std5=[
+                    {name:'monika', age:20,marks:10},
+                    { name: 'hemali',age:20,marks: 37},
+                    { name: 'mirali', age: 40, marks: 19 },
+                     { name: 'avni', age: 50,   marks: 22 },
+                 ]
+
+                //  add mark10 and remvoe mark value below 45
+                let newstde=std5.map((result,index)=>{
+                    return{name:result.name,age:result.age,marks:result.marks+20}
+                })
+
+                let newstd6=newstde.filter((result,index)=>{
+                    return result.marks>45
+                })
+                console.log(newstd6);
+
+    </script>
+</body>
+</html>

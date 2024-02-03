@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // multiple inheritance is not supprot
+
+          // herarchical inheritance
+
+          class a{
+            constructor(a){
+                this.name=a
+            }
+
+            displaya(){
+              console.log("hii this is a + this.name");
+            }
+          }
+
+          class b extends a{
+            constructor(a){
+                super(a)
+                this.name=a
+            }
+
+            displayb(){
+                console.log('hii this is b + this.name');
+            }
+          }
+
+          class c extends a{
+            constructor(a){
+                super(a)
+                this.name=a
+            }
+
+            displayac(){
+                console.log('hii this is c + this.name');
+            }
+          }
+
+        //   const obj=new b('b')
+        //   obj.displayb()
+        //   obj.displaya()
+
+        const obj=new c('c')
+        obj.displaya()
+        // obj.displayc()
+        // obj.displayb()
+
+
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <script>
+        // try catch is exception in handling4
+        // try ...catch for error showing and hide
+        // try and catch jo code sacho hase toj te try ma rese and jo code khoto hase to catch ma jase ane error batvse
+
+        // try catch throw finally
+
+        var a=5
+        try{
+            console.log(b);
+        }catch(error){
+            console.log('this is page not working');
+        }
+
+        // error lavamate
+        try{
+                dadalert('welcome fellow geek')
+        }
+        catch(error){
+            console.log(error);
+        }
+
+        // error na aaeve tayre
+        function geekfun(){
+            let a=5;
+            try{
+                console.log('value of varible:'+a);
+            }
+            catch(e){
+                console.log('error'+e.description);
+            }
+        }
+        geekfun()
+
+        // throws bolck throws statement
+        try{
+            throw new Error('yeah .....sorry')
+        }
+        catch(e){
+            console.log(e);
+        }
+
+        // finally bolck
+        try{
+            console.log('try');
+        }
+        catch(e){
+           console.log('error');
+        }
+        finally{
+            console.log('finally');
+        }
+    </script>
+</body>
+</html>

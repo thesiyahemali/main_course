@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slide {
+            height: 600px;
+            width: 100%;
+        }
+
+        #section1 a i {
+            background-color: rgb(233, 197, 203);
+            color:red;
+            border-radius: 50%;
+            padding: 22px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        #section1 a:hover i {
+            background-color: aquamarine;
+            color: aquamarine;
+
+        }
+
+        @media(min-width:992px) {
+            .slide {
+                height: 600px !important;
+                width: 100%;
+            }
+        }
+
+        .hot {
+            position: relative;
+            padding-left: 70px;
+            color: #006989;
+            font-weight: 700;
+        }
+
+        .hot::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            height: 3px;
+            width: 50px;
+            background-color: red;
+        }
+
+        .sea {
+            background-image: url(img/bg.jpg);
+            height: 400px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: brightness(60%);
+
+        }
+
+        .submit {
+            width: 300px;
+        }
+
+        .lorem:hover {
+            background-color:#006989;
+            color: white;
+            
+        }
+        
+
+        @media(min-width:768px) {
+            .slide {
+                height: 200px;
+                width: 100%;
+            }
+        }
+
+        @media(min-width:576px) {
+            .slide {
+                height: 200px;
+                width: 100%;
+            }
+        }
+
+        @media(max-width:576px) {
+
+            h4 {
+                margin-top: 30px;
+            }
+
+            button {
+                margin-bottom: 30px;
+            }
+
+            .slide {
+                height: 200px;
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row bg-danger">
+            <div class="col-sm-3  ">
+                <h1 class="mt-1 ms-4 text-light">Str<i class="fa-solid fa-earth-americas fs-2"
+                        style="color: #deed02;"></i>ll</h1>
+            </div>
+
+            <div class="col-sm-9">
+                <ul class=" list-unstyled d-flex justify-content-end">
+                    <li class=" fs-2 mx-4"><a class="text-decoration-none fs-6 text-warning ">HOME</a></li>
+                    <li class=" mx-4 fs-2"><a class="text-decoration-none fs-6 text-light ">ABOUT</a></li>
+                    <li class="mx-4 fs-2"><a class="text-decoration-none fs-6 text-light">DESTINATIONS</a></li>
+                    <li class="mx-4 fs-2"><a class="text-decoration-none fs-6 text-light">BLOG</a></li>
+                    <li class="mx-4 fs-2"><a class="text-decoration-none fs-6 text-light">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- section1 -->
+    <div class="container-fluid">
+        <div class="row" style="background-color: #f8f9fa;">
+            <div class="col-lg-6 mt-lg-5 pt-lg-5">
+                <h4 class="mt-lg-5 pt-lg-5 ps-lg-5 fs-lg-5 mt-sm-5 fw-bold fs-5" style="color: #047fa4;">Mountain
+                    Holiday</h4>
+                <h1 class="ps-lg-5 display-3 " style="font-weight: 400;">Explore Your travel <span
+                        class="fw-bold">Destination</span></h1>
+                <p class="ps-lg-5 lead " style="color: #8C8C8C; font-weight: 400;">Enjoy the best Destination with our
+                    Travel Agency</p>
+                <button class="ms-lg-5 px-lg-4 py-lg-2 mt-lg-3 btn-outline-primary rounded">Read More</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/slider1.jpg" class="img-fluid slide">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .section2 -->
+    <div class="container">
+        <div class="continer" id="section1">
+            <div class="row ms-lg-5 mt-lg-5 ">
+                <div class="col-lg-3 ">
+                    <a href="" class="">
+                        <i class="fa-solid fa-earth-americas fs-3 mt-lg-5  " style="color: #f20202;"></i>
+                    </a>
+                    <h5 class="fw-bold mt-3 ">Voyages & Cruises</h5>
+                    <p class="lead" style="color: #8C8C8C; font-weight:400; font-size: 17px;"> Lorem ipsum dolor sit
+                        amet,Ea
+                        consequuntur illum facere</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="" class="">
+                        <i class="fa-solid fa-bed  fs-3 mt-lg-5" style="color: #f20202;"></i>
+                    </a>
+                    <h5 class="fw-bold mt-3">Hotel Bookings</h5>
+                    <p class="lead" style="color: #8C8C8C; font-weight:400; font-size: 17px;"> Lorem ipsum dolor sit
+                        amet,Ea
+                        consequuntur illum facere</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="" class="">
+                        <i class="fa-solid fa-plane-up fs-3 mt-lg-5  " style="color: #f20202;"></i>
+                    </a>
+                    <h5 class="fw-bold mt-3">Air Tickets</h5>
+                    <p class="lead" style="color: #8C8C8C; font-weight:400; font-size: 17px;"> Lorem ipsum dolor sit
+                        amet,Ea
+                        consequuntur illum facere</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="" class="">
+                        <i class="fa-solid fa-earth-americas fs-3 mt-lg-5  " style="color: #f20202;"></i>
+                    </a>
+                    <h5 class="fw-bold mt-3 ">Visas</h5>
+                    <p class="lead" style="color: #8C8C8C; font-weight:400; font-size: 17px;"> Lorem ipsum dolor sit
+                        amet,Ea
+                        consequuntur illum facere</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section3 -->
+    <div class="container-fluid  " style="background-color:#f8f9fa; margin-top: 6%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mt-5 pt-5">
+                    <span class="hot ms-5"> hot tour</span>
+                    <h1 class="fw-bold ms-5">popular package</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mt-5">
+                        <div class=" img position-relative">
+                            <img src="img/img2.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <div class=" img position-relative">
+                            <img src="img/img3.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <div class=" img position-relative">
+                            <img src="img/img4.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class=" img position-relative">
+                            <img src="img/img5.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class=" img position-relative">
+                            <img src="img/img6.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class=" img position-relative">
+                            <img src="img/img7.jpg" class="img-fluid rounded" style="height:400px; width:85%">
+                            <div class=" text position-absolute  bottom-0 Start-0 ms-2 text-light">
+                                <h3>paris</h3>
+                                <p>3Days, 4 Nights Start From <span class="text-warning"> $750</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- sction4 -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="embed-responsive embed-responsive">
+                        <iframe src="https://i.vimeocdn.com/video/472379227-c22099e99deedc266cefc18379d18e4b6d058e027b300b7c8faf7326d597d1f1-d?mw=800&amp;mh=450&amp;q=70&quot;" style="width: 90%; height: 200px;"></iframe>
+                        <div class="vp-preview vp-preview-cover vp-preview-invisible" id="vp-preview" data-thumb="https://i.vimeocdn.com/video/472379227-c22099e99deedc266cefc18379d18e4b6d058e027b300b7c8faf7326d597d1f1-d?mw=800&amp;mh=450&amp;q=70" data-thumb-width="800" style="background-image: url(&quot;https://i.vimeocdn.com/video/472379227-c22099e99deedc266cefc18379d18e4b6d058e027b300b7c8faf7326d597d1f1-d?mw=800&amp;mh=450&amp;q=70&quot;);"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- .section5 -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <span class="hot ms-5">Short Video </span>
+                        <h1 class="fw-bold ms-5">Find Your Perfect Vacation </h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="ms-5 me-5" style="color: #8C8C8C;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur
+                            adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-sm-12">
+                        <span class="hot ms-5">10-30% off</span>
+                        <h1 class="fw-bold ms-5">Book Now </h1>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column pt-3">
+                        <label for="" class="" style="color: #141414; font-weight: 600;">Name</label>
+                        <input type="text" placeholder="Name"
+                            style="height: 45px;   color: #8C8C8C; background-color: #f2f2f2; border: 2px solid #f2f2f2;"
+                            class=" mt-1">
+                        <!-- <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com"> -->
+
+                    </div>
+                    <div class=" col-lg-4 d-flex flex-column pt-3">
+                        <label for="" style="color: #141414; font-weight: 600; " class="">Destination</label>
+                        <select name="" id="" class=" mt-1"
+                            style="height: 45px; color: #8C8C8C; background-color: #f2f2f2;  border: 2px solid #f2f2f2;">
+                            <option value="">Any</option>
+                            <option value="">Africa</option>
+                            <option value="">America</option>
+                            <option value="">Asia</option>
+                            <option value="">Esetran europe</option>
+                            <option value="">Europe</option>
+                            <option value="">south America</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column pt-3">
+                        <label style="color: #141414; font-weight: 600; " class="">Activity</label>
+                        <select name="" id="" class=" mt-1"
+                            style="height: 45PX; color: #8C8C8C; background-color: #f2f2f2;  border: 2px solid #f2f2f2;">
+                            <option value="">Any</option>
+                            <option value="">city turscultural & thematic tours</option>
+                            <option value="">family friendly tour</option>
+                            <option value="">holiday & seasonal tours</option>
+                            <option value="">indulgenace & luxuray tours</option>
+                            <option value="">outdoor Activites</option>
+                            <option value="">Relaxation tours</option>
+                            <option value="">wild & adventure tours</option>
+
+
+                        </select>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column pt-3">
+                        <label style="color: #141414; font-weight: 600;">Duration</label>
+                        <select name="" id="" class=""
+                            style="height: 45px; ; color: #8C8C8C; background-color: #f2f2f2;  border: 2px solid #f2f2f2;">
+                            <option value="">Any</option>
+                            <option value="">1 Day Tour</option>
+                            <option value="">2-4 Days Tour</option>
+                            <option value="">5-7 Days Tour</option>
+                            <option value=""> 7+ Days Tour</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 pt-3 d-flex flex-column">
+                        <label style="color: #141414; font-weight: 600;">Date</label>
+                        <input type="date"
+                            style="height: 45px;  color: #8C8C8C; background-color: #f2f2f2;  border: 2px solid #f2f2f2;"
+                            class="mt-1">
+                    </div>
+                    <div class="col-lg-4 pt-3 d-flex flex-column">
+                        <label style="color: #141414; font-weight: 600; ">Submit</label>
+                        <input type="submit" value="submit"
+                            style="height: 45px;  background-color: red; color: white; border: 2px solid #f2f2f2;"
+                            class="mt-1">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <!-- <div class="container"> -->
+            <div class="row mt-5 pt-5 position-relative">
+                <div class="col-lg-12 sea">
+                    <div class="col-lg-6 position-absolute top"></div>
+                    <div class="col-lg-6 col-sm-12 col-auto position-absolute  end-0 ">
+                        <div class="col-sm-12 d-flex pt-5">
+
+                            <hr class="border border-danger border-2 " style="width: 50px;"> <i
+                                class="mt-2 ms-2 fst-normal text-light">Lets Stay In Touch</i>
+
+                        </div>
+                        <h1 class="mt-2 text-light">Sign Up For 25% Discount</h1>
+                        <p class="mt-3 text-light">Want to get an instant discount for your next tour? Leave your email
+                            and sign up for our newsletter with 25% off all our offers.
+                        </p>
+                        <div class="btn-group mt-2">
+
+                            <input type="text" class="form-control" placeholder="Input group example"
+                                aria-label="Input group example" aria-describedby="btnGroupAddon">
+                            <!-- <div class="input-group-text" id="btnGroupAddon">@</div> -->
+                            <button class="border-0 btn-lg bg-danger submit">Submit</button>
+                        </div>
+
+                        <p class="lead  mt-4 text-light">Subscribe to our free weekly newsletter for new update releases
+                            (no spam)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-5 pt-5 ms-5 ps-3">
+                    <div class="col-sm-12">
+                        <span class="hot ms-5">Testimonials</span>
+                        <h1 class="fw-bold ms-5">Feedback From Our Customers </h1>
+                    </div>
+                              
+                  <div class="row mt-5 ms-4">
+                    <div class="col-lg-3  border border-2 lorem mx-lg-4 ">
+                        <p style="color: #8C8C8C; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px;" class="ps-2 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+                        <div class="peter d-flex ps-2 mt-3">
+                            <img src="img/slider1.jpg" alt="" class="rounded-circle " style="height: 60px;">
+                            <div class="text ms-3 mt-2">
+                                <h5 class="fw-bold">Theo Hall</h5>
+                                <p class="" style="color:  #8C8C8C; font-weight: 400;">SEO Expert</p>
+                            </div>
+             
+                        </div>
+                    </div>
+                    <div class="col-lg-3  border border-2 lorem mx-lg-4 ">
+                        <p style="color: #8C8C8C; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px;" class="ps-2 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+                        <div class="peter d-flex ps-2 mt-3">
+                            <img src="img/slider1.jpg" alt="" class="rounded-circle " style="height: 60px;">
+                            <div class="text ms-3 mt-2">
+                                <h5 class="fw-bold">Theo Hall</h5>
+                                <p class="" style="color:  #8C8C8C; font-weight: 400;">SEO Expert</p>
+                            </div>
+             
+                        </div>
+                    </div> <div class="col-lg-3  border border-2 lorem mx-lg-4 ">
+                        <p style="color: #8C8C8C; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px;" class="ps-2 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat dicta consequuntur alias delectus magni rem quam illum itaque nulla.</p>
+                        <div class="peter d-flex ps-2 mt-3">
+                            <img src="img/slider1.jpg" alt="" class="rounded-circle " style="height: 60px;">
+                            <div class="text ms-3 mt-2">
+                                <h5 class="fw-bold">Theo Hall</h5>
+                                <p class="" style="color:  #8C8C8C; font-weight: 400;">SEO Expert</p>
+                            </div>
+             
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

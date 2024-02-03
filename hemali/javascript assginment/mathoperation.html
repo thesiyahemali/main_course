@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div" style="border: 3px solid black; height: 290px; margin-right: 69%;">
+    <h2 style="margin-left: 30%;">maths operations</h2><br>
+    <label style="margin-left: 4%; font-size: 20px;"  value="0">Enter 1st number:</label>
+    <input type="text" name="" id="num1" style="margin-left: 15%; font-size: 18px;"><br><br>
+    <label style="margin-left: 4%; font-size: 20px; margin-top: 10%;"  value="0">Enter 2nd number:</label>
+    <input  type="text" name="" id="num2" style="margin-left: 13%; font-size: 18px;" >
+
+    <button style="margin-top: 5%; font-size: 25px;margin-left:4%; padding-left: 3%; padding-right: 3%;" onclick="sum()" >+</button>
+    <button style="font-size: 25px; margin-left:2%; padding-left: 3%; padding-right: 3%;" onlclick="sub()">-</button>
+    <button style="font-size: 25px; margin-left:2%; padding-left: 3%; padding-right: 3%; " onclick="mul()">*</button>
+ <br>
+    <button style="font-size: 25px; margin-left:4%; margin-top: 2%; padding-left: 3%; padding-right: 3%; " onclick="div()">/</button>
+    <button style="font-size: 20px; margin-left:3%; margin-top: 2%; padding-left: 2%; padding-right: 3%;" onclick="module()">%</button> 
+
+    <p style="margin-left: 50%; margin-top: -14%; font-size: 23px;" id="ans">Answer is:</p>
+
+</div>
+<script>
+
+    function sum() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let ans = num1 + num2;
+      document.getElementById('ans').textContent = "Addition Result: " + ans;
+    }
+    function sub() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let ans = num1 - num2;
+      document.getElementById('ans').textContent = "Subtraction Result: " + ans;
+    }
+    function mul() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let ans = num1 * num2;
+      document.getElementById('ans').textContent = "Multiplication Result: " + ans;
+    }
+    function div() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let ans = num1 / num2;
+      document.getElementById('ans').textContent = "Addition Result: " + ans; 
+    //   if (num2 === 0) {
+    //     document.getElementById('ans').textContent = "Cannot divide by zero";
+    //   } else {
+    //     let result = num1 / num2;
+    //     document.getElementById('ans').textContent = "Division Result: " + ans;
+    //   }
+    }
+    function module() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let ans = num1 % num2;
+      document.getElementById('ans').textContent = "module Result: " + ans;
+    }
+    
+</script>
+</body>
+</html>

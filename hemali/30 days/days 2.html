@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   1.Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+        var challenge = '30 days of javascript'
+        //    let const
+
+        // 2.Print the string on the browser console using console.log()
+        var challenge = '30 days of javascript'
+        console.log(challenge);
+
+        // 3.print the length of the string on the browser console using console.log()
+        var cha = '30 days of javascript'
+        console.log(cha.length);
+
+        //  4.Change all the string characters to capital letters using toUpperCase() method
+        var cha = '30 dyas of javascript'
+        console.log(cha.toLocaleUpperCase());
+
+        // 5.Change all the string characters to lowercase letters using toLowerCase() method
+        var cha = '30 dyas of javascript'
+        console.log(cha.toLocaleLowerCase());
+
+        // 6.Cut (slice) out the first word of the string using substr() or substring() method 
+        // substr jetli index api aetlu index mathi remove thaye 
+        let chall = '30 dyas of javascript'
+        console.log(chall.substr(5));
+        console.log(chall.substring(2));
+
+        //   7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+        // slice jetli index api hoy aetli aaeve baki nu remove thaye
+        let a = '30 days of javascript'
+        console.log(a.slice(0, 8));
+
+        //   8.Check if the string contains a word Script using includes() method
+        // includes ma strin hoy tema true ya false aaeve
+        let b = 'script'
+        console.log(b.includes('script'));
+        console.log(b.includes('Script'));
+
+        //   9.Split the string into an array using split() method
+        // split ma string tukda kare
+        let c = '30 days of javascript'
+        console.log(c.split(""));
+
+        //   10.Split the string 30 Days Of JavaScript at the space using split() method
+        // spliit ma space muki ne karye to ek ek ord aaeve
+        let d = '30 days of javascript'
+        console.log(d.split(" "));
+
+        //   11.'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+        // splice ma space muki ne splice thaye
+        let e = ['google', 'ibm', 'facebok', 'oracle', 'apple', 'microsoft', 'amazon']
+        console.log(e.splice(' '));
+
+        // 12.Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+        // replace ma strig ma javascript in jagya ae python 
+        let f = '30 days of javascript'
+        console.log(f.replace('javascript', 'python'));
+
+        //   13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+        // charat ma jetli index apye te word aaeve
+        let p = '30 days of javascript'
+        console.log(p.charAt(19));
+
+        //   14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+        // chartcodeat ma tano code aaeve je apo hoy te
+        let s = '30 days of javascript'
+        let result = s.charCodeAt('j')
+        console.log(result);
+
+        //    15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+        // indexof ma string m jetli jagya ae hase aeni index batse se
+        let frst = '30 days of javascript '
+        console.log(frst.indexOf('j'));
+
+        // 16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+        // lastndexof ma laste math number count krse
+        let laste = '30 dyas of javascript'
+        console.log(laste.lastIndexOf('a'));
+
+        // 17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+        // indextof ma sentece ma first letter apo to bhi aej ndex count kare and aakho word karo to bhi aej ndex count karse
+        let setntence = 'you cannot end a sentence with because bacsuse bacsse is a conjuction'
+        console.log(setntence.indexOf('because'));
+        console.log(setntence.indexOf('b'));
+
+        //   18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        // sentenc1 ma lastindex hoy tea laste mathii index count karse
+        let sentence1 = 'you cannto end a sentecnce with because because because is a conjuncation'
+        console.log(sentence1.lastIndexOf('because'));
+        console.log(sentence1.lastIndexOf('b'));
+
+        // 19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+        let search = 'you cannot end a sentence with because because because s a conjncation'
+        console.log(search.search(' because'));
+        console.log(search.search('b'));
+
+        //20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '
+
+        //let`s add some white sapce at the strat and end 
+        let chae = '   30 dyas of javascript   '
+
+        //let`s first check for the lenthe
+        console.log(chae.length);
+        //the solution
+        console.log(chae.trim());
+        //white space roome and lenthe finde
+        console.log(chae.trim().length);
+
+        //21. Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+        //    startwith sting aenathi chalu thaye se k nay te batve ane true an false m javbe aaeve
+        let che = '30 dyas of javascript'
+        console.log(che.startsWith(3));
+        console.log(che.startsWith(0));
+
+        // 22.Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+        //   endithds ma end mathi string start thaye se k ny te batve anser tre ya false ma aaeve
+        let chea = '30 days of javascript'
+        console.log(chea.endsWith('t'));
+        console.log(chea.endsWith('p'));
+
+        // 23.Use match() method to find all the a’s in 30 Days Of JavaScript
+        // match method ma string ma aena jevo word se k ny ae batve ane g aetle golbal tarikhe lakhi ne karvi to badha aena jeva word aaeve ae batve
+
+        let challe = '30 days of javascript'
+        console.log(challe.match('a'));
+        console.log(challe.match(/a/g));
+
+        // 24.Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+        // concat thi join thaye 6  be String
+
+        let ke = '30 days of'
+        let kew = 'javascript'
+        console.log(ke.concat(kew));
+
+        // 25.Use repeat() method to print 30 Days Of JavaScript 2 times
+        //   repeat method thi jetli var repate karvu hoy aetli var string repeat thaye
+        let ch = '30 days of javascript '
+        console.log(ch.repeat(2));
+
+        //<h1>  excerice 2 <h1>
+
+
+        //  1.Using console.log() print out the following statement:
+
+        // The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+
+        let qoute = "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another."
+        console.log(qoute);
+
+        // II. Escaping the inner quotes with a backslash.
+        let qoute1 = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.'
+        console.log(qoute1);
+
+        // III. Using template literals or back ticks. ``
+        let qoute2 = ` The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another`
+        console.log(qoute2);
+
+        // 2.Using console.log() print out the following quote by Mother Teresa:
+
+        // "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+
+        let motherteresa = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+        console.log(motherteresa);
+
+        // 3.Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+        // I. using the inbuilt Number object.
+        console.log(typeof '10' === typeof 10);
+        console.log(typeof Number('10') === typeof 10);
+
+        //    II. Appending + sign
+        console.log(typeof +'10' === typeof 10);
+
+        // III. Using parseInt
+        console.log(typeof parseInt('10') === typeof 10);
+
+        // 4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+        console.log(parseFloat('9.8') === 10);
+        console.log(Math.ceil(parseFloat('9.8')) === 10);
+        console.log(Math.round(parseFloat('9.8')) === 10);
+
+        // 5. Check if 'on' is found in both python and jargon
+
+        let language = 'python', notlanguage = 'jarngo'
+        console.log(language.includes('on') &&  notlanguage.includes('on'));
+        console.log(/on/g.test(language) && /on/g.test( notlanguage));
+
+        // 6.I hope this course is not full of jargon. Check if jargon is in the sentence.
+        // check sentence means k aa santence ma string ma je ae schu ceh k ny ae sak karva nu kay 6 includes thi sake thaye
+        let language1='i hope coyrse is not full of jargon'
+        console.log(language1.includes('jargon'));
+        console.log(/jargon/gi.test(language1));
+        
+        // 7.Generate a random number between 0 and 100 inclusively.
+        // random number means k dar vakhte number chanje thaya kare tane random number kevay
+        const random=Math.floor(Math.random()*101)
+        console.log(random);
+        console.log(Math.floor(Math.random()*101));
+
+       
+        // 8.Generate a random number between 50 and 100 inclusively.
+        // random number 50 thi lay ne 100 suthi aetle 50 pachi na je aaevse
+        const randomnumber=Math.floor(Math.random()*51)+50;
+        console.log(randomnumber);
+        console.log(Math.floor(Math.random()*51)+50);
+
+        // 9.Generate a random number between 0 and 255 inclusively.
+        // 0 thi lay 255 suthi random number aaevse
+        const rand=Math.floor(Math.random()*256)
+        console.log(rand);
+
+        // 10.Access the 'JavaScript' string characters using a random number.
+        // javascript ne random number ma mokla se
+           let prolang='javascript'
+           console.log(prolang.charAt(Math.floor(Math.random()*prolang.length)));
+
+
+    </script>
+</body>
+
+</html>

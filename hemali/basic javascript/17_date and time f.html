@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="second"></div>
+<script>
+     var d = new Date()
+     console.log(d);
+
+     var year = d.getFullYear() 
+     console.log(year);
+
+    //  0-11 month count kre
+     var month=d.getMonth()+1
+     console.log(month);
+
+    //  0-23 hours count kare se
+     var hours=d.getHours()
+     console.log(hours);
+    
+    //  1-31 ni date btve se
+     var date=d.getDate()
+     console.log(date);
+     
+    //  weekday 0-6 ma batve
+     var day=d.getDay()
+     console.log(day);
+
+    //  0-59 m btve minutes
+     var minutes=d.getMinutes()
+     console.log(minutes);
+
+    //  0-59 m seconde btve se
+     var seconde=d.getSeconds()+1
+     console.log(seconde);
+
+    //  0-999 ma batve se
+     var milliseconde=d.getMilliseconds()
+     console.log(milliseconde);
+
+     var time=d.getTime()
+     console.log(time);
+
+   setInterval(() => {
+        var d = new Date()
+        var min = d.getMinutes()
+        var sec = d.getSeconds()
+      document.getElementById('second').innerText = d
+      }, 1000)
+      0
+
+      console.log(seconde)
+</script>
+</body>
+</html>

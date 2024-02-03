@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        /* a:link{
+     text-decoration: line-through;
+   } */
+   /* a:visited{
+    color: rgb(128, 0, 87);
+   } */
+   a:hover{
+    color: aqua;
+    background-color: red;
+    font-size: 20px;
+    /* pointer help  wait  zoom-in*/
+    cursor: zoom-in;
+   } 
+   .p1{
+    border: 3px solid green;
+    color: green;
+    text-align: center;
+    margin: 0px 40%;
+    border-radius: 5px;
+   }
+   .p1:hover{
+    color: grey;
+    border: 3px solid grey;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+   }
+   .p2:hover, h1:hover, .a1:hover {
+  background-color: yellow;
+  cursor: help;
+}
+b{
+    background-color: powderblue;
+    font-size: 40px;
+}
+b:hover{
+     background-color: brown;
+     cursor: wait;
+}
+div{
+    background-color: chocolate;
+    padding: 30px;
+    display: none;
+}
+span:hover+div{
+    display: block;
+}
+  img{
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    display: none;
+  }
+  i:hover+img{
+    display: block;
+  }
+  .h1{
+    border-radius: 5px;
+    margin: 20px 40px;
+    padding: 10px 30px;
+    color: coral;
+
+  }
+  .h1:hover{
+    background-color: aqua;
+    box-shadow: 5px 5px 0px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+    </style>
+    </head>
+    
+    <body>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    
+        <p class="p1">parth</p>
+    
+        <p class="p2">Lorem ipsum dolor </p>
+        <h1>hello</h1>
+        <a class="a1">school</a><br><br>
+    
+        <b>hemali</b><br><br>
+
+        <span>hemali</span>
+       <div>thesiya</div><br><br>
+
+      <i>image</i>
+       
+       <img src="https://images.pexels.com/photos/17827643/pexels-photo-17827643/free-photo-of-ijsland.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><br><br><br>
+
+
+
+
+
+       <button class="h1">read more</button>
+
+
+    </body>
+    
+    </html>

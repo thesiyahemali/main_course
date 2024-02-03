@@ -1,0 +1,22 @@
+.h1{
+    color: rgb(42, 101, 165);
+    font-style: italic;
+}
+
+.p{
+    color: aqua;
+    background-color: black;
+    font-size: large;
+    padding-inline-start: 10px;
+}
+
+.u{
+    color: crimson;
+    background-color: coral;
+    height: 10px;
+    width: auto;
+}
+.add{
+    background-color: darkgoldenrod;
+    font-style: initial;
+}

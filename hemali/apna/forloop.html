@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <=50; i++) {
+            console.log('apna college=',i);
+            
+        }
+        for (let i = 1; i <=50; i++) {
+            console.log('i=',i);
+            
+        }
+
+        let sum=0
+        for (let i= 0; i <=5; i++) {
+            sum=sum+i
+            
+        }
+        console.log('sum=',sum);
+
+
+        // while loop
+
+        let i=1;
+        while (i<=5) {
+            console.log('i=',i);
+            i++;
+        }
+
+        // do while loop
+        let j=1;
+        do {
+            console.log('j=',j);
+        j++;
+        } while (j<=5);
+
+
+        // for of loop  
+        let str='elcometobca'
+       for(let k of str){
+        console.log('k=',k);
+       }
+
+    //    for in loop objecct mate use tahye 
+
+    let student={
+        name:'rahul',
+        age:'20',
+        cgpa:7.5,
+        ispass:true
+    }
+
+    for(let key in student){
+        // console.log(key,student[key]);
+        console.log('key=',key,'value=',student[key]);
+    }
+
+
+    // task1
+
+    for (let num = 0; num <=100; num++) {
+       if(num%2!==0){
+        console.log('num',num);
+       }
+    }
+
+    // task2
+    let gamenum=25;
+    let usernum=prompt('guess the game number')
+    // console.log(usernum);
+    while (usernum != gamenum) {
+        usernum=prompt("you entred wrong number.guess again:")
+    }
+    console.log('congrtionl , you entrend the right numbr');
+    </script>
+</body>
+</html>

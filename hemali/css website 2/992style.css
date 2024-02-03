@@ -1,0 +1,159 @@
+@media(min-width:992px){
+
+    .hemali{
+        display: flex;
+        width: 100%;
+        flex-direction: unset;
+    }
+    .hemali .left{
+        width: 69%;
+        /* border: 1px solid red; */
+    }
+    .hemali .left p{
+        font-size: 17px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+        color: #333333;
+        display:inline-block;
+        margin-top:20px ;
+        
+        /* margin-left: 19%; */
+        /* border: 1px solid red; */
+    
+    }
+    .hemali .left .sel{
+        margin-left: 2%;
+        
+    }
+    .hemali .left .sele{
+        margin-left: 23%;
+        /* border: 2px solid; */
+    }
+    .hemali .left .sele2{
+        margin-left: 19%;
+    }
+    
+    
+    .hemali  .head1 i{
+        font-size: 14px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        color: #868686;
+        display:inline-block;
+        margin:0px 0%;
+        
+        font-style: normal;
+        margin-bottom: 15px;
+        /* border: 1px solid green; */
+    }
+    .hemali  .head1 .cal{
+        /* border: 1px solid; */
+        margin-left :2%;
+        font-weight: 300;
+    
+    
+    }
+    .hemali  .head1 .for{
+        /* border: 1px solid; */
+        margin-left :14.50%;
+        font-weight: 300;
+        
+    
+    
+    }
+    .hemali  .head1 .num{
+        /* border: 1px solid; */
+        margin-left :16%;
+        font-weight: 300;
+        
+    
+    }
+    .hemali .right a i  {
+        
+        margin-top: 40px;
+        color: blue;
+        font-size: 13px;
+        padding-right: 5px;
+        
+        /* border: 1px solid red; */
+        
+    }
+    .hemali .right a {
+        border: 1px solid red;
+        color: blue;
+        padding: 10px 10px;
+        margin-left: 34%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .hemali .right{
+        width: 30%;
+        /* border: 1px solid red; */
+    }
+    .hemali .right a:hover {
+        background-color: #0f4c81;
+        color: white;
+        border: #0f4c81;
+    }
+    .hemali .right :hover i{
+        color: white;
+    }
+    
+    /* .header2 */
+    .parth{
+        display: flex;
+        width: 100%;
+        flex-direction: unset;
+        background-color: #0f4c81;
+        top: 0px;
+        z-index: 1;
+        /* border: 2px solid red; */
+    }
+    .parth .left {
+        width: 30%;
+        /* border: 2px solid ; */
+    }
+    .parth .left h1{
+        color: white;
+        font-weight: 700;
+        font-family: 'Rubik', sans-serif;
+        margin-left: 37%;
+        font-size: 35px;
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+    .parth .right {
+        width: 69%; 
+        /* border: 2px solid red; */
+    }
+    .parth .right ul {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content:start;
+        margin-top: 30px; 
+        /* border: 1px solid green; */
+    
+    }
+    .parth .right ul li {
+      margin-top: -5px;
+      
+        /* border: 1px solid; */
+    }
+    .parth .right ul li a {
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+        margin:0px 60px 0px 90px;
+        /* border: 1px solid red; */
+    }
+    .parth .right ul li .abo{
+        margin-left: 68%;
+    }
+    .parth .right ul li .con{
+        margin-left: 135%;
+    }
+    
+}

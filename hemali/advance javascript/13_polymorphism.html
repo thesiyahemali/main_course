@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // polymorphisam means the same function with different signature is called many Time
+        // function same hoy aene call karva hoy v
+
+        // function bov badha hoy aene ek je var call karvu hoy tene polymarphisam kevay
+
+        class a{
+            add(){
+                console.log('this is first method');
+            }
+        }
+
+        class b extends a{
+            add(){
+            //    super.add()
+                console.log('this is seconde method');
+            }
+        }
+
+        const obj=new b()
+        obj.add()
+        const obja=new a()
+        obja.add()
+        
+        
+    </script>
+</body>
+</html>

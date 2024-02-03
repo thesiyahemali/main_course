@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=['hemali','mirali','avni','monika','khushi','vidhi']
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            
+        }
+
+        let arr1=['aaksh','mayur','aashish','parth','hardik','abhi']
+        for(let arr of arr1){
+            console.log(arr);
+        }
+
+
+        let cities=['mubai','pune','delhi','hyderbad']
+        for(let citi of cities){
+            console.log(citi.toLocaleUpperCase());
+        }
+
+
+        let mrks=[86,90,88,70,50,65]
+        let sum=0;
+        for (let val of mrks){
+            // sum=sum+val;
+            sum+=val;
+        }
+        let avg=sum/mrks.length;
+        console.log(`avg marks of the class =${avg}`);
+
+
+
+        let items=[250,60,450,579,90,765]
+
+         let index=0;
+         for(let val of items){
+             console.log(`val at index ${index} =${val}`);
+            let offer=val/10;
+             items[index]=items[index]-offer
+            console.log(`value atfer offer=${items[index]}`);
+             index++;
+         }
+
+        // for loop ma
+        for(let i=0; i<items.length; i++){
+            let offer=items[i] /10;
+            items[i]-=offer
+        }
+        console.log(items);
+
+    </script>
+</body>
+</html>

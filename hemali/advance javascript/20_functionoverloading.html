@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- function overloading is a not supprot javascript -->
+    <script>
+        class a{
+            constructor(a,b){
+                this.num1=a
+                this.num2=b
+            }
+            add(d,f,c){
+                console.log(d+f+c);
+            }
+            add(a,b){
+                console.log(a+b);
+            }
+        }
+
+        const obj=new a(2,3)
+        obj.add(7,7,4)
+        obj.add(2,4)
+    </script>
+</body>
+</html>

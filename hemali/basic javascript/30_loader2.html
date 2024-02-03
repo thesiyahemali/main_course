@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  HTML CSSResult Skip Results Iframe body {
+    background: linear-gradient(222deg, rgba(18, 18, 18, 1) 0%, rgba(93, 50, 43, 1) 50%, rgba(44, 47, 66, 1) 100%);
+    font-family: 'Arial';
+    text-align: center;
+  }
+
+  .icon {
+    position: relative;
+    left: 50vw;
+    width: 0;
+    top: 50vh;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .bar {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    top: -10px;
+    background-color: #f98866;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    animation: loading 1.5s ease-in-out 0s infinite;
+  }
+
+  .bar:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .bar:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .bar:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .bar:nth-child(4) {
+    animation-delay: 0.45s;
+  }
+
+  @keyframes loading {
+    0% {
+      height: 20px;
+    }
+
+    50% {
+      height: 60px;
+    }
+
+    100% {
+      height: 20px;
+    }
+  }
+
+  .main {
+    margin: 20px;
+  }
+
+  a {
+    padding: 20px;
+
+  }
+
+  p {
+    margin: 30px;
+    line-height: 40px;
+  }
+</style>
+
+<body>
+  <div class="icon" id="loader">
+    <div class="bar" style="background-color: #3498db; margin-left: -60px;"></div>
+    <div class="bar" style="background-color: #e74c3c; margin-left: -20px;"></div>
+    <div class="bar" style="background-color: #f1c40f; margin-left: 20px;"></div>
+    <div class="bar" style="background-color: #2eB869; margin-left: 60px;"></div>
+  </div>
+
+  <div id="main" class="main" style="display: none;">
+    <div class="manu">
+      <a href="">HOME</a>
+      <a href="">ABOUT</a>
+      <a href="">CONTCT</a>
+      <a href="">INDEX</a>
+      <a href="">GALLERY</a>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam perferendis fugiat voluptas dignissimos.
+        Officiis ipsam doloribus unde eaque nam! Architecto aliquam dolorum numquam ipsa libero molestiae sapiente non
+        blanditiis, expedita qui quam rerum quisquam fugit amet suscipit repudiandae cum autem quos quod harum
+        veritatis! Esse rerum in itaque sequi debitis cumque nihil delectus saepe culpa odio, quos dolor dolore
+        consequuntur eveniet voluptas enim eaque beatae molestiae consequatur dolorum possimus at temporibus reiciendis.
+        Ratione, voluptatibus et consequatur saepe inventore eaque deleniti vero facilis cum eos assumenda quibusdam rem
+        illo eum quisquam dolor consequuntur, at dolore sit velit possimus reprehenderit. Ad voluptate numquam deleniti!
+        Aliquid ipsam esse accusamus ratione quod perspiciatis pariatur dolorem culpa, at voluptatum blanditiis eligendi
+        optio amet in? Illum consequatur in laboriosam ea qui, tempora mollitia laborum, sapiente eos atque provident
+        temporibus, dolorum minima. Ab aspernatur laborum ex ut? Debitis minus voluptatem iste quisquam eaque eius quasi
+        iusto illo quos, perferendis optio dignissimos temporibus adipisci sint exercitationem ipsa quod dolore est
+        voluptate? Inventore autem ipsam soluta ratione cupiditate vel voluptas necessitatibus, vitae reprehenderit
+        provident enim consequatur ipsa esse. Sunt quia accusantium veniam ipsam modi omnis, reprehenderit quisquam. At,
+        perspiciatis quas iure numquam voluptate temporibus iusto, vitae ut sunt mollitia totam, amet provident deleniti
+        nihil quia voluptates? Praesentium deserunt, sequi reiciendis esse illum laborum nostrum non quia ea
+        exercitationem facilis adipisci possimus labore dolorum. Quaerat, nostrum repudiandae. Ut illo reiciendis nam
+        laboriosam? Laboriosam debitis ipsam ea neque ex placeat necessitatibus totam, quidem doloribus est
+        exercitationem tenetur, perspiciatis ab quam beatae. Ea modi ex mollitia. Culpa, assumenda? Fugit magni
+        repudiandae possimus ipsa numquam quisquam harum id, libero recusandae cumque aliquid fuga molestiae, odio saepe
+        fugiat ab ex. Ipsam minus ab a nisi inventore repudiandae, soluta fuga, quisquam voluptas itaque quibusdam
+        corporis impedit aliquid illum iusto pariatur quo totam assumenda suscipit amet.</p>
+
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      let lod=document.getElementById('loader').style.display='none'
+      let main=document.getElementById('main').style.display='block'
+    }, 3000);
+  </script>
+</body>
+
+</html>

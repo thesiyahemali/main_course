@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="storedata()">add username</button>
+
+    <script>
+        function storedata(){
+            document.cookie='color =red';
+            location.reload()
+        }
+        let color=document.cookie
+        console.log(color);
+
+        let c = color.split('=')
+        console.log(c);
+        document.body.style.backgroundColor=c[1]
+
+           document.cookie = 'username=bhadresh'
+       document.cookie = 'age=23'
+    </script>
+</body>
+</html>

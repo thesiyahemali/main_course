@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+        display: flex;
+        flex-direction:unset;
+        width: 100%;
+        justify-content: space-around;
+        background-color: pink;
+        }
+     ul{
+        list-style: none;
+        display: flex;
+        flex-direction: unset;
+        width: 100%;
+        justify-content: space-around;
+     }
+     a{
+        text-decoration: none;
+     }
+     button{
+        display: none;
+     }
+     .parth{
+        margin-left: -100px;
+     }
+     @media(max-width:576px){
+        header{
+        width: 100%;
+        }
+     ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+     }
+        button{
+        display: block;
+     } 
+     a{
+        text-decoration: none;
+        margin: 0px;
+     }
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="home" id="home">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">login</a></li>
+            <li><a href="">signup</a></li>
+
+        </ul>
+        <button id="btn">save</button>
+        <button id="cls">x</button>
+    </header>
+    <script>
+        let btn = document.getElementById("btn");
+        let cls = document.getElementById("cls");
+         let home = document.getElementById("home")
+        btn.addEventListener("click",function () {
+        //    console.log("hiiii"); 
+        home.classList.add("parth");
+        });
+        cls.addEventListener("click",function () {
+        //    console.log("hiiii"); 
+        home.classList.remove("parth")
+        });
+    </script>
+</body>
+</html>

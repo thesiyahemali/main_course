@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="pass">
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+    <button id="Show">Show</button>
+    <input type="checkbox" name="" id="check">
+
+
+    <script>
+        let check = document.getElementById("check")
+        let pass = document.getElementById("pass")
+        let show = document.getElementById("show")
+        let hide = document.getElementById("hide")
+        let Show = document.getElementById("Show")
+
+        show.addEventListener("click",function () {
+        //   console.log("dfndjfc");
+            pass.type="text";
+        })
+
+        hide.addEventListener("click",function () {
+        //   console.log("dfndjfc...........");
+            pass.type="password";
+        })
+
+        Show.addEventListener("click",function () {
+            if(pass .type =="password"){
+              pass.type ="text";
+            }
+            else{
+                pass.type="password";
+                Show.content="show"
+            }
+        })
+
+        
+        check.addEventListener("click",function () {
+            if(pass .type =="password"){
+              pass.type ="text";
+            }
+            else{
+                pass.type="password";
+                // Show.content="show"
+            }
+        })
+
+    </script>
+</body>
+</html>

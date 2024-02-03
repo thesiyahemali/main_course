@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dom document object model  -->
+<!--     
+    <button onclick="alert('hi')">Save</button>
+    <button id="btn">Aarth</button>
+    <p id="p1"></p>
+    <h1 id="h1"></h1>
+    <script>
+        let  para = document.getElementById("p1");
+        let  h1 = document.getElementById("h1");
+        let  BTN = document.getElementById("btn");
+        BTN.addEventListener("click", function() {
+            // document.write("Hemali");
+            // console.log("Avni");
+            para.innerHTML= "<p>Hello</p>"
+            h1.innerText= "<p>Hello</p>"
+        });
+    </script> -->
+
+    <button onclick="alert('hello')">save</button>
+    <button id="btn">click</button>
+    <p id="p1"></p>
+    <h1 id="h1"></h1>
+
+    <input type="password" name="" id="pass">
+    <button id="showe">show</button>
+    <!-- <button id="hide">hide</button> -->
+
+    <script>
+       let btn =  document.getElementById("btn");
+       let p1 = document.getElementById("p1");
+       let  h1 = document.getElementById("h1");
+       btn.addEventListener("click",function () {
+        //  console.log("hemali");
+        p1.innerHTML="<p>hello<p>"
+            h1.innerText= "<p>Hello</p>"
+       })
+
+       let pass =document.getElementById("pass")
+       let showe = document.getElementById("showe")
+    //    let hide = document.getElementById("hide")
+
+
+    //    showe.addEventListener("click",function () {
+    //     pass.type="text";
+    //    })
+
+    //    hide.addEventListener("click",function () {
+    //     pass.type="password";
+    //    })
+
+       showe.addEventListener("click",function() {
+            if(pass.type === "password"){
+              pass.type="text";
+            }
+            else{
+              pass.type="password"
+            }
+          })
+    </Script>
+</body>
+</html>
+
+

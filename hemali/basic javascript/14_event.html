@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="print()">click me</button>
+    <br><br>
+    <!-- // keyborad nd mouse   -->
+    <button ondblclick="changecolor()">change color</button>
+    <br><br>
+    <button onmouseleave="leavemouse(event)" onmouseover="mouserover(event)">mouse over</button>
+    <br><br>
+    <button oncontextmenu="buttonwidth(event)">right click</button>
+    <br><br>
+    <button onmouseup="mouseup(event)" onmousedown="mousedown(event)">mouse down</button>
+    <br><br>
+    <button onclick="presskey(event)">click me</button>
+    <script>
+        function print() {
+            document.body.style.backgroundColor = 'red'
+        }
+
+        function changecolor() {
+            document.body.style.backgroundColor = 'pink'
+        }
+
+        function mouserover(a) {
+            console.log(a);
+            a.target.style.backgroundColor = 'red'
+        }
+
+        function leavemouse(e) {
+            setTimeout(() => {
+                e.target.style.backgroundColor = 'yellow'
+            }, 2000);
+        }
+
+        function buttonwidth(e) {
+            e.target.style.width = '300px'
+            e.target.style.transition = 'all 10s'
+        }
+
+        function mousedown(e) {
+            e.target.style.fontWeight = 'bold'
+            e.target.style.backgroundColor = 'yellow'
+        }
+
+        function mouseup(e) {
+            e.target.style.fontWeight = '300'
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red'
+        }
+
+        function presskey(e){
+            if(e.target){
+                alert('alert key is presed')
+            }
+        }
+
+        if (window.event.keyCode == '13') {
+           document.body.style.backgroundColor = 'red'
+       }
+
+         document.onkeydown = function () {
+          if (window.event.keyCode == '13') {
+        document.body.style.backgroundColor = 'red'
+         }
+      }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .parth * {
+        border: 1px solid;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+</style>
+</style>
+
+<body>
+    <div class="parth">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <button id="parent">parent</button>
+    <button id="parents">parents</button>
+     <button id="parentp">parentsp</button>
+     <button id="parentuntill">parentuntill</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#parent").click(function () {
+                $("a").parent().css({ "color": "red", "background-color": "yellow" })
+            })
+
+            $("#parents").click(function () {
+                $("a").parents().css({ "color": "red", "background-color": "blue" })
+            })
+            $("#parentp").click(function() {
+                $("a").parents("ul").css({"color":"red","background-color":"green"})
+             })
+             $("#parentuntill").click(function() {
+                $("a").parentsUntil("div").css({"color":"red","background-color":"green"})
+             })
+        });
+    </script>
+</body>
+
+</html>

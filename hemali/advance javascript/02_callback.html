@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  callback -> inside function call onther function its called callback
+        // example1
+
+        /* function sum(a,b){
+            return a+b
+        }
+        function multi(a,b){
+             console.log(a*b);
+        }
+        let add=sum(4,5)
+        console.log(add);
+        multi(add,2) */
+
+        // callback function example 1
+/* 
+        function sum(a,b,callback){
+              callback (a+b,4)
+        }
+        function multi(a,b){
+            console.log(a*b);
+        }
+        sum(4,5,multi) */
+
+        // example 2
+      /*   function sum(a, b, c, callback) {
+            return callback(a + b, c)
+        }
+        function multi(a, b) {
+            console.log(a * b);
+        }
+        let a = prompt('a')
+        let b = prompt('b')
+        let c = prompt('c')
+        let add = sum(Number(a), Number(b), Number(c), multi)
+        console.log(add); */
+
+        // example 3
+
+        function sum(a,b,callback){
+           return callback (a+b,4)
+        }
+        function multi(a,b){
+            return a*b
+        }
+        function div(a,b){
+            return a/b
+        }
+        function mod(a,b){
+            return a%b
+        }
+        let c=sum(5,5,div)
+        let d=mod(3,5)
+        console.log(c);
+        console.log(d);
+
+        
+
+    </script>
+</body>
+
+</html>

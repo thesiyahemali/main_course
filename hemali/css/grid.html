@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hemali{
+            display: grid;
+            /* row-gap: 50px; */
+            /* column-gap:300px; */
+             /* grid-template-columns: auto auto auto ;  */
+             /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  */
+             grid-template-columns: repeat(3, 1fr); 
+            gap: 50px 300px; 
+
+        }
+      img{
+        width: 300px;
+        height: 300px;
+      }
+      .box{
+        border: 4px solid red;
+        height: 600px;
+        width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        /* column-gap: 20px; */
+        /* row-gap: 30px; */
+        gap: 20px 30px;
+        /* grid-row-start: 1; */
+  /* grid-row-end: 3; */
+      }
+      .grid{
+        font-size: 40px;
+        background-color: aqua;
+        text-align:center;
+        padding-top: 50px;
+        border: 2px solid black;
+        margin: 10px;
+        
+
+      }
+      .box1{
+        border: 3px solid rgb(7, 6, 7);
+        height: 700px;
+        width: 1000px;
+        margin:50px;
+        display: grid;
+        grid-template-columns:auto auto auto auto ;
+        gap: 20px 30px;
+      }
+      .grid1{
+        font-size: 30px;
+        background-color: brown;
+        text-align: center;
+        padding-top: 80px;
+        border: 5px solid blueviolet;
+        margin: 10px;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="hemali">
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/15813200/pexels-photo-15813200/free-photo-of-wedding-picture.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+        </div>
+
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/13059887/pexels-photo-13059887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/15813200/pexels-photo-15813200/free-photo-of-wedding-picture.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+        </div>
+
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/15813200/pexels-photo-15813200/free-photo-of-wedding-picture.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+        </div>
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+        <div class="earth">
+            <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+    </div><br><br><br><br><br><br>
+
+    <div class="box">
+        <div class="grid">1</div>
+        <div class="grid">2</div>
+        <div class="grid">3</div>
+        <div class="grid">4</div>
+        <div class="grid">5</div>
+        <div class="grid">6</div>
+        <div class="grid">7</div>
+        <div class="grid">8</div>
+        <div class="grid">9</div>
+        
+    </div>
+
+    <div class="box1">
+        <div class="grid1">1</div>
+        <div class="grid1">2</div>
+        <div class="grid1">3</div>
+        <div class="grid1">4</div>
+        <div class="grid1">5</div>
+        <div class="grid1">6</div>
+        <div class="grid1">7</div>
+        <div class="grid1">8</div>
+        <div class="grid1">9</div>
+        <div class="grid1">10</div>
+        <div class="grid1">11</div>
+        <div class="grid1">12</div>
+    </div>
+</body>
+</html>

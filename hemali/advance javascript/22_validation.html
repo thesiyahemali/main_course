@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: red;
+        display: none;
+    }
+</style>
+
+<body>
+    <form action="" onsubmit="validate(event)">
+        <label>username</label>
+        <input type="text" name="username" id="username">
+        <p id="userError">please enter valid username</p>
+        <br>
+        <label>emali</label>
+        <input type="email" name="email" id="email">
+        <p id="emailError">please enter valid email</p>
+        <br>
+        <label>phone:</label>
+        <input type="text" name="phone" id="phone">
+        <p id="phoneError">please enter valid phone</p>
+
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validate(e) {
+            e.preventDefault()
+
+            let name = document.getElementById('username').value
+            let email = document.getElementById('email').value
+            let phone = document.getElementById('phone').value
+
+            namesubmit = true
+            if (name == '') {
+                namesubmit = false
+                document.getElementById('userError').style.display = 'block'
+            } else {
+                namesubmit = true
+                document.getElementById('userError').style.display = 'none'
+            }
+
+
+            emalisubmit = true
+            let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+            if (email == '' && !pattern.test(email)) {
+                emalisubmit = false
+                document.getElementById('emailError').style.display = 'block'
+
+            } else {
+                emalisubmit = true
+                document.getElementById('emailError').style.display = 'none'
+            }
+
+            phonesubmit = true
+            let pattern1 = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
+            if (phone == '' && !pattern1.test(phone)) {
+                phonesubmit = false
+                document.getElementById('phoneError').style.display = 'block'
+            } else {
+                phonesubmit = true
+                document.getElementById('phoneError').style.display = 'none'
+            }
+
+
+
+            if (namesubmit && emalisubmit && phonesubmit) {
+                e.currentTarget.submit()
+
+            }
+        }
+    </script>
+</body>
+
+</html>

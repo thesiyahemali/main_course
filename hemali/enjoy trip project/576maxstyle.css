@@ -1,0 +1,203 @@
+@media(max-width:576px){
+    .section1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .section1 .img img{
+        width: 100%;
+        height: 400px;
+    }
+    .section1 .text1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        color: white;
+    }
+    .section1 .text1 i{
+      margin-top: 12%;
+      margin-left: 7%;
+      font-size: 12px;
+    }
+    .section1 .text1  .loc{
+        margin-left: 11%;
+        margin-top: -6.80%;
+        font-size: 14px;
+        
+    }
+    .section1 .text1 .njo{
+        font-family: 'Rokkitt', serif;
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 2.50em;
+        text-align: center;
+        margin-top: 13%;
+    }
+    .section1 .text1 .bor{
+    border: 2px solid white;
+    width: 52%;
+    margin-left: 23.50%;
+    }
+    .section1 .text1 .nun{
+        color: #ffffff;
+        text-align: center;
+        margin: 2em ;
+        letter-spacing: 1px;
+        font-size: 0.90em;
+        font-weight: 600;
+    }
+    .section1 .text1  .btn{
+        width: 100%;
+        align-items: center;
+        margin-top: -2%;
+    }
+    .section1 .text1 .btn .abo{
+        padding: 0.2em 1em;
+        border-radius: 20px;
+        color: #ffffff;
+        text-align: center;
+        background: transparent;
+        border:  1px solid #ffffff;
+    
+    }
+    .section1 .text1 .btn .mor{
+        padding: 0.2em 1em;
+        border-radius: 20px;
+        color: #ffffff;
+        text-align: center;
+        background:#ff9800;
+        border:  1px solid #ff9800;
+       margin-left: 5%;
+    }
+    .section1 .text1 .btn .abo:hover{
+        background-color: #ff9800;
+        border:  1px solid #ff9800;
+        transition: 0.5s all;
+    }
+    .section1 .text1 .btn .mor:hover{
+        background-color:transparent;
+        border:  1px solid #ffffff;
+        transition: 0.5s all;
+    }
+    .section1 .text1 .des{
+        text-align: center;
+        margin-top: 4.50%;
+        /* border: 2px solid red; */
+    }
+    .section1 .text1 .des i{
+        border: 1px solid white;
+        font-size: 13px;
+        padding: 10px 10px; 
+       margin-left: 4px;
+    }
+    .section1 .text1 .des .face:hover{
+        background-color: #337ab7;
+        border: 1px solid #337ab7;
+        transition:0.5s all;
+    }
+    .section1 .text1 .des .twit:hover{
+        border: solid 1px #55acee;
+        background: #55acee;
+        transition:0.5s all;
+    }
+    .section1 .text1 .des .rs:hover{
+        border: solid 1px #f26522;
+        background: #f26522;
+        transition:0.5s all;
+    }
+    .section1 .text1 .des .vke:hover{
+        border: solid 1px #45668e;
+        background: #45668e;
+        transition:0.5s all;
+    }
+           
+/* section2 */
+.section2{
+    width: 100%;
+    height: auto;
+    margin-top: 6%;
+    padding: 20px 28px;
+}
+.section2 .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section2 .main .first{
+   width: 100%;
+   font-family: 'Rokkitt', serif;
+}
+.section2 .main .first h1{
+    letter-spacing: 2px;
+    font-size:1.7em;
+    color: #212121; 
+}
+.section2 .main .first h5{
+    color: #212121;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.8em;
+    margin: 0.9em 0px;
+}
+.section2 .main .first p{
+    color: #999999;
+    font-size: 1em;
+    margin: 0px 0px;
+    line-height: 1.8em;
+}
+.section2 .main .first .p2{
+    margin: 10px 0px;
+}
+.section2 .main .seconde{
+    width: 100%;
+    margin-top: 5%;
+    padding-left: 0px;
+ }
+ .section2 .main .seconde img{
+    width: 100%;
+    height: 416px;
+ }
+.section2 .main .third{
+    width: 100%;
+    margin:  2em 0em;
+    font-family: 'Rokkitt', serif;
+}
+.section2 .main .third h1{
+    color: #212121;
+    font-size: 1.40em;
+    margin: 0 0;
+    letter-spacing: 2px;
+}
+.section2 .main .third h5{
+    color: #212121;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.8em;
+    margin: 1em 0px;
+}
+.section2 .main .third p{
+    color: #999999;
+    font-size: 1em;
+    margin: 0px 0px;
+    line-height: 1.8em;
+}
+.section2 .main .third .p2{
+    margin: 15px 0px;
+}
+.section2 .main .third button{
+   padding: 0.2em 1.5em;
+    margin: 1em 0em;
+    background-color: #ff9800;
+    color: white;
+    border: 1PX solid #ff9800;
+    text-align: center;
+}
+.section2 .main .third button:hover{
+    background-color: transparent;
+    color: #4b4b4b;
+    border: 1PX solid #212121;
+    transition: 0.5s all;
+}
+    }
+    

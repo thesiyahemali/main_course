@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- bom= browser object model  -->
+   <script>
+    var width=innerWidth
+    console.log(width);
+
+    var height=innerHeight
+    console.log(height);
+
+    if(width<500){
+        alert=('this is mobile')
+        document.body.style.backgroundColor='red'
+    }else{
+        alert=('this is computer')
+        document.body.style.backgroundColor='green'
+    }
+
+    var w=screen.width
+    var h=screen.height
+
+    console.log(h);
+    var aw=screen.availWidth
+
+    console.log(window.location.href);
+    console.log(aw);
+
+    console.log(window.location.hostname);
+    console.log(window.location.pathname);
+    console.log(window.location.protocol);
+    console.log(window.location.port);
+
+    function loadGoogle() {
+          window.location.assign('http://127.0.0.1:5500/array.html')
+        }
+        function goBack() {
+          window.history.back()
+        }
+        function forward() {
+          window.history.forward()
+        }
+
+        console.log(navigator.language)
+          console.log(navigator.cookieEnabled);
+          console.log(navigator.appCodeName);
+          console.log(navigator.platform);
+          console.log(navigator.appVersion);
+          console.log(navigator.userAgent);
+          console.log(navigator.onLine);
+
+        if(navigator.onLine){
+            console.log('you are online');
+        }else{
+            console.log('you are offline');
+        }
+        console.log(navigator.javaEnabled);
+   </script>
+</body>
+</html>

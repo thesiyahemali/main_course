@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="cal.css"> -->
+    <style>
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .calculator {
+    background-color: rgb(44, 45, 46);
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .calculator form input {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: -5px -6px 15px black;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+  }
+  
+  form .display {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 30px;
+    padding-right: 10px;
+  }
+  
+  .calculator form input.equal {
+    width: 45%;
+  }
+  
+  form input.operator {
+   color: #33ffd8;
+  }
+  
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="#">
+                <div class="display">
+                    <input type="text" name="display" id="inputbox" placeholder="0">
+                </div>
+                <div>
+                    <input type="button" value="Ac" class="operator"  onclick="clearN()">
+                    <input type="button" value="DE" class="operator" onclick="removeData()" >
+                    <input type="button" value="." class="operator" onclick="displayN('.')" >
+                    <input type="button" value="/" class="operator" onclick="displayN('/')" >
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="displayN('7')"  >
+                    <input type="button" value="8" onclick="displayN('8')" >
+                    <input type="button" value="9" onclick="displayN('9')" >
+                    <input type="button" value="*" class="operator" onclick="displayN('*')"  >
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="displayN('4')">
+                    <input type="button" value="5"  onclick="displayN('5')">
+                    <input type="button" value="6"  onclick="displayN('6')">
+                    <input type="button" value="-" class="operator" onclick="displayN('-')" >
+                </div>
+                <div>
+                    <input type="button" value="1"  onclick="displayN('1')">
+                    <input type="button" value="2" onclick="displayN('2')">
+                    <input type="button" value="3"  onclick="displayN('3')" >
+                    <input type="button" value="+"  class="operator" onclick="displayN('+')">
+                </div>
+                <div>
+                    <input type="button" value="00"   onclick="displayN('00')">
+                    <input type="button" value="0" onclick="displayN('0')" >
+                    <input type="button" value="="  onclick="cal()">
+                </div>
+            </form>
+        </div>
+    </div>
+   <script>
+      function displayN(val){
+                document.getElementById('inputbox').value += val 
+      }
+
+      function cal(){
+           document.getElementById('inputbox').value = eval(document.getElementById('inputbox').value)
+      }
+      
+   </script>
+</body>
+</html>
+</body>
+</html>

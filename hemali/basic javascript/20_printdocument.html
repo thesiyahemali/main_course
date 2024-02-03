@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, natus?
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt et nam quaerat excepturi sit. Iste ipsa non aperiam ratione consequuntur temporibus sint fugiat, asperiores esse sunt distinctio explicabo rem excepturi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita mollitia nulla sed quasi? Consequatur iste magnam saepe excepturi! Libero, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eos reiciendis nisi recusandae qui aliquam veniam.
+        </p>
+    </div>
+    <button onclick="printdata()">print above code</button>
+    <script>
+        function printdata(){{
+            let body=document.getElementById('main').innerText
+            let orianalhtml=document.body.innerHTML
+            document.body.innerHTML=body
+
+            window.print()
+            document.body.innerHTML=orianalhtml
+        }}
+    </script>
+</body>
+<!-- 
+    why choose Front End??
+i recently joined the course of Front End.
+During my education time, I have learned HTML, CSS, and JavaScript, and I have also completed a short-term course.
+"Frontend is in high demand in the market.
+"In websites and web applications, it is important for the consumer to find them more attractive through animation and UI. -->
+
+</html>

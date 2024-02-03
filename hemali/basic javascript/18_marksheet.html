@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+" />
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Math</th>
+                <th scope="col">Science</th>
+                <th scope="col">biology</th>
+                <th scope="col">Chemistry</th>
+                <th scope="col">Physics</th>
+
+                <th scope="col">Total</th>
+                <th scope="col">percentage</th>
+                <th scope="col">grade</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mirali</td>
+                <td><input type="text" id="m_m" onchange="cal1()" /></td>
+                <td><input type="text" id="m_s" onchange="cal1()" /></td>
+                <td><input type="text" id="m_b" onchange="cal1()" /></td>
+                <td><input type="text" id="m_c" onchange="cal1()" /></td>
+                <td><input type="text" id="m_p" onchange="cal1()" /></td>
+
+
+                <td id="m_t"></td>
+                <td id="m_per"></td>
+                <td id="m_grd"></td>
+
+
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hemali</td>
+                <td><input type="text" id="h_s" onchange="cal2()" /></td>
+                <td><input type="text" id="h_m" onchange="cal2()" /></td>
+                <td><input type="text" id="h_b" onchange="cal2()" /></td>
+                <td><input type="text" id="h_c" onchange="cal2()" /></td>
+                <td><input type="text" id="h_p" onchange="cal2()" /></td>
+                <td id="h_t"></td>
+                <td id="h_per"></td>
+                <td id="h_grd"></td>
+
+
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Urvisha</td>
+                <td><input type="text" id="u_m" onchange="cal3()" /></td>
+                <td><input type="text" id="u_s" onchange="cal3()" /></td>
+                <td><input type="text" id="u_b" onchange="cal3()" /></td>
+                <td><input type="text" id="u_c" onchange="cal3()" /></td>
+                <td><input type="text" id="u_p" onchange="cal3()" /></td>
+                <td id="u_t"></td>
+                <td id="u_per"></td>
+                <td id="u_grd"></td>
+
+
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>avani</td>
+                <td><input type="text" id="a_m" onchange="cal4()" /></td>
+                <td><input type="text" id="a_s" onchange="cal4()" /></td>
+                <td><input type="text" id="a_b" onchange="cal4()" /></td>
+                <td><input type="text" id="a_c" onchange="cal4()" /></td>
+                <td><input type="text" id="a_p" onchange="cal4()" /></td>
+                <td id="a_t"></td>
+                <td id="a_per"></td>
+                <td id="a_grd"></td>
+
+
+
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <script>
+        function cal1(event) {
+            var math = document.getElementById('m_m').value
+            var scie = document.getElementById('m_s').value
+            var bio = document.getElementById('m_b').value
+            var chem = document.getElementById('m_c').value
+            var phy = document.getElementById('m_p').value
+
+
+           let totall= document.getElementById('m_t').innerText = Number(math) + Number(scie) + Number(bio) + Number(chem) + Number(phy)
+
+           let percent = document.getElementById('m_per').innerText = (Number(totall) / 500) *100
+
+            let grade;
+            if (percent >= 90) {
+                grade = 'A+';
+            } else if (percent >= 80) {
+                grade = 'A';
+            } else if (percent >= 70) {
+                grade = 'B';
+            } else if (percent >= 60) {
+                grade = 'C';
+            } else if (percent >= 50) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+            grade = document.getElementById('m_grd').innerText = grade
+            
+
+        }
+
+         function cal2(event) {
+                var math = document.getElementById('h_m').value
+                var scie = document.getElementById('h_s').value
+                var bio = document.getElementById('h_b').value
+                var chem = document.getElementById('h_c').value
+                var phy = document.getElementById('h_p').value
+
+
+               let totall = document.getElementById('h_t').innerText = Number(math) + Number(scie) + Number(bio) + Number(chem) + Number(phy)
+               let percent = document.getElementById('h_per').innerText = (Number(totall) / 500) * 100
+
+            let grade;
+             if (percent >= 90) {
+                 grade = 'A+';
+             } else if (percent >= 80) {
+                 grade = 'A';
+             } else if (percent >= 70) {
+                 grade = 'B';
+             } else if (percent >= 60) {
+                 grade = 'C';
+             } else if (percent >= 50) {
+                 grade = 'D';
+             } else {
+                 grade = 'F';
+             }
+             grade = document.getElementById('h_grd').innerText = grade            
+
+            }
+         function cal3(event) {
+                var math = document.getElementById('u_m').value
+                var scie = document.getElementById('u_s').value
+                var bio = document.getElementById('u_b').value
+                var chem = document.getElementById('u_c').value
+                var phy = document.getElementById('u_p').value
+
+
+               let totall = document.getElementById('u_t').innerText = Number(math) + Number(scie) + Number(bio) + Number(chem) + Number(phy)
+           let percent = document.getElementById('u_per').innerText = (Number(totall) / 500) * 100
+
+           let grade;
+             if (percent >= 90) {
+                 grade = 'A+';
+             } else if (percent >= 80) {
+                 grade = 'A';
+             } else if (percent >= 70) {
+                 grade = 'B';
+             } else if (percent >= 60) {
+                 grade = 'C';
+             } else if (percent >= 50) {
+                 grade = 'D';
+             } else {
+                 grade = 'F';
+             }
+             grade = document.getElementById('u_grd').innerText = grade       
+
+            }
+
+            function cal4(event) {
+                    var math = document.getElementById('a_m').value
+                    var scie = document.getElementById('a_s').value
+                    var bio = document.getElementById('a_b').value
+                    var chem = document.getElementById('a_c').value
+                    var phy = document.getElementById('a_p').value
+
+
+                   let totall = document.getElementById('a_t').innerText = Number(math) + Number(scie) + Number(bio) + Number(chem) + Number(phy)
+           let percent = document.getElementById('a_per').innerText = (Number(totall) / 500) * 100
+
+           let grade;
+                if (percent >= 90) {
+                    grade = 'A+';
+                } else if (percent >= 80) {
+                    grade = 'A';
+                } else if (percent >= 70) {
+                    grade = 'B';
+                } else if (percent >= 60) {
+                    grade = 'C';
+                } else if (percent >= 50) {
+                    grade = 'D';
+                } else {
+                    grade = 'F';
+                }
+                grade = document.getElementById('a_grd').innerText = grade       
+
+                }
+    </script>
+</body>
+
+</html>
