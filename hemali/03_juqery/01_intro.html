@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- javascript is juqery libary  -->
+    <!-- juqery ma javascript no code lakhi sakhvi -->
+    <!-- juqery ma html css javascript nu basic knowledge hovu joye -->
+    <!-- juqery is lightwight write less do more javascript libaray -->
+
+    <!-- The jQuery library contains the following features:
+       HTML/DOM manipulation
+       CSS manipulation
+       HTML event methods
+       Effects and animations
+       AJAX
+       Utilities -->
+
+
+       <!-- syntax -->
+       <!-- $(document).ready(function(){
+
+        // jQuery methods go here...
+      
+      }); -->
+<!-- 
+      $(function(){
+
+        // jQuery methods go here...
+      
+      }); -->
+       
+    <p id="head">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur suscipit rerum dolor
+        voluptatibus? Velit eius consectetur veniam illum tenetur nulla facere fugit. Quo aliquid soluta modi itaque
+        voluptate sapiente. </p>
+
+        <h1 class="heade">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae porro, voluptates ea provident incidunt reiciendis dignissimos vel voluptatum iste ipsa sunt illo suscipit inventore repudiandae possimus aperiam unde necessitatibus quidem?</h1>
+
+        <h2 class="heade">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h2>
+
+        <h3 class="heade">helloooooooooooooooooooooooooooooooooooooooooooooo</h3>
+
+        <h6 class="ele">element selecotre 1</h6>
+        <h6  class="ele">element selector</h6>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            // selector
+            //   1. id:
+                
+            $(document).ready(function(){
+                // let head=$('#head').text()
+                let head=$('#head').html()
+                console.log(head);
+
+                // 2.class
+                // .text lakhiye to jetala class hoy ae badha aaeve 
+                // .html lakhvi to khail first class hoy tej aaeve
+                // let heade=$('.heade').text()
+                let heade=$('.heade').html()
+                console.log(heade);
+
+                // 3.element sekector and tag selectore
+                //  let ele=$('h6').text()
+                 let ele=$('h6').html()
+                 console.log(ele);
+            })
+        </script>
+</body>
+
+</html>

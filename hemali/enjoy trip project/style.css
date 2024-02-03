@@ -517,17 +517,29 @@
 
 /* .section4 */
 
-.section4 {
+.services {
     margin-top: 5%;
-    /* width: 20%; */
-    /* text-align: center; */
-
+    background: #e5eff1;
+}
+ .services .services1{
+ padding-top: 4%;
+    font-size: 2.8em;
+    color: #212121;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+}
+.services .row{
+    margin-top: 4%;
 }
 
-.section4 h5 {
+.section4 .phase {
     text-align: center;
     font-size: 1em;
-    color: #212121;
+    color: #0e0101;
+    font-weight: bold;
+    margin-top: 2%;
 }
 
 .section4 p {
@@ -537,6 +549,8 @@
     line-height: 1.18em;
     font-size: .9em;
     margin-left: 3%;
+    margin-top: 4%;
+   
 }
 
 .section4 .main {
@@ -550,17 +564,13 @@
     background: #ffffff;
     transition-duration: 0.3s;
 }
-
 .section4 .icon {
     width: 70px;
     height: 70px;
     text-align: center;
     border: solid 3px #ff9800;
     line-height: 80px;
-    
     margin: 10px 0px 5px 138px;
-
-
 }
 
 .section4 .main:before {
