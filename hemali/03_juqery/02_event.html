@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click me</button>
+    <button id="btn2">double click</button>
+    <button id="btn3">mouseover</button>
+    <button id="btn4">mouseup</button>
+    <button id="btn5">scroll</button>
+    <input type="text"/>
+    <h1 id="data"></h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(()=>{
+        // 1).click  event
+           $('#btn1').click((e)=>{
+            e.target.style.color='red'
+           })
+
+        //    2).dblclick event
+          $('#btn2').dblclick((e)=>{
+            e.target.style.color='green'
+          })
+
+        //   3)mouseover thi mouse no arrow lay javi tayre color thaye
+        $('#btn3').mouseover((e)=>{
+            e.target.style.color='blue'
+        })
+          
+        // 4)mouseleve  thi mouse no aarow lay levi tayre color thaye
+          $('#btn3').mouseleave((e)=>{
+            e.target.style.color='red'
+          })
+
+        //   5)mouseup thi aena per cilck karvi tayre 
+          $('#btn4').mouseup((e)=>{
+            e.target.style.color='red'
+          })
+
+        //   6)mousedown  thi aena per click thi lay levi tayre color chanje thaye
+        $('#btn4').mousedown((e)=>{
+            e.target.style.color='blue'
+        })
+
+
+        // *KeyboardEvent
+        // 1) keypress event  thi ek var key press karo tayre ek khali space ganye pachi taype thaye
+        //   $('input').keypress((e)=>{
+        //     $('#data').text(e.target.value)
+        //   })
+
+        //   2)keydown
+        // $('input').keydown((e)=>{
+        //     $('#data').text(e.target.value)
+        // })
+
+        //  3))keyup
+        // $('input').keyup((e)=>{
+        //     $('#data').text(e.target.value)
+        // })
+
+
+
+        // form event
+    //    1)change ma type kari ne bar niklvi tayre change thaye
+        // $('input').change((e)=>{
+        //     $('#data').text(e.target.value)
+        // })
+
+
+        //2) focus thi je event karso te thase tema
+        // $('input').focus((e)=>{
+        //     e.target.style.backgroundColor = 'yellow'
+        // })
+
+        // 3)blur  ma je event karso te thase
+          $('input').blur((e)=>{
+            e.target.style.backgroundColor='black'
+          })
+
+
+        //   4)scroll
+        //    $('#btn5').click(()=>{
+        //     window.scroll({
+        //         left:100,
+        //         top:100,
+        //         behavior: 'smooth',
+        //     })
+        //    })
+
+
+        //    5)resize
+        $(window).resize(function () {
+          let width = $(window).width()
+          //   console.log(width)
+          if (width < 500) {
+            document.body.style.backgroundColor = 'red'
+          }
+        })
+
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="in">fade in effect</button>
+    <button id="out">fade out effect</button>
+    <button id="toggle">fade toggle effect</button>
+    <button id="to">fade to effect</button>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque necessitatibus itaque placeat officia voluptatem accusantium id! Dolorem tenetur, laudantium consequatur recusandae nihil ea quidem tempore, nisi repudiandae id aspernatur odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolore reprehenderit officia facilis officiis aliquam possimus accusamus quibusdam excepturi numquam. In nobis, id atque nihil iusto autem nemo eligendi dolorum.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+                $('#in').click(()=>{
+                    $('p').fadeIn(3000)
+                })
+
+                $('#out').click(()=>{
+                    $('p').fadeOut(3000)
+                })
+
+                $('#toggle').click(()=>{
+                    $('p').fadeToggle(2000)
+                })
+
+
+                // callback - after comple fade in color will change
+                // callback ma complete fade thaye jay pachi je color thaye
+                $('#to').click(()=>{
+                    $('p').fadeTo('slow',0.6,()=>{
+                      $('p').css('color','red')
+                    })
+                })
+        })
+    </script>
+</body>
+</htm

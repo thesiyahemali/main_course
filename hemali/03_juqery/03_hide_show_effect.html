@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur natus dolorem voluptates sint, tempora nobis atque ad repellendus at et ullam sit, iure ipsam sunt facere eveniet, quia voluptatum exercitationem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, dolorum! Aut, molestias voluptas. Iusto voluptatum esse numquam soluta mollitia non reiciendis quam corrupti laudantium, iure eius fugiat unde. Aperiam, amet!</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // chaine method work with show method 
+        $(document).ready(()=>{
+            $('#show').click(()=>{
+                $('p').show(3000).css('background-color','red')
+                // .css('font-size', '50px')
+            })
+
+            $('#hide').click(()=>{
+                $('p').hide(5000)
+            })
+        })
+    </script>
+</body>
+</html>
