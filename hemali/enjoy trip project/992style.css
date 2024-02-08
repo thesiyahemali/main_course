@@ -200,6 +200,146 @@
     border: 1PX solid #212121;
     transition: 0.5s all;
 }
+/* .section4 */
+.services {
+    margin-top: 5%;
+    background: #e5eff1;
+}
+ .services .services1{
+ padding-top: 4%;
+    font-size: 2.8em;
+    color: #212121;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+}
+.services .row{
+    margin-top: 4%;
+}
+
+.section4 .phase {
+    text-align: center;
+    font-size: .9em;
+    color: #0e0101;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.section4 p {
+    width: 322px;
+    text-align: center;
+    color: #999999;
+    line-height: 1.18em;
+    font-size: .9em;
+    margin-left: -5%;
+    margin-top: -2%;
+    line-height: 1.8em; 
+}
+.section4 .main {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    transition-duration: 0.3s;
+}
+.section4 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: solid 3px #ff9800;
+    line-height: 80px;
+    margin: 10px 0px 5px 114px;
+}
+.section4 .main:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff9800;
+    border-radius: 100%;
+    transform: scale(2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.section4 .main:hover:before {
+    transform: scale(0);
+}
+.section4 .icon i.fa-solid {
+    color: #ffffff;
+    font-size: 2em;
+}
+.section4 .icon:hover i.fa-solid {
+    color: #000000;
+}
+
+/* .section5 */
+.section5 .phase {
+    text-align: center;
+    font-size: .9em;
+    color: #0e0101;
+    font-weight: bold;
+    margin-top: 2%;
+}
+.section5 p {
+    width: 221px;
+    text-align: center;
+    color: #999999;
+    line-height: 1.7em;
+    font-size: .9em;
+    margin-left: 3%;
+    margin-top: -4%; 
+}
+.section5 .main {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    transition-duration: 0.3s;
+}
+.section5 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: solid 3px #ff9800;
+    line-height: 80px;
+    margin: 5px 0px 5px 80px;
+}
+.section5 .main:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff9800;
+    border-radius: 100%;
+    transform: scale(2);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.section5 .main:hover:before {
+    transform: scale(0);
+}
+.section5 .icon i.fa-solid {
+    color: #ffffff;
+    font-size: 2em;
+}
+.section5 .icon:hover i.fa-solid {
+    color: #000000;
+}
 
     }
     

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>ipsum dolor sit <b> consectetur adipisicing elit </b>amet. Ratione quisquam sit in, ipsum repellendus odio quia culpa architecto rerum eligendi totam pariatur praesentium omnis consectetur cupiditate suscipit excepturi non! Sint!</p>
+
+    <h1></h1>
+    
+     <h3></h3>
+
+     <input type="text" id="test" value="hemali"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(()=>{
+            let data=$('p').html()
+            $('h3').html(data)
+
+            let data1=$('p').text()
+            $('h1').text(data1)
+          })
+
+          let data2=$('#test').value()
+          $('h1').value(data2)
+
+    </script>
+</body>
+</html>

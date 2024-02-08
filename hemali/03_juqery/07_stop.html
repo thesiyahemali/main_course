@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 100%;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <button id="down">slide down</button>
+    <button id="up">slide up</button>
+    <button id="toggle">slide toggle</button>
+    <button id="stop">stop slide</button>
+
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nulla temporibus, optio magni quidem ipsa at dolores voluptates saepe dolor ea ex laboriosam, recusandae non vero dolorem accusantium, earum debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam soluta suscipit officiis consequatur autem earum velit, qui quos amet nemo, porro esse mollitia unde nesciunt, nulla quia ipsum. Officiis.</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+
+            $('#down').click(()=>{
+                $('.box').slideDown(3000).css('font-size',"50px")
+            })
+
+            $('#up').click(()=>{
+                $('.box').slideUp(2000).css('color','red')
+            })
+
+            $('#toggle').click(()=>{
+                $('.box').slideToggle(5000)
+            })
+
+            $('#stop').click(()=>{
+                $('.box').stop()
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

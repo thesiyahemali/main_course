@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga soluta ad nobis commodi ea? Quia, perspiciatis. Excepturi error animi, placeat autem veniam dolorem, ex quo molestias nemo quasi, beatae nulla. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ea totam obcaecati? Id, assumenda magni veniam reiciendis nulla illo molestias, provident accusantium saepe nemo quam consectetur sunt blanditiis quibusdam tempore! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officiis ab minima accusantium sunt soluta velit, architecto qui dolore natus perspiciatis dolorum praesentium blanditiis, atque ratione unde iusto, explicabo doloremque.
+    </p>
+    <button id="css">css Apply</button>
+
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam saepe quod enim tempore unde sed, amet facilis exercitationem voluptate obcaecati ullam porro ab sint magnam vitae quas inventore corporis iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae obcaecati iusto labore voluptas tempora ipsam consectetur quidem excepturi dignissimos laudantium, quisquam modi repellat, odit illum atque, autem rem! Ipsam?</h1>
+
+    <button id="apply">apply</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <script>
+      $(document).ready(()=>{
+        // clas ni jem
+        $('#css').click(()=>{
+            $('p').css('color','yellow').css('font-size','30px').css('backgroundColor','gray')
+        })
+
+
+        // Object ni  rite
+        $('#apply').click(()=>{
+            $('h1').css({
+                backgroundColor:'pink',
+                color:'white',
+                fontSize:'20px'
+            })
+        })
+      })
+ </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.sun {
+    height: 300px;
+    width: 300px;
+    background-image: url(sun.jpg);
+    background-size: 100% 100%;
+  }
+
+  .moon {
+    height: 300px;
+    width: 300px;
+    background-image: url(moon.jpg);
+    background-size: 100% 100%;
+  }
+</style>
+
+<body>
+    <div class="box "></div>
+    <button id="SunMoon">Moon</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+        // hasclass se ae aema aaevo class se k ny ae jova nu kam kare
+         $(document).ready(()=>{
+            $('#SunMoon').click(()=>{
+                let $class =$('.box').hasClass('sun')
+                // console.log('');
+                if($class){
+                    $('#SunMoon').text('sun')
+                    $('.box').removeClass('sun')
+                    $('.box').addClass('moon')
+                }else{
+                    $('#SunMoon').text('moon')
+                    $('.box').removeClass('moon')
+                    $('.box').addClass('sun')
+                }
+            })
+         })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #a {
+      height: 400px;
+      width: 700px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #b {
+      height: 300px;
+      width: 500px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #c {
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+    }
+    </style>
+<body>
+       <!-- traversing ma  apde uper thi nise ne nise thi uper jay sakvi anen je vastu select karva hoy tej thaye -->
+
+       <!-- traversing ma prenst childe silbling  tema ancestoree destontecor silbling flitering aaeve -->
+    <div id="a">
+        <span>a</span>
+        <div id="b">
+            <span>b</span>
+            <div id="c">
+                <span>c</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(()=>{
+        // ancestoree
+
+        // jeno prents kidho hoy tej aaeve
+        // $('#b').parent().css({border:"2px solid red"})
+
+        // parents ma badha aaeve
+        // $('#c').parents().css({border:"2px solid green"})
+
+        // parentsUntil ma tena ma badha prents aaeve
+        // $('#c').parentsUntil().css({border:"2px solid red"})
+
+
+        // Descendants
+        //    $('#a').children().css({border:"3px solid pink"})
+           $('#b').find('div').css({border:"3px solid pink"})
+
+
+    })
+</script>
+
+</body>
+</html>

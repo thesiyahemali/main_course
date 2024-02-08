@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid black;">
+        <p class="ab">A paragraph in a div.</p>
+        <p>Another paragraph in a div.</p>
+      </div>
+      <br />
+  
+      <div style="border: 1px solid black;">
+        <p class="ab">A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+      </div>
+      <br />
+  
+      <div style="border: 1px solid black;" >
+        <p class="ab">A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+      <script>
+         $(document).ready(()=>{
+            // first ma first hase aene je lagse
+            // $('div').first().css('background-color','yellow')
+
+            // last ma laste parghrhe hase tej lagse 
+            // $('div').last().css('background-color','yellow')
+
+            // eq ma jetli index apso tej lagse 
+            // $('div').eq(0).css('background-color','yellow')
+
+            // je class apa hase tej lagse 
+            // $('p').filter('.ab').css('background-color','yellow')
+
+        //    je class apo hase te ny lage but aena vagre na hase tene lagse 
+            $('p').not('.ab').css('background-color','yellow')
+
+
+            
+
+
+
+         })
+      </script>
+</body>
+</html>

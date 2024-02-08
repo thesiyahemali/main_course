@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 40px;
+            width: 200px;
+            background-color:rgb(157, 155, 155);
+            position: relative;
+            color: white;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+      <div class="box">juqry</div>
+      <button id="ani">Animate</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+          $(document).ready(()=>{
+            $('#ani').click(()=>{
+                $('.box').animate({left:'250px',height:'100px',width:'200px'},{
+                    easing:'swing',
+                    duration:2000,
+                    complete:function(){
+                        $('.box').animate({fontSize:'70px',},{
+                           easing:'swing',
+                           duration:'2000'
+                        })
+                    }
+                })
+            })
+          })
+    </script>
+</body>
+</html>

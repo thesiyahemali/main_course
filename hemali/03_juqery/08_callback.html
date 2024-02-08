@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+          height: 400px;
+          width: 100%;
+          background-color: rgb(135, 93, 93);
+          display: none;
+        }
+        </style>
+</head>
+<body>
+    <button id="down">Slide Down</button>
+    <!-- <button id="up">Slide Up</button> -->
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi
+        sunt voluptas in cum quo. Adipisci vitae incidunt omnis, laudantium dolore
+        aspernatur, dignissimos blanditiis necessitatibus velit reprehenderit,
+        quidem mollitia sint?
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+       <!-- callback ma ek event pate pachi je baiji event run thaye -->
+
+      <script>
+        $('#down').click(()=>{
+            $('.box').slideDown(3000,()=>{
+                $('.box').css('color','red',()=>{
+                    $('.box').css('font-Size','30px')
+                })
+                
+            })
+        })
+      </script>
+    
+</body>
+</html>

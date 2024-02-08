@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .sun{
+        height: 300px;
+        width: 300px;
+        background-image: url(sun.jpg);
+        background-size: 100% 100%;
+    }
+
+    .moon{
+        height: 300px;
+        width: 300px;
+        background-image: url(moon.jpg);
+        background-size: 100% 100%;
+    }
+</style>
+<body>
+    <div class="box sun"></div>
+     
+<button id="toggle">toggle</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('#toggle').click(() => {
+              $('.box').toggleClass('moon');
+           });
+        })
+
+    </script>
+</body>
+</html>

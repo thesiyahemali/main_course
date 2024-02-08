@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="text">set text</button>
+    <button id="html">set html</button>
+    <button id="value">set value</button>
+
+    <p id="test1">this is text</p>
+    <p id="test2">this is html</p>
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('#text').click(()=>{
+             $('#test1').text('hello text')
+            })
+
+            $('#html').click(()=>{
+             $('#test2').text('<h1>hello html</h1>')
+            })
+
+            $('#value').click(()=>{
+             $('#test3').val('hello value')
+            })
+        })
+    </script>
+</body>
+</html>
