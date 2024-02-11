@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            // AJAX = Asynchronous JavaScript and XML.
+            // get:method use for only get data form server 
+            // post:method use for send data to server and get Response
+
+
+            $.ajax({
+                // request URL
+                // url:"22_text.html",
+                url:"23_test.txt",
+                type:"GET",
+                // type:"POST",  post ma data jay ny
+                // data:{name:'hemali'},
+                success:function(data){
+                    $('body').append(data)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: rebeccapurple;
+      }
+</style>
+<body>
+    <div>
+        <p>
+          first
+        </p>
+        <p>
+          second
+        </p>
+        <p>
+          third
+        </p>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+        // clone method no use karva ma copy karva thaye se
+        $(document).ready(()=>{
+            $('p').clone().appendTo('body')
+        })
+      </script>
+</body>
+</html>

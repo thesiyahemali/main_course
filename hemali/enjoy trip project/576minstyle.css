@@ -199,5 +199,43 @@
     border: 1PX solid #212121;
     transition: 0.5s all;
 }
+/* .section4 */
+.services {
+    margin-top: 5%;
+    background: #e5eff1;
+}
+.section4 p {
+    width: 525px;
+    line-height: 1.18em;
+    font-size: .9em;
+    margin-left: -1%;
+    margin-top: -2%;
+    line-height: 1.8em; 
+}
+.section4 .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 80px;
+    margin: 10px 0px 5px 224px;
+}
+
+/* .section5 */
+.section5 p {
+    width: 525px;
+    text-align: center;
+    color: #999999;
+    line-height: 1.7em;
+    font-size: .9em;
+    margin-left: -1%;
+    margin-top: -2%; 
+}
+.section5 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: solid 3px #ff9800;
+    line-height: 80px;
+    margin: 5px 0px 5px 224px;
+}
     }
     

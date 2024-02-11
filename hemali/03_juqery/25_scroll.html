@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div
+    style="
+      border: 1px solid black;
+      width: 300px;
+      height: 200px;
+      overflow: auto;
+    "
+  >
+    This is some text. This is some text. This is some text. This is some
+    text. This is some text. This is some text. This is some text. This is
+    some text. This is some text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed ullam voluptas impedit quasi tempore nemo facilis! Aperiam beatae nihil ducimus eligendi autem sint dolorem, assumenda, itaque fugit facilis fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nesciunt optio delectus natus reiciendis rerum dolor, nemo vero? Ipsa dolorem quibusdam repellat ducimus exercitationem velit rem quas nisi hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius, a mollitia similique accusantium maiores dignissimos non cumque est numquam in ipsam nostrum quidem ut nesciunt tempora, aliquam optio ab?
+  </div>
+
+  <button>Return the vertical position of the scrollbar</button>
+  <p>Move the scrollbar down and click the button again.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                alert($('div').scrollTop())
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" name="name" placeholder="Name" />
+      <br />
+      <input type="email" name="email" placeholder="Email" />
+      <br />
+      <input type="password" name="password" placeholder="Password" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- aaevi link hoy online te mukva ni -->
+    <!-- jquery.validate.min.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+      integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('form').validate({
+                rules:{
+                    name:{
+                        required: true,
+              minlength: 3,
+                    }
+                },
+
+                messages:{
+                  name:{
+                    required:
+                    '<br><span style="color:red">please enter valid name</span>'
+                  }  
+                }
+
+                
+            })
+           
+        })
+    </script>
+  </body>
+</html>
