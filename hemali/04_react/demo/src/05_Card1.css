@@ -4,3 +4,9 @@
 .card-img-top{
     filter: brightness(50%);
 }
+.container-fluid{
+    background-color: aqua;
+}
+.active{
+    color: red;
+}

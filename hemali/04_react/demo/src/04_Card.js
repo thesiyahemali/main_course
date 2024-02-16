@@ -5,7 +5,7 @@ import './05_Card1.css'
 const Card = () => {
   return (
     <>
-      <div class="card" style={{width:'18rem'}}>
+      <div class="card" style={{height:'300px',width:'500px'}}>
   <img src={logo2} class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>

@@ -1,0 +1,159 @@
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: unset;
+    /* border: 1px solid red; */
+}
+.header .left {
+    width: 30%;
+}
+.header .left h1 {
+    
+    color: #666;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 11px;
+    font-size: 25px;
+    margin-left: 100px;
+    /* border: 1px solid red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.header .right {
+    width: 69%;
+    display:inline-block;
+    /* border: 1px solid red; */
+    
+    
+}
+.header .right ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    margin-top: 5px;
+    
+    
+}
+.header .right ul li {
+   
+   position: relative;
+   /* border:1px solid red; */
+   
+}
+.header .right ul li a{
+    text-decoration: none;
+    font-size: 15px;
+     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     color:aqua ;
+    font-weight: 400;
+    /* border: 1px  solid blue; */
+    
+
+    
+}
+.header .right ul li i{
+    
+    color: blue;
+}
+
+.header .right ul li a:hover{
+    
+    color:blue;
+
+}
+
+/* drop */
+.header .drop {
+    position: relative;
+}
+.header .dropdown{
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    z-index: 1;
+    
+}
+.header .dropdown{
+    display: none;
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .dropdown ul{
+    display: inline-block;
+    width: 200px;
+    opacity: .5;
+    border: 1px solid white;
+    
+}
+.header .drop:hover .dropdown{
+    display: block;
+    
+}
+.header .drop:hover .dropdown{
+    background-color: white;
+    
+    
+
+}
+
+
+/* level */
+
+.header .level{
+    position: relative;
+}
+.header .leve{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    border: 1px solid white;
+    width: 100px;
+    z-index: 1;
+}
+.header .leve{
+    display: none;   
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .leve ul{
+    display: inline-block;  
+}
+.header .leve ul li a{
+    font-size:15px;   
+}
+.header .level:hover .leve{
+    display: block;  
+}
+.header .level:hover .leve{
+    background-color: white;
+}
+
+
+/* levele */
+.header .levele{
+    position: relative;  
+}
+.header .levele2{
+    position: absolute;
+    top: -17px;
+    left: 40px;
+    border: 1px solid white;
+    width: 100px; 
+    z-index: 1;
+}
+.header .levele2{
+    display:none;
+    margin-left: 30px;
+    box-shadow: 1px 1px 2px 1px rgb(215, 213, 213);
+
+}
+.header .levele2 ul{
+    display:inline-block;
+}
+.header .levele:hover .levele2{
+    display: block;
+}
+.header .levele:hover .levele2{
+    background-color: white;
+}
