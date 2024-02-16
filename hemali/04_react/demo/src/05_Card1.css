@@ -1,0 +1,6 @@
+.card{
+    margin: 100px;
+}
+.card-img-top{
+    filter: brightness(50%);
+}

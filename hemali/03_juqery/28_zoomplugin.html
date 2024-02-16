@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- https://github.com/igorlino/elevatezoom-plus/blob/master/src/jquery.ez-plus.js parthi ne zoom plugin levu -->
+<body>
+    <img id="img" src="robot-2.jpg" alt="" data-zoom-image="robot-1.jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./ez-plus.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            $('#img').ezPlus()
+        })
+    </script>
+</body>
+</html>

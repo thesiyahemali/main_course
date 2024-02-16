@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <div id="app"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- aama ky run ny thaye just demo mate je se -->
+    <script>
+        // $ ni jagay ae baiju name lakhvu hoy tena use mate no conficat no use thaye
+
+        // replace name of $ to onther word
+
+        jq=$.noConflict()
+
+        jq(document).ready(()=>{
+            jq('#result').load('text.html')
+            jq("#app").load('test.txt')
+        })
+    </script>
+</body>
+</html>

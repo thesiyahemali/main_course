@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Nunito|Russo+One';
+
+      #menu {
+        display: none;
+      }
+      #menu > ul {
+        list-style-type: none;
+        display: block;
+        line-height: 2;
+        font-family: 'Russo One', sans-serif;
+        background-color: #837ad3;
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+        width: 20%;
+        font-size: 130%;
+        border-radius: 10px;
+        z-index: 1;
+        margin-top: 0px;
+        float: left;
+      }
+
+      .start {
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #837ad3;
+        color: #13085e;
+        font-size: 130%;
+        font-weight: bold;
+        float: right;
+        margin-top: 10px;
+        font-family: 'Nunito', sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: #13085e;
+      }
+      a:hover {
+        color: pink;
+      }
+      h1 {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: #052b59;
+        z-index: -1;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding: 20px;
+        font-family: 'Nunito', sans-serif;
+        color: #719bcd;
+      }
+      p {
+        float: left;
+        margin: 20px;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="start">
+      <i id="btn" class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <h1>Test</h1>
+    <div id="menu">
+      <ul>
+        <li><a href="#">crazy</a></li>
+        <li><a href="#">links</a></li>
+        <li><a href="#">pop</a></li>
+        <li><a href="#">outta</a></li>
+        <li><a href="#">nowhere!</a></li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(()=>{
+        $('button').click(()=>{
+            $('#menu').slideToggle(1000,()=>{
+                if($('#menu').css('display')=="bolck"){
+                    $('#btn').addClass('fa-xmark')
+                    $('#btn').removeClass('fa-bars')
+                }else{
+                    $('#btn').removeClass('fa-xmark')
+                    $('#btn').addClass('fa-bars') 
+                }
+            })
+        })
+      })
+    </script>
+  </body>
+</html>

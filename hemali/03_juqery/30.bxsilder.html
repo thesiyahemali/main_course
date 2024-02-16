@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(169, 89, 89);
+      }
+
+      .bx-wrapper {
+        border: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div>
+        <img
+          height="100%"
+          width="100%"
+          src="robot-2.jpg"
+          alt=""
+          title="image 1"
+        />
+      </div>
+      <div>
+        <img
+          height="100%"
+          width="100%"
+          src="robot-2.jpg"
+          alt=""
+          title="image 2"
+        />
+      </div>
+      <div>
+        <img
+          height="100%"
+          width="100%"
+          src="robot-2.jpg"
+          alt=""
+          title="image 3"
+        />
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $(function () {
+          $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 600,
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
