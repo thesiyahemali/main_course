@@ -8,6 +8,7 @@ import { Routes,Route } from 'react-router-dom';
 import Home from './06_Home';
 import Concat from './07_Concat';
 import Haderactive from './08_Haderactive';
+import Profile from './10_Profile';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/concat' element={<Concat/>}/>
         <Route path='/haderactive' element={<Haderactive/>}/>
+        <Route path='/concat/profile' element={<Profile/>}> </Route>
 
 
        </Routes>
