@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 id="timer">0</h1>
-    <button id="btn" onclick="stoptimer()">Stop</button>
-    <script>
-        var i = 0
-        var intervalId = setInterval(() => {
-          document.getElementById('timer').innerText = i
-          i++
-        //   if (i == 10) {
-        //     clearInterval(intervalId)
-        //   }
-        }, 1000)
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="timer">0</h1>
+  <button onclick="stoptimer()">stop</button>
+  
 
-        function stoptimer() {
-          clearInterval(intervalId)
-        }
-    </script>
-  </body>
+  <script>
+    let i=0
+   let interId= setInterval(() => {
+       document.getElementById('timer').innerText=i
+       i++;
+    }, 1000);
+
+      function stoptimer(){
+        clearInterval(interId)
+      }
+  </script>
+</body>
 </html>

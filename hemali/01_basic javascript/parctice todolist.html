@@ -40,35 +40,39 @@
       </div>
 
       <script>
-        let item=[]
-         function addItem(){
-            let input=document.getElementById('input').value
-        item.push(input)
-        // console.log(input);
-        displayelement(item)
-        document.getElementById('input').value = ''
-         }
+        // let item=[]                                                                      
+        //  function addItem(){
+        //     let input=document.getElementById('input').value
+        // item.push(input)
+        // // console.log(input);
+        // displayelement(item)
+        // document.getElementById('input').value = ''
+        //  }
 
-         function displayelement(data){
-           document.getElementById('data').innerText=''
-           data.forEach((value,index) => {
-             let itdata=document.createElement('h1')
-             itdata.innerText=value
+        //  function displayelement(data){
+        //    document.getElementById('data').innerText=''
+        //    data.forEach((value,index) => {
+        //      let itdata=document.createElement('h1')
+        //      itdata.innerText=value
              
-             let deltedata=document.createElement('button')
-             deltedata.innerText='delete'
-             deltedata.addEventListener('click',()=>{
-                deletD(index)
-             })
-             document.getElementById('data').appendChild(itdata)
-             document.getElementById('data').appendChild(deltedata)
+        //      let deltedata=document.createElement('button')
+        //      deltedata.innerText='delete'
+        //      deltedata.addEventListener('click',()=>{
+        //         deletD(index)
+        //      })
+        //      document.getElementById('data').appendChild(itdata)
+        //      document.getElementById('data').appendChild(deltedata)
 
-           });
-           function  deletD(i){
-               item.splice(i,1)
-               displayelement(item)
-           }
-         }
+        //    });
+        //    function  deletD(i){
+        //        item.splice(i,1)
+        //        displayelement(item)
+      //    }
+        //  }
+
+``
+      
+       
       </script>
 </body>
 </html>

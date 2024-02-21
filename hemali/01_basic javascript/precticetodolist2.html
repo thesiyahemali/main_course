@@ -30,8 +30,8 @@
         height: auto;
       background-color:lightgrey;
       border-radius: 20px;
-      display: flex;
-      justify-content: center;
+      /* display: flex; */
+      /* justify-content: center; */
       margin: auto;
       margin-top: 3%;
       text-align: center;
@@ -41,7 +41,7 @@
         border-radius: 8px;
         border: none;
     }
-    button{
+    .add{
         padding: 5px 20px;
         border-radius: 8px;
         border: none;
@@ -55,7 +55,7 @@
         <h2 class="To-Do">To-Do List</h2>
         <div class="box">
             <input type="text" id="input">
-            <button onclick="addItem()">Add</button>
+            <button onclick="addItem() " class="add">Add</button>
         </div>
         <div class="box2" id="data"></div>
     </div>
@@ -75,9 +75,9 @@
         inp.forEach((data,i) => {
            let displ=document.createElement('h1') 
            displ.innerText=data
-           let delet=document.createElement('span')
-           delet.innerHTML='x'
-           delet.style.color='red'
+           let delet=document.createElement('button')
+           delet.innerHTML='delte'
+        //    delet.style.color='red'
           delet.addEventListener('click',()=>{
             deleteData(i)
           })

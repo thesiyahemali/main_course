@@ -1,4 +1,3 @@
-      
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,89 +91,32 @@
                     <input type="button" value="00"   onclick="displayN('00')">
                     <input type="button" value="0" onclick="displayN('0')" >
                     <input type="button" value="="  onclick="cal()">
-                </div>
+                </div>     
             </form>
         </div>
     </div>
    <script>
+       function displayN(val){
+      
+        document.getElementById('inputbox').value += val
+       }
 
-    function removeData(){
-       let output = document.getElementById('inputbox')
-       let remo = output.value.split('')
-       console.log(remo);
-       remo.pop()
-       
-       output.value = remo.join('')
+       function cal(){
+       let total = eval(document.getElementById('inputbox').value)
+       document.getElementById('inputbox').value = total
+       }
 
-       
+       function clearN(){
+         document.getElementById('inputbox').value = 0
+       }
 
-    }
-        function displayN(val){
-    
-         let output = document.getElementById('inputbox')
-         
-         if(val == '+' || val == '-' || val == '*' || val == '/'){
-               if(output.value.includes('+')){
-                  let plus =  output.value.split('+')   
-                        let total = Number(plus[0])+Number(plus[1])
-                        output.value = total + val
-                }else if(output.value.includes('-')){
-                   let minus =  output.value.split('-')  
-                   let total = Number(minus[0])-Number(minus[1])
-                   output.value = total + val
-                } else if(output.value.includes('*')){
-                     let multi = output.value.split('*')
-                     let total = Number(multi[0])* Number(multi[1])
-                     output.value = total + val
-                }else if(output.value.includes('/')){
-                         let div = output.value.split('/')
-                         let total = Number(div[0])/Number(div[1])
-                         output.value = total + val
-
-                }
-               else{
-                 output.value += val
-               }
-            
-
-         }else{
-             output.value += val
-         }
-
-
+       function removeData(){
+           let data =  document.getElementById('inputbox').value
+           let newArr = data.split('')
+           newArr.pop()
+          let js = newArr.join('')
+          document.getElementById('inputbox').value = js
         }
-
-    function cal(){
-        let output = document.getElementById('inputbox')
-
-        if(output.value.includes('+')){
-                    let plus = output.value.split('+')
-                     console.log(plus);
-                    let total = parseFloat(plus[0])+parseFloat(plus[1])
-                    output.value = total
-        } else if(output.value.includes('-')){
-              let minus = output.value.split('-')
-                    let total = parseInt(minus[0])-parseInt(minus[1])
-                    output.value = total
-        } else if(output.value.includes('*')){
-              let multi = output.value.split('*')
-                    let total = parseInt(multi[0])*parseInt(multi[1])
-                    output.value = total
-        }else if(output.value.includes('/')){
-              let div = output.value.split('/')
-                    let total = parseInt(div[0])/parseInt(div[1])
-                    output.value = total
-        }
-       
-       
-    }
-
-
-
-    function clearN(){
-      document.getElementById('inputbox').value = ''
-
-    }
    </script>
 </body>
 </html>

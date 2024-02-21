@@ -1,4 +1,4 @@
-[11:25 am, 06/01/2024] Avani tejani: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -87,11 +87,7 @@
                 <td id="a_t"></td>
                 <td id="a_per"></td>
                 <td id="a_grd"></td>
-
-
-
             </tr>
-           
         </tbody>
     </table>
 
@@ -212,160 +208,6 @@
                 grade = document.getElementById('a_grd').innerText = grade       
 
                 }
-    </script>
-</body>
-
-</html>
-[11:29 am, 06/01/2024] Avani tejani: <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>marksheet</title>
-</head>
-<style>
-    .box {
-        padding: 10px;
-        background: linear-gradient(45deg, #7db4ce, #3a4d52);
-        width: 30%;
-        height: 650px;
-        margin: auto;
-        margin-top: 10%;
-        border: 2px solid rgb(14, 102, 98);
-    }
-
-    h1,
-    h3 {
-        text-align: center;
-    }
-
-    div {
-        /* border:1px solid #3a4d52; */
-        /* display: flex; */
-        margin: auto;
-        width: 400px;
-
-    }
-
-    label {
-        display: inline-block;
-        margin: auto;
-        padding: 10px 50px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        /* color: rgb(206, 255, 255); */
-
-    }
-
-    input {
-        display: inline-block;
-        margin: auto;
-        height: 30px;
-        text-align: center;
-        /* height: 20px; */
-    }
-
-    button {
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        padding: 10px 50px;
-        margin-bottom: 10px;
-        color: rgb(206, 255, 255);
-        background: linear-gradient(45deg, #151e22, #3a4d52);
-        border: 2px solid rgb(14, 102, 98);
-    }
-</style>
-
-<body>
-
-    <div class="box">
-        <h1>marksheet of information technology</h1>
-        <h3>Entermarks</h3>
-
-        <div>
-            <label for="C">C Language</label>
-            <input type="number" name="C" id="C" placeholder="Enter C marks" />
-        </div>
-        <div>
-            <label for="C2">C++</label>
-            <input type="number" name="C2" id="C2" placeholder="Enter C++ marks" />
-        </div>
-        <div>
-            <label for="Database">Database</label>
-            <input type="number" name="Database" id="Database" placeholder="Enter Database marks" />
-        </div>
-        <div>
-            <label for="HTML">HTML</label>
-            <input type="number" name="HTML" id="HTML" placeholder="Enter HTML marks" />
-        </div>
-        <div>
-            <label for="CSS">CSS</label>
-            <input type="number" name="CSS" id="CSS" placeholder="Enter CSS marks" />
-        </div>
-        <div>
-            <label for="Python">Python</label>
-            <input type="number" name="Python" id="Python" placeholder="Enter Python marks" />
-        </div>
-        <div>
-            <label for="JavaScript">JavaScript</label>
-            <input type="number" name="JavaScript" id="JavaScript" placeholder="Enter JavaScript marks" />
-        </div>
-
-        <button id="btn" onclick="calculateResult()">Result</button>
-        <div id="result"></div>
-
-        <div class="total1">
-            <p>Total Marks: <span id="totalMarks"></span>/700</p>
-            <p>Percentage: <span id="percentage"></span>%</p>
-        </div>
-
-
-
-    </div>
-
-    </div>
-
-    <script>
-        function calculateResult() {
-
-            let cMarks = parseFloat(document.getElementById('C').value);
-            let cPlusPlusMarks = parseFloat(document.getElementById('C2').value);
-            let databaseMarks = parseFloat(document.getElementById('Database').value);
-            let htmlMarks = parseFloat(document.getElementById('HTML').value);
-            let cssMarks = parseFloat(document.getElementById('CSS').value);
-            let pythonMarks = parseFloat(document.getElementById('Python').value);
-            let jsMarks = parseFloat(document.getElementById('JavaScript').value);
-
-            // Calculate total marks and percentage
-            let totalMarks = cMarks + cPlusPlusMarks + databaseMarks + htmlMarks + cssMarks + pythonMarks + jsMarks;
-            let percentage = (totalMarks / 700) * 100;
-
-
-            // let grade;
-            // if (percentage >= 90) {
-            //     grade = 'A+';
-            // } else if (percentage >= 80) {
-            //     grade = 'A';
-            // } else if (percentage >= 70) {
-            //     grade = 'B';
-            // } else if (percentage >= 60) {
-            //     grade = 'C';
-            // } else if (percentage >= 50) {
-            //     grade = 'D';
-            // } else {
-            //     grade = 'F';
-            // }
-
-            // Display the result
-            document.getElementById("totalMarks").innerText = totalMarks
-            document.getElementById("percentage").innerText = percentage.toFixed(2)
-            // let resultContainer = document.getElementById('result');
-            // resultContainer.innerHTML = `
-            // <p>Total Marks: ${totalMarks}</p>
-            // <p>Percentage: ${percentage.toFixed(2)}%</p>`;
-        }
     </script>
 </body>
 

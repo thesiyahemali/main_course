@@ -30,66 +30,66 @@
     <script>
       // arrow function var name = () => {}
 
-        // setTimeout(() => {
-        //   document.getElementById('main').innerText = 1
-        // }, 3000)
+        setTimeout(() => {
+          document.getElementById('main').innerText = 1
+        }, 3000)
 
       // first example
-    //   var i = 0
-    //   var j = 0
-    //   var color = [
-    //     'red',
-    //     'green',
-    //     'pink',
-    //     'blue',
-    //     'orange',
-    //     'black',
-    //     'purple',
-    //     'yellow',
-    //     'brown',
-    //     'grey',
-    //   ]
-    //   setInterval(() => {
-    //     document.getElementById('main').innerText = i
-    //     if (j > 9) {
-    //       j = 0
-    //     }
-    //     document.getElementById('box').style.backgroundColor = color[j]
-    //     i++
-    //     j++
-    //   }, 1000)
+      var i = 0
+      var j = 0
+      var color = [
+        'red',
+        'green',
+        'pink',
+        'blue',
+        'orange',
+        'black',
+        'purple',
+        'yellow',
+        'brown',
+        'grey',
+      ]
+      setInterval(() => {
+        document.getElementById('main').innerText = i
+        if (j > 9) {
+          j = 0
+        }
+        document.getElementById('box').style.backgroundColor = color[j]
+        i++
+        j++
+      }, 1000)
      
 
     //   second example
-        var i = 0
-        var j = 0
-        var k = 9
-        var color = [
-          'red',
-          'green',
-          'pink',
-          'blue',
-          'orange',
-          'black',
-          'purple',
-          'yellow',
-          'brown',
-          'grey',
-        ]
-        setInterval(() => {
-          document.getElementById('main').innerText = i
-          if (j > 9) {
-            j = 0
-          }
-          if (k == 0) {
-            k = 9
-          }
-          document.getElementById('main').style.color = color[k]
-          document.getElementById('box').style.backgroundColor = color[j]
-          i++
-          j++
-          k--
-        }, 1000)
+        // var i = 0
+        // var j = 0
+        // var k = 9
+        // var color = [
+        //   'red',
+        //   'green',
+        //   'pink',
+        //   'blue',
+        //   'orange',
+        //   'black',
+        //   'purple',
+        //   'yellow',
+        //   'brown',
+        //   'grey',
+        // ]
+        // setInterval(() => {
+        //   document.getElementById('main').innerText = i
+        //   if (j > 9) {
+        //     j = 0
+        //   }
+        //   if (k == 0) {
+        //     k = 9
+        //   }
+        //   document.getElementById('main').style.color = color[k]
+        //   document.getElementById('box').style.backgroundColor = color[j]
+        //   i++
+        //   j++
+        //   k--
+        // }, 1000)
     </script>
   </body>
 </html>

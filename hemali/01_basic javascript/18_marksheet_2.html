@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+" />
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Math</th>
+                <th scope="col">Science</th>
+                <th scope="col">biology</th>
+                <th scope="col">Chemistry</th>
+                <th scope="col">Physics</th>
+
+                <th scope="col">Total</th>
+                <th scope="col">percentage</th>
+                <th scope="col">grade</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mirali</td>
+                <td><input type="text" id="m_m" onchange="cal1()" /></td>
+                <td><input type="text" id="m_s" onchange="cal1()" /></td>
+                <td><input type="text" id="m_b" onchange="cal1()" /></td>
+                <td><input type="text" id="m_c" onchange="cal1()" /></td>
+                <td><input type="text" id="m_p" onchange="cal1()" /></td>
+
+                <td id="m_t"></td>
+                <td id="m_per"></td>
+                <td id="m_grd"></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hemali</td>
+                <td><input type="text" id="h_s" onchange="cal2()" /></td>
+                <td><input type="text" id="h_m" onchange="cal2()" /></td>
+                <td><input type="text" id="h_b" onchange="cal2()" /></td>
+                <td><input type="text" id="h_c" onchange="cal2()" /></td>
+                <td><input type="text" id="h_p" onchange="cal2()" /></td>
+                <td id="h_t"></td>
+                <td id="h_per"></td>
+                <td id="h_grd"></td>
+
+
+
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+         function cal1(event){
+            let math=document.getElementById('m_m').value
+            let sci=document.getElementById('m_s').value
+            let bio=document.getElementById('m_b').value
+            let che=document.getElementById('m_c').value
+            let phy=document.getElementById('m_p').value
+         
+
+            let total=document.getElementById('m_t').innerText=Number(math)+Number(sci)+Number(bio)+Number(che)+Number(phy)
+
+
+            let percentage=document.getElementById('m_per').innerText=Number((total)/500)*100
+
+         }
+
+
+         function cal2(){
+            let math=document.getElementById('h_s').value
+            let sci=document.getElementById('h_m').value
+            let bio=document.getElementById('h_b').value
+            let che=document.getElementById('h_c').value
+            let phy=document.getElementById('h_p').value
+
+            let total=document.getElementById('h_t').innerText=Number(math)+Number(sci)+Number(bio)+Number(che)+Number(phy)
+
+            let percentage=document.getElementById('h_per').innerText=Number((total)/500)*100
+         }
+            
+
+       
+
+    </script>
+</body>
+
+</html>
