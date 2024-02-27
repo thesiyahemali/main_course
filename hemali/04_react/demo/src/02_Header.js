@@ -7,7 +7,7 @@ const header = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <Link className="navbar-brand" to={'viewsatae'}>viewstate</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +17,7 @@ const header = () => {
           <NavLink activeclassName='active' aria-current="page" to={'home'}>Home</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <Link className="nav-link" to={'userrafcnce'}>useRef</Link>
         </li>
 
         <li className="nav-item">
@@ -29,10 +29,10 @@ const header = () => {
             Dropdown
           </a>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" to={'/concat'}>Action</Link></li>
-            <li><Link className="dropdown-item" to={'/haderactive'}>Another action</Link></li>
+            <li><Link className="dropdown-item" to={'/concat'}>conact</Link></li>
+            <li><Link className="dropdown-item" to={'/haderactive'}>header</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to={'props'}>Props</Link></li>
           </ul>
         </li>
         <li className="nav-item">
