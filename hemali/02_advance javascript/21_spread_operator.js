@@ -4,7 +4,7 @@
  // The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. -->
 
  var a=[1,2,3,4,5]
- var b=[10,11,12,13,...a]
+ var b=[10,11,...a,12,13,]
  console.log(b);
 
  var obj={name:'hemali',age:'21'}

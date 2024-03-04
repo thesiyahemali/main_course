@@ -32,7 +32,7 @@ const header = () => {
             <li><Link className="dropdown-item" to={'/concat'}>conact</Link></li>
             <li><Link className="dropdown-item" to={'/haderactive'}>header</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item" to={'props'}>Props</Link></li>
+            <li><Link className="dropdown-item" to={'todolist'}>Todolist</Link></li>
           </ul>
         </li>
         <li className="nav-item">

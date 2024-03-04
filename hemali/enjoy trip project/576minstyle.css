@@ -200,10 +200,23 @@
     transition: 0.5s all;
 }
 /* .section4 */
+.section4 {
+    grid: 1fr 1fr 1fr;
+}
 .services {
     margin-top: 5%;
+    height: auto;
     background: #e5eff1;
 }
+.services .services1{
+    padding-top: 4%;
+       font-size: 2.8em;
+       color: #212121;
+       font-weight: 600;
+       letter-spacing: 2px;
+       font-family: 'Rokkitt', serif;
+       text-align: center;
+   }
 .section4 p {
     width: 525px;
     line-height: 1.18em;
@@ -218,7 +231,14 @@
     line-height: 80px;
     margin: 10px 0px 5px 224px;
 }
-
+.section4 .phase {
+    text-align: center;
+    font-size: .9em;
+    color: #0e0101;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 0%;
+}
 /* .section5 */
 .section5 p {
     width: 525px;
@@ -237,5 +257,31 @@
     line-height: 80px;
     margin: 5px 0px 5px 224px;
 }
+/* slider  */
+
+.slider ul{
+    height:400px;
+    background-image: url(img/img4.jpg);
+  }
+  
+  .slider ul i{
+    font-size: 4em;
+    margin-top: 5%;
+  }
+  .slider ul .side{ 
+      font-size: 1em;
+      line-height: 2em;
+      margin: 2em auto;
+     width: 100%;
+      font-weight: 200;
+  }
+  .slider ul h6{
+      font-size: 1em;
+      margin: 2em auto;
+      text-align: center;
+      font-weight: 600;
+  }
+
+
     }
     

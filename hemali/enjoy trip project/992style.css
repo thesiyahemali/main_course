@@ -341,5 +341,39 @@
     color: #000000;
 }
 
+/* silder  */
+.slider ul{
+    position:relative;
+    width:auto;
+    height:400px;
+    display:inline-block;
+    list-style:none;
+    background-image: url(img/img4.jpg);
+  }
+  
+  .slider ul i{
+    color:#fff;
+    font-size: 4em;
+    margin-top: 5%;
+    display: flex;
+   justify-content: center;
+  }
+  .slider ul .side{
+      color: #ffffff;
+      font-size: .9em;
+      line-height: 2em;
+      margin: 2em auto;
+     text-align: center;
+     width: 80%;
+      font-weight: 200;
+  }
+  .slider ul h6{
+      color: #ffffff;
+      font-size: 1em;
+      margin: 2em auto;
+      text-align: center;
+      font-weight: 600;
+  }
+
     }
     

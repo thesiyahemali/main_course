@@ -330,7 +330,7 @@
 }
 .section3 .left .text  {
   margin-left: 50%;
- margin-top: -52%;
+ margin-top: -57.20%;
   background-color: #ed6663;
   height: 390px;
   color: white;
@@ -406,6 +406,7 @@
     display: flex;
     flex-direction: unset;
     width: 100%;
+    margin-top: -2.57%;
     /* border: 3px solid; */
 }
 .section4 .left{
@@ -415,7 +416,7 @@
 .section4 .left .text .p2{
     font-size: 40px;
     color: #2b4052;
-    padding: 0% 20%;
+    padding: 0% 16.95%;
     margin-top: 15%;
     font-family: 'Rubik', sans-serif;
 }
@@ -424,15 +425,15 @@
     color: #777;
     margin: 0%;
     padding-top: 5%;
-    padding-left: 20%;
-    padding-right: 25%;
+    padding-left: 17%;
+    padding-right: 23%;
     line-height: 25px;
     font-weight: 300;
     font-family:  'Rubik', sans-serifx;
 }
 .section4 .left .text button{
     margin-top: 3%;
-    margin-left: 20%;
+    margin-left: 17%;
     font-size: 17px;
     font-family: 'Rubik', sans-serif;
     padding: 15px 6%;

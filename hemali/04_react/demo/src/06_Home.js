@@ -6,8 +6,8 @@ import Concat from './07_Concat'
 const Home = () => {
   return (
     <>
-      <Silder/>
-      <Card/>
+      {/* <Silder/>
+      <Card/> */}
       
     </>
   )
