@@ -11,9 +11,11 @@ import Viewsatae from "./11_Viewsatae";
 import Todolist from "./14_Todolist";
 import Props from "./12_Props";
 import Userrafcnce from "./13_Userrafcnce";
+import Event from "./15_Event";
 import { useState } from "react";
 const name = "myweb";
 const email = "thesiyahemali999@gmail.com";
+
 
 
 function App() {
@@ -25,8 +27,8 @@ function App() {
     <>
       <Header />
 
-      <Silder/>
-       <Card />
+      {/* <Silder/>
+       <Card /> */}
       {/* <Head/>
        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aut velit sint explicabo eos culpa eaque commodi consequatur atque mollitia magnam eum, asperiores obcaecati quaerat animi, molestias cum nulla beatae!</h1> */}
 
@@ -45,6 +47,7 @@ function App() {
       {/* <Props webname={name} Props incment={inc} myemail={email} /> */}
       {/* <Userrafcnce /> */}
       {/* <Todolist/> */}
+      <Event/>
     </>
   );
 }
