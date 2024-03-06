@@ -271,6 +271,102 @@
       text-align: center;
       font-weight: 600;
   }
+   
+/* .section3 */
+.section3 {
+    margin: 20px 0px 0px 0px;
+}
+
+.section3 .our {
+    font-size: 2.7em;
+    font-weight: 800;
+}
+
+.section3 .main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 42px;
+}
+.section3 .left img {
+    position: relative;
+}
+.section3 .left h6 {
+    margin: 15px 0px;
+    font-size: .9em;
+}
+.section3 .left .p1 {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.section3 .left button {
+    padding: 6px 33px;
+    font-size: 1em;
+}
+.section3 button:hover{
+    background-color: transparent;
+}
+.section3 .time{
+    position: absolute;
+    height: 70.60%;
+    width: 50%;
+    padding-top: 160px;
+}
+.section3 .time .day{
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 54px;
+}
+.section3 .time .month{
+    font-size: .9em;
+    font-weight: 400;
+}
+.section3 .time .build{
+    font-size: .9em;
+     line-height: 35px;
+}
+.section3 .time:hover{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.section3 .right {
+    margin-left: 0px;
+}
+
+.section3 .right img {
+    width: 100%;
+    position: relative;
+    margin: 12px 0px 0px 0px;
+}
+
+.section3 .right h6 {
+    margin: 16px 0px;
+    font-size: .9em;
+}
+
+.section3 .right .p2 {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.section3 .right button {
+    padding: 6px 33px;
+    font-size: 1em;
+}
+.section3 .right .time{
+    position: absolute;
+    top: 202px;
+    height: 69%;
+    width: 50%;
+    padding-top: 160px;
+}
+.section3 .right .time:hover{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.section3 button:hover{
+    background-color: transparent;
+}
 
     }
     

@@ -3,10 +3,17 @@ import { acomponetnt } from './01_ChildA'
 
 const ChildC = () => {
     
-    const [data,update]=useContext(acomponetnt)
+    const [data,update]=useContext(acomponetnt);
+
     const updatecontext=()=>{
-        update('hiiii i am okk') 
+        update('hii i am ok change to child c in "A"'); 
     }
+     const yescontext=()=>{
+      update('hii i am ok change to child A in "yes"')
+     }
+     const naycontext=()=>{
+      update('hii i am ok change to child A in "nay"')
+     }
    
   return (
     <div>
@@ -16,15 +23,8 @@ const ChildC = () => {
         updatecontext()
       }}>update</button>
 
-    
-
-      <button onClick={()=>{
-        update('yes')
-      }}>yes</button>
-
-     <button onClick={()=>{
-      update('nay')
-     }}>nay</button>
+    <button onClick={yescontext}>yes</button>
+    <button onClick={naycontext}>nay</button>
 
         
     </div>

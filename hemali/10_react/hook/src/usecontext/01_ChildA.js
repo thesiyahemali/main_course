@@ -7,9 +7,8 @@ const ChildA = () => {
     const hook=useState('A')
   return (
     <div>
-    <acomponetnt.Provider value={hook}>
-      <ChildB/>
-      <ChildC/>
+    <acomponetnt.Provider value={hook}> 
+      <ChildB/> 
     </acomponetnt.Provider>
     <h1>A</h1>
     </div>

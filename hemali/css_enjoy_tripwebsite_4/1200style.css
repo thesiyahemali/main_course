@@ -372,5 +372,136 @@ margin-left: 23.50%;
       text-align: center;
       font-weight: 600;
   }
+  
+/* .section3 */
+.section3 {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    font-family: 'Rokkitt', serif;
+}
+
+.section3 .our {
+    text-align: center;
+    font-size: 2.7em;
+    color: #212121;
+    font-weight: 800;
+}
+
+.section3 .main {
+    display: flex;
+    flex-direction: unset;
+    margin: 0px 130px;
+
+}
+
+.section3 .left img {
+    width: 100%;
+    position: relative;
+}
+.section3 .left h6 {
+    margin: 15px 0px;
+    color: #212121;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.section3 .left .p1 {
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.section3 .left button {
+    padding: 6px 33px;
+    border: solid 1px #ff9800;
+    background: #ff9800;
+    color: #ffffff;
+    font-size: 1em;
+}
+.section3 button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+.section3 .time{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    height: 62%;
+    width: 50%;
+    background: rgba(16, 16, 16, 0.67);
+    color: #fff;
+    padding-top: 115px;
+}
+.section3 .time .day{
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 54px;
+}
+.section3 .time .month{
+    font-size: .9em;
+    font-weight: 400;
+}
+.section3 .time .build{
+    font-size: .9em;
+    color: #ff9800;
+     line-height: 35px;
+    text-transform: capitalize;
+}
+.section3 .time:hover{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.section3 .right {
+    margin-left: 25px;
+}
+
+.section3 .right img {
+    width: 100%;
+    position: relative;
+    margin: 12px 0px 0px 0px;
+}
+
+.section3 .right h6 {
+    margin: 15px 0px;
+    color: #212121;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.section3 .right .p2 {
+    color: #999999;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.section3 .right button {
+    padding: 6px 33px;
+    border: solid 1px #ff9800;
+    background: #ff9800;
+    color: #ffffff;
+    font-size: 1em;
+}
+.section3 .right .time{
+    position: absolute;
+    top: 228px;
+    text-align: center;
+    height: 62%;
+    width: 50%;
+    background: rgba(16, 16, 16, 0.67);
+    color: #fff;
+    padding-top: 105px;
+}
+.section3 .right .time:hover{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.section3 button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
 
 }
