@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var a=['abbbb','fbbf','mnnbbb']
+
+    let arr=[]
+    for(let i=0; i<a.length;i++){
+        let data=a[i].split('')
+        // console.log(data);
+        let sume=0;
+        for(let j=0; j<a[i].length; j++){
+            if (data[j]=='b') {
+                sume+=1
+                
+            }
+        }
+        arr[i]=sume
+    }
+    console.log(arr);
+
+    </script>
+</body>
+</html>

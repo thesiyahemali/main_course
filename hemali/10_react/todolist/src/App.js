@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Subscription from './components/01_Subscription';
+import Covide from './componets/Covide';
+// import Todolist from './Todolist';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Subscription/>
-      </header>
+        {/* <Todolist/> */}
+        <Covide/>
     </div>
   );
 }

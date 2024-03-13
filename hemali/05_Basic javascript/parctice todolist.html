@@ -1,78 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
-    .box1 {
-      height: 300px;
-      width: 250px;
-      background-color: aqua;
-      margin: auto;
-    }
+  .box1 {
+    height: 300px;
+    width: 250px;
+    background-color: aqua;
+    margin: auto;
+  }
 
-    .box {
-      margin: auto;
-      padding-top: 10px;
-      width: 100%;
-      text-align: center;
-    }
-    .box2 {
-      margin: auto;
-      width: 100%;
-      height: auto;
-      background-color: cadetblue;
-      text-align: center;
-    }
-    input {
-      height: 20px;
-    }
-  </style>
+  .box {
+    margin: auto;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .box2 {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+    text-align: center;
+  }
+
+  input {
+    height: 20px;
+  }
+</style>
+
 <body>
-    <div class="box1">
-        <div class="box">
-          <input type="text" id="input" />
-          <button onclick="addItem()">Add</button>
-        </div>
-        <div class="box2" id="data"></div>
-      </div>
+  <div class="box1">
+    <div class="box">
+      <input type="text" id="input" />
+      <button onclick="addItem()">Add</button>
+    </div>
+    <div class="box2" id="data"></div>
+  </div>
 
-      <script>
-        // let item=[]                                                                      
-        //  function addItem(){
-        //     let input=document.getElementById('input').value
-        // item.push(input)
-        // // console.log(input);
-        // displayelement(item)
-        // document.getElementById('input').value = ''
-        //  }
+  <script>
+    let item = []
+    function addItem() {
+      let input = document.getElementById('input').value
+      item.push(input)
+      // console.log(input);
+      displayelement(item)
+      document.getElementById('input').value = ''
+    }
 
-        //  function displayelement(data){
-        //    document.getElementById('data').innerText=''
-        //    data.forEach((value,index) => {
-        //      let itdata=document.createElement('h1')
-        //      itdata.innerText=value
-             
-        //      let deltedata=document.createElement('button')
-        //      deltedata.innerText='delete'
-        //      deltedata.addEventListener('click',()=>{
-        //         deletD(index)
-        //      })
-        //      document.getElementById('data').appendChild(itdata)
-        //      document.getElementById('data').appendChild(deltedata)
+    function displayelement(data) {
+      document.getElementById('data').innerText = ''
+      data.forEach((value, index) => {
+        let itdata = document.createElement('h1')
+        itdata.innerText = value
 
-        //    });
-        //    function  deletD(i){
-        //        item.splice(i,1)
-        //        displayelement(item)
-      //    }
-        //  }
+        let deltedata = document.createElement('button')
+        deltedata.innerText = 'delete'
+        deltedata.addEventListener('click', () => {
+          deletD(index)
+        })
+        document.getElementById('data').appendChild(itdata)
+        document.getElementById('data').appendChild(deltedata)
 
-``
-      
-       
-      </script>
+      });
+      function deletD(i) {
+        item.splice(i, 1)
+        displayelement(item)
+      }
+    }
+
+    ``
+
+
+  </script>
 </body>
+
 </html>

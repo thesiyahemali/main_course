@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import A from './Comp1'
+import {A} from './Comp1'
 
 const Comp3 = () => {
     const[data,update]=useContext(A)
