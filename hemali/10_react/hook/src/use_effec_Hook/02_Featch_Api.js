@@ -15,10 +15,16 @@ const Featch_Api = () => {
       {pro.map((prd)=>{
        return(
       <>
+      <section1>
+
         <img src={prd.images}></img>
+<div className="section2">
          <h3>{prd.id}</h3>
          <p>{prd.title}</p>
-         <span>{prd.price}</span>
+         <span>{prd.price}</span><br></br>
+         <b>{prd.description}</b>
+         </div>
+         </section1>
       </>
        )
       })}

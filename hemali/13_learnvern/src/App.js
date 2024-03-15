@@ -5,9 +5,9 @@ import Subscription from './components/01_Subscription';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+     
         <Subscription/>
-      </header>
+    
     </div>
   );
 }

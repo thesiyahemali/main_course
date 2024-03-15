@@ -7,6 +7,8 @@ import Effect from './use_effec_Hook/Effect';
 import Featch from './use_effec_Hook/01_Featch';
 import Featch_Api from './use_effec_Hook/02_Featch_Api';
 import Jsonapi from './JSON/Jsonapi';
+import Useeffect_use from './use_effec_Hook/03_Useeffect_use';
+import Axios_api from './Axios/Axios_api';
 
 function App() {
   return (
@@ -17,7 +19,10 @@ function App() {
      {/* <Effect/> */}
      {/* <Featch/> */}
      {/* <Featch_Api/> */}
-     <Jsonapi/>
+     {/* <Jsonapi/> */}
+     {/* <Useeffect_use/> */}
+     <Axios_api/>
+
   
     </div>
   );
