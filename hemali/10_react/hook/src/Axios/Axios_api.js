@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React,{useEffect,useState,useRef} from 'react'
 
+// aa file ni ander json server call karvu se aetle json-server --watch db.json --port 8001 chalu karvu cmd ma pachi je aa code run thase 
+
 const Axios_api = () => {
     const [data,setdata]=useState([])
     const inpt=useRef(null)

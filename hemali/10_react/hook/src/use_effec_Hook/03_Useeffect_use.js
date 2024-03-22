@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 
+// useEffect no use karta sikhvu se sir example kari ne 
 const Useeffect_use = () => {
     const [count,setcount]=useState(0)
     const [count2,setcountt]=useState(0)

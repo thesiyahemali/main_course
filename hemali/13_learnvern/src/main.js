@@ -30,3 +30,8 @@ component adthva baije pan baija tag ma samll use thaye to tene defalult tag kev
   javascript                 typescript                  javascript   */
 
 //   installing node js 
+
+/* what is props 
+ props means k ek componet thi baija componet ma data pass karva hoy aena mate apde props no use karvi savi 
+
+ ek componet na data baija componet ma data pass karva mate  */

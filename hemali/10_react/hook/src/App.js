@@ -9,20 +9,21 @@ import Featch_Api from './use_effec_Hook/02_Featch_Api';
 import Jsonapi from './JSON/Jsonapi';
 import Useeffect_use from './use_effec_Hook/03_Useeffect_use';
 import Axios_api from './Axios/Axios_api';
+import Render from './Conditional_Render/01_Render';
 
 function App() {
   return (
     <div className='App'>
-    {/* <ChildA/>createContext and usecontext no use kari ne karvu ae 
-     <Comp1/>  createContext and usecontext no use kari ne karvu ae exampl2    */}
-     {/* <Cal/> */}
-     {/* <Effect/> */}
-     {/* <Featch/> */}
-     {/* <Featch_Api/> */}
-     {/* <Jsonapi/> */}
-     {/* <Useeffect_use/> */}
-     <Axios_api/>
-
+    {/* <ChildA/>createContext and usecontext no use kari ne karvu ae  */}
+     {/* <Comp1/>  createContext and usecontext no use kari ne karvu ae exampl2    */}
+     {/* <Cal/> calculater banve se react ma  */}
+     {/* <Effect/>   //use effect nu example se  */}
+     {/* <Featch/>  api thi data lava savi  */}
+     {/* <Featch_Api/> api thi data lava savi  */}
+     {/* <Jsonapi/> apde je json server banvu se tena data display karva se tenu example se  */}
+     <Useeffect_use/> use effect no use karta sikhvu se 
+     {/* <Axios_api/> fetch jevu se axois thi data lava savi  */}
+    {/* <Render/> */}
   
     </div>
   );

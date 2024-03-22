@@ -1,5 +1,7 @@
 import React,{useEffect,useState} from 'react'
 
+// apde je api banvu se temathi aena data display karva se ae example se 
+// json server banvu se tena 
 const Jsonapi = () => {
     const [pro,setpro]=useState([])
     useEffect(()=>{

@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 
+// baija api thi data lavavlo se aenu example se
 const Featch_Api = () => {
     const [pro,setpro]=useState([])
     useEffect(()=>{

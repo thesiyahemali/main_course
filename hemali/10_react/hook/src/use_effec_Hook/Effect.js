@@ -5,6 +5,9 @@ const Effect = () => {
 //     useEffect(()=>{
 //    },[])
 
+// aama useEffect sikha savi aetle pela useeefct run thase pachi je componet run thase 
+// api call karva mate useEffect no use thaye se 
+
 useEffect(()=>{
     console.log('hiii this is use effect hook');
     alert('hiiii')

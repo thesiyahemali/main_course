@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 
+// api thi data ky rite lavavo te karvleu example se  fack store api thi data lavevlo se
 const Featch = () => {
     const [product,setproduct]=useState([])
     useEffect(()=>{
