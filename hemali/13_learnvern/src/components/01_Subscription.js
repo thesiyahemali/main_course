@@ -1,7 +1,7 @@
 import React from 'react'
 import './02_Subscription.css'
+import SubscriptionDate from './03_SubscriptionDate'
 const Subscription = (props) => {
-   
   /* daynamic data 
     let date=(new Date('2024','3','21'));
     let title='Monthly Subscription'
@@ -16,7 +16,7 @@ const Subscription = (props) => {
      </div> */
 
     <div className='subscription'>
-      <div>{props.passdate}</div>
+     <SubscriptionDate date={props.date}/>
       <h2 className='subscription_title'>{props.passtitle}</h2>
       <div className='subscription_price'>{props.passamount}</div>
     </div>

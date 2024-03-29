@@ -27,11 +27,11 @@ function App() {
     <div>
       {/* <Subscription/>daynamic data  */}
       
-        <Subscription passdate={subscriptios[0].date.toLocaleString()} passtitle={subscriptios[0].title} passamount={subscriptios[0].amount}/>
+        <Subscription date={subscriptios[0].date} passtitle={subscriptios[0].title} passamount={subscriptios[0].amount}/>
 
-        <Subscription passdate={subscriptios[1].date.toLocaleString()} passtitle={subscriptios[1].title} passamount={subscriptios[1].amount}/>
+        <Subscription date={subscriptios[1].date} passtitle={subscriptios[1].title} passamount={subscriptios[1].amount}/>
 
-        <Subscription passdate={subscriptios[2].date.toLocaleString()} passtitle={subscriptios[2].title} passamount={subscriptios[2].amount}/>
+        <Subscription date={subscriptios[2].date} passtitle={subscriptios[2].title} passamount={subscriptios[2].amount}/>
     
     </div>
   );

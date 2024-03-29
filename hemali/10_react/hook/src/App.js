@@ -10,6 +10,7 @@ import Jsonapi from './JSON/Jsonapi';
 import Useeffect_use from './use_effec_Hook/03_Useeffect_use';
 import Axios_api from './Axios/Axios_api';
 import Render from './Conditional_Render/01_Render';
+import Forward from './ForwardRef_Hook/01_Forward';
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
      {/* <Featch/>  api thi data lava savi  */}
      {/* <Featch_Api/> api thi data lava savi  */}
      {/* <Jsonapi/> apde je json server banvu se tena data display karva se tenu example se  */}
-     <Useeffect_use/> use effect no use karta sikhvu se 
+     {/* <Useeffect_use/> use effect no use karta sikhvu se  */}
      {/* <Axios_api/> fetch jevu se axois thi data lava savi  */}
     {/* <Render/> */}
   
+     <Forward/>
     </div>
   );
 }
