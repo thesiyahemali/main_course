@@ -593,9 +593,9 @@
      border: 1px solid #cdcdcd;
      width: 35%;
      background: #ffffff;
-     margin-right: 2%;
+     margin-right: 1.50%;
  }
- /* .section6 .frome button{
+ .section6 .frome button{
     color: #FFFFFF;
     background: #212121;
     border: none;
@@ -604,5 +604,23 @@
     font-size: .9em;
     outline: none;
     text-transform: uppercase;
-  border: 2px solid red;
- } */
+ }
+ .section6 .frome button:hover{
+    background-color: transparent;
+    color: black;
+    transition: .5s all;
+ }
+ .section6 .frome .ore{
+    font-size: 1em;
+    color: #212121;
+    margin: 0px 0;
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    text-transform: uppercase;
+ }
+ .section6 .frome .des {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px;
+ }
