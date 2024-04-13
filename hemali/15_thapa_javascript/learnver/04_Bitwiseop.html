@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Bitwise operator
+logical operator
+assginment operator
+ternary operator&& conditional operator -->
+<body>
+    <script>
+        document.write("<h3>Bitwise operator </h3>")
+
+        var x = 5;
+        var y = 9;
+        var z = 2
+
+        document.write('bitwise x & y:' + (x & y))
+        document.write('<br>')
+        document.write('bitwise x | y:' + (x | y))
+        document.write('<br>')
+        document.write('bitwise x ^ y:' + (x ^ y))
+        document.write('<br>')
+        document.write('bitwise ~x:' + (~x))
+        document.write('<br>')
+        document.write('bitwise left shift x << z:' + (x << z))
+        document.write('<br>')
+        document.write('bitwise right shift x >> z:' + (x >> z))
+        document.write('<br>')
+        document.write('bitwise right shift x >>> z:' + (x >>> z))
+    </script>
+
+    <script>
+        document.write("<h3>logical operator </h3>")
+
+        var x = true;
+        var y = false;
+       if(x && x){
+        document.write('statement is true =>x && y')
+       }
+       document.write("<br>")
+       if(x || x){
+        document.write('statement is true =>x || y ')
+       }
+       document.write("<br>")
+       if(! y){
+        document.write('statement is true =>!y ')
+       }
+
+
+    </script>
+
+
+<script>
+     document.write("<h3>assginment operator </h3>")
+
+      var a=5; //this is assginment operator 
+    var b=10;
+
+    document.write("Assginment a += b: " + (a += b))
+
+    /*a=a+b
+    a=5+10
+    x=12
+      */
+
+     document.write("<br>")
+    document.write("value of a is :"+a)
+    document.write("<br>")
+
+    document.write("Assginment a -= b: " + (a -= b))
+    /*a=a+b
+    a=15-10
+    a=5
+      */
+    document.write("<br>")
+
+    document.write("Assginment a *= b: " + (a *= b))
+     /*a=a+b
+    a=5-10
+    a=50
+      */
+    document.write("<br>")
+    document.write("Assginment a /= b: " + (a /= b))
+     /*a=a+b
+    a=50/10
+    a=5
+      */
+      document.write("<br>")
+    document.write("Assginment a %= b: " + (a %= b))
+      /*a=a+b
+    a=5/10
+    a=5
+      */
+</script>
+
+<script>
+    var z=true;
+    var x=false;
+    document.write("<h3>ternary operator </h3>")
+     var z=z?2:4;
+     document.write("value of z:"+z)
+
+
+
+     document.write("<h3>special operator </h3>")
+      // , operator
+     let g=(1,2,3);
+     document.write("value od g:"+(a))
+     document.write("<br>")
+
+    //  delete operator 
+     var person={
+       firstname:'hemali',
+       lastname:'thesiya'
+     }
+        delete person.lastname
+     document.write('delete lastname from the object :'+person.lastname);
+     document.write("<br>")
+
+    //  in operator
+    var z='age' in person? true: false;
+    document.write('<br>');
+    document.write("if 'age' exist in object 'perosn':"+z)
+
+</script>
+</body>
+
+</html>

@@ -51,6 +51,7 @@ const Axios_api = () => {
                     <tr>
                     <td>{i+1}</td>
                         <td>{result.name}</td>
+                        
                         <button onClick={()=>{
                             deleteData(result.id)
                         }}>Delte</button>

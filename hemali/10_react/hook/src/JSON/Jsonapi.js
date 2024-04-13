@@ -19,9 +19,6 @@ const Jsonapi = () => {
             <>
             <table>
             <th>{pre.id}</th>
-           
-
-        
                 <td>{pre.name}</td>
                 <td>{pre.marks}</td>
                 </table>

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Subscription from './components/01_Subscription';
+import Subscription from './Subscriptions/01_Subscription';
+import Container from './Templte/05_Container';
 
 function App() {
   let subscriptios = [
@@ -24,7 +25,7 @@ function App() {
 }
 ];
   return (
-    <div>
+    <Container>
       {/* <Subscription/>daynamic data  */}
       
         <Subscription date={subscriptios[0].date} passtitle={subscriptios[0].title} passamount={subscriptios[0].amount}/>
@@ -33,7 +34,7 @@ function App() {
 
         <Subscription date={subscriptios[2].date} passtitle={subscriptios[2].title} passamount={subscriptios[2].amount}/>
     
-    </div>
+    </Container>
   );
 }
 

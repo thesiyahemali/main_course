@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of primitive datatypes</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var x = 'hello';  //string datatype
+        var num = 2000;    //number datatype
+        var yes = true;   //bolean varible with value true/1
+        var no = false;     //bolean varible with value flase/0
+        var y;   //undefine varible
+        document.write(y)
+        var z = 'null'// null varible
+        document.write('<br>')
+        document.write(z) 
+    </script>
+
+    <h3>concepts of primitive datatypes</h3>
+
+    <script>
+        //concept of varible of number+string
+        var a = 15 + 'hello';
+        document.write(a)
+        document.write("<br>")
+        var b = "hello+10+10"
+        document.write(b)
+        document.write("<br>")
+
+        var c = 50 + 50 + 'hello'
+        document.write(c)
+
+        document.write("<br>")
+
+        // string 
+        //concept of varible of qutes+string
+
+        var str1 = 'his';
+        // var str2=' name is "hemali"'
+        var str2 = " name is 'hemali'"
+        document.write(str1 + str2)
+        document.write("<br>")
+
+        //concept of varible of booleans
+        var temp1 = 2;
+        var temp2 = 2;
+        if (temp1 == temp2) {
+            document.write('true')
+        } else {
+            document.write('false')
+        }
+        document.write("<br>")
+
+        //concept of varible of null + undefine
+        var temp4 = null;
+        var temp5 = undefined;
+        if (temp4 === temp5) {
+            document.write('true')
+        } else {
+            document.write('false')
+        }
+        document.write("<br>")
+
+    </script>
+    <h3>exmple of non-primtive data types </h3>
+
+    <script>
+        // non primitive datatype 
+        // exmple of non-primitve datatype 
+        // array ma position 0 thi saru thase 
+        //   1 array 
+        document.write('<h3>exmple of array</h3>')
+
+        var car = ['hayundi', 'marti', 'dhr'];
+        document.write(car)
+        document.write("<br>")
+        document.write(car[1])
+        document.write("<br>")
+
+        //   2.object 
+        document.write('<h3>exmple of object</h3>')
+        var person = {
+            firstname: 'hemali',
+            lastname: 'thesiya',
+            age: 20
+        }
+        document.write(person.firstname+' with age '+ person.age)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+{
+  "user": [
+    {
+      "id": "3d20",
+      "name": "hemali",
+      "email": "thesiya@gmail.com",
+      "password": "12345",
+      "isadmin": true
+    },
+    {
+      "id": "6ec4",
+      "name": "hemali",
+      "email": "thesiya@gmail.com",
+      "password": "12345",
+      "isadmin": true
+    },
+    {
+      "id": "ff44",
+      "name": "hemali",
+      "email": "thesiya@gmail.com",
+      "password": "123",
+      "isadmin": true
+    },
+    {
+      "id": "8211",
+      "name": "hemali",
+      "email": "thesiya@gmail.com",
+      "password": "1234",
+      "isadmin": true
+    },
+    {
+      "id": "296b",
+      "name": "hemali",
+      "email": "thesiya@gmail.com",
+      "password": "fjehdnfkj",
+      "isadmin": true
+    },
+    {
+      "id": "55d4",
+      "name": "fnvgkjnd",
+      "email": "thesiya@gmail.com",
+      "password": "bghygbju",
+      "isadmin": false
+    },
+    {
+      "id": "faea",
+      "name": "fnvgkjnd",
+      "email": "thesiya@gmail.com",
+      "password": "1234",
+      "isadmin": false
+    },
+    {
+      "id": "f342",
+      "name": "fnvgkjnd",
+      "email": "thesiya@gmail.com",
+      "password": "122ddfgvr",
+      "isadmin": true
+    },
+    {
+      "id": "fdb3",
+      "name": "fnvgkjnd",
+      "email": "thesiya@gmail.com",
+      "password": "cfdsgvs",
+      "isadmin": true
+    },
+    {
+      "id": "8fae",
+      "name": "hemail",
+      "email": "hhggg@ggh.in",
+      "password": "1234",
+      "isadmin": true
+    },
+    {
+      "id": "5b3f",
+      "name": "mirali",
+      "email": "he@gmail.com",
+      "password": "567",
+      "isadmin": true
+    },
+    {
+      "id": "6a6c",
+      "name": "mirali",
+      "email": "thesiya@gmail.com",
+      "password": "123",
+      "isadmin": true
+    },
+    {
+      "id": "ee06",
+      "name": "mirali",
+      "email": "hhggg@ggh.in",
+      "password": "123456",
+      "isadmin": false
+    },
+    {
+      "id": "f18a",
+      "name": "hemail",
+      "email": "thesiya@gmail.com",
+      "password": "12345",
+      "isadmin": false
+    },
+    {
+      "id": "9c5c",
+      "name": "mirali",
+      "email": "he@gmail.com",
+      "password": "56789",
+      "isadmin": false
+    },
+    {
+      "id": "dbd8",
+      "name": "hemail",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "789",
+      "isadmin": false
+    }
+  ]
+}

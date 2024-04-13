@@ -1,5 +1,5 @@
 import React from 'react'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const Object_Types = ({list}) => {
   return (
@@ -10,10 +10,10 @@ const Object_Types = ({list}) => {
   )
 }
 
-Object_Types.prototypes={
-    list:propTypes.shape({
-        name:propTypes.string.isRequired,
-        age:propTypes.number.isRequired
+Object_Types.propTypes={
+    list:PropTypes.shape({
+        name:PropTypes.string.isRequired,
+        age:PropTypes.string.isRequired
     })
 }
 export default Object_Types

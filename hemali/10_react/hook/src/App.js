@@ -11,6 +11,8 @@ import Useeffect_use from './use_effec_Hook/03_Useeffect_use';
 import Axios_api from './Axios/Axios_api';
 import Render from './Conditional_Render/01_Render';
 import Forward from './ForwardRef_Hook/01_Forward';
+import UseMemo from './Use_Memo_Hook/UseMemo';
+import First from './UseCallback_Hook/First';
 
 function App() {
   return (
@@ -26,7 +28,12 @@ function App() {
      {/* <Axios_api/> fetch jevu se axois thi data lava savi  */}
     {/* <Render/> */}
   
-     <Forward/>
+     {/* <Forward/>ForwardRef_Hook no use kari ne karvu se example  */}
+
+     {/* <UseMemo/>     */}
+     {/* Use_Memo_Hook no use karvu se  */}
+
+     {/* <First/> */}
     </div>
   );
 }
