@@ -1,9 +1,22 @@
 import React from 'react'
+import Hader from './Hader'
+import Sidebar from './Sidebar'
+import { Outlet } from 'react-router-dom'
 
 const Admin = () => {
   return (
     <div>
-      <h1>Admin</h1>
+      <Hader/>
+      <div className="Container-fluid">
+          <div className="row">
+            <div className="col-md-3 sidebar ">
+               <Sidebar/>
+            </div>
+            <div className="col-md-9 content">
+              <Outlet/>
+            </div>
+          </div>
+      </div>
     </div>
   )
 }

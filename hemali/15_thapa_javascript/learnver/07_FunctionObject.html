@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- class object sir  -->
+     <script>
+        // class car{
+        //     var model;
+        //     var color ;
+        //     car(model,color){
+        //         this.model = model; 
+        //         this.color = color;
+        //     }
+        // }
+        // var xuv = new car("xuv","red"); 
+
+        // only samjva ane work kevi rite tena mate karlu chee 
+
+        var add=new Function('num1','num2','return num1+num2');
+        document.writeln(add(5,10))
+        document.writeln(add(55,10))
+   
+        document.write('<br/>')
+         var power=new Function('num1','num2','return Math.pow(num1,num2)');
+        document.writeln(power(5,2))
+
+     </script>
+
+
+     <script>
+        document.write("<h3> function call method in javasript </h3>")
+
+        document.write("<h3> call method () </h3>")
+        // example1
+         function Emp(id,name){
+            this.id=id;
+            this.name=name
+         }
+        function PramentempEmp(id,name){
+          Emp.call(this,id,name)
+        }
+
+        document.writeln(new PramentempEmp(1,'hemali thesiya').name)
+
+
+         document.write("<br/>")
+          //  banvel exampl2   
+         const person={
+           fullname:function(city,country){
+              return this.firstname + " " + this.lastname + " " + city + " " + country;
+           }
+         }
+
+         const person1={
+           firstname:'hemali',
+           lastname:'thesiya'
+         }
+         document.write(person.fullname.call(person1,'oslo','india'))
+     </script>
+
+
+     <script>
+      document.write("<h3> apply method () </h3>")
+        var arr=[6,7,8,9,0];
+
+        var max=Math.max.apply(this,arr);
+        document.writeln(max)
+        document.write('<br>')
+        // exampl2 
+        const person2={
+           fullname:function(city,country){
+              return this.firstname + " " + this.lastname + " " + city + " " + country;
+           }
+         }
+         const person3={
+           firstname:'hemali',
+           lastname:'thesiya'
+         }
+         document.write(person2.fullname.apply(person3,['surat','india']))
+     </script>
+
+
+
+<script>
+
+document.write("<h3> Binde method () </h3>")
+ 
+ var website1={
+   name:'learnvern',
+   getName:function(){
+     return this.name;
+   }
+ } 
+
+   
+var unboundGetName = website1.getName;
+var boundGetName = unboundGetName.bind(website1);
+
+document.write(boundGetName()); 
+  // document.write(website1.getName())
+</script>
+
+
+ <script>
+  
+document.write("<h3>tostring method () </h3>") 
+
+ function add(num1,num2){
+  return num1+num2
+ }
+ document.write(add.toString()+'<br>');  // parametr na apvi to function return karse 
+ document.write('summation of 10 and 40 is:'+add(10,40).toString())
+ </script>
+</body>
+</html>

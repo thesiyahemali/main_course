@@ -22,7 +22,7 @@ const Hadare = () => {
             <a href="#" className="navigation__link">
               Home
             </a>
-            <div className="box-menu" style={{ width: 800, left: 243 }}>
+            <div className="box-menu" style={{ width: 900, left: 243 }}>
               <div className="col pe-4">
                 <ul className="sub-menu__list list-unstyled">
                   <li className="sub-menu__item">

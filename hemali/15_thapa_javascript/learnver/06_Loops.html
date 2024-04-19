@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      document.writeln("<h3>for loop </h3>")
+      for (let i = 0; i <= 5; i++) {
+         document.writeln(i)
+         document.write('<br>')
+
+      }
+      document.write('<br>')
+      for (let j = 10; j <= 100; j++) {
+         document.writeln(j)
+         document.write('<br>')
+      }
+   </script>
+
+   <script>
+      document.writeln("<h3>while loop </h3>")
+      var i = 1;
+      while (i <= 5) {
+         document.writeln(i)
+         i++;
+      }
+   </script>
+
+   <script>
+      document.writeln("<h3>do while loop </h3>")
+      var i = 5
+      do {
+         document.write(i)
+         i++;
+      } while (i <= 10)
+   </script>
+
+
+   <script>
+      document.writeln("<h3>for in ....loop </h3>")
+
+      var temp = ""
+      var person = {
+         firstname: 'hemali',
+         lastname: 'thesiya',
+         age: 20,
+      }
+
+      for (value in person) {
+         temp = temp + person[value] + " "
+         // document.writeln(person[value])
+      }
+      document.writeln(temp)
+
+   </script>
+
+   <script>
+      document.writeln("<h3>for of ....loop with array</h3>")
+
+      var alphabets = ['a', 'b', 'c', 'd', 'e']
+      // for(let i=0; i<alphabets.length; i++){
+      //    document.writeln(alphabets[i])
+      // }
+      for (value of alphabets) {
+         document.writeln(value)
+      }
+ 
+      document.writeln("<h3>for of ....loop with string</h3>")
+      
+      var s='learnvern'
+      for(value of s){
+         document.writeln(value+'<br>')
+      }
+   </script>
+</body>
+
+</html>

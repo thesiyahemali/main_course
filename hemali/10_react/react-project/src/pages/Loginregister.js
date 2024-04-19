@@ -7,10 +7,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import {useNavigate } from "react-router-dom";
 
 const Loginregister = () => {
+  const navigate = useNavigate()
+ 
     // register 
   const [regisdata,setregidata]=useState({name:'',email:'',password:'',isadmin:false})
 // aa useState error set karsu karye to k submit karvi tayre sak karsu 
-   const [regError,setregError]=useState({})
+  const [regError,setregError]=useState({})
 
     // login 
     const[loginData,setloginData]=useState({email:'',password:''})
@@ -24,7 +26,7 @@ const Loginregister = () => {
        e.preventDefault()
        var re = /\S+@\S+\.\S+/;
        let validatelogin={}
-
+ console.log(loginData);
        if(loginData.password ==""){
            validatelogin.password='pelse enter valid password '
        }
@@ -40,27 +42,37 @@ const Loginregister = () => {
       //   console.log(result.data[0]);
       // })
         try{
-        let loginData=await axios.get(`http://localhost:8000/user?email=${loginData.email}`)
-         console.log(loginData.data[0]);
+          
+        let logindata=await axios.get(`http://localhost:8000/user?email=${loginData.email}`)
+        console.log(logindata.data[0]);
 
-         if(loginData.data[0].password == loginData.password){
+         if(logindata.data[0].password == loginData.password){
+            //  local stroge ma store kari ne logout per gaya 
+             localStorage.setItem('user',logindata.data[0].name);
+             localStorage.setItem('admin',logindata.data[0].isadmin);
 
-         }else{
-          setloginData({password:'please enter valid password'})
-         }
-      }catch(error){
-        setloginData({email:'please enter valid email'})
-      }
+             if(logindata.data[0].isadmin){
+              navigate('/admin')
+             }else{
+              navigate('/')
+             }
+            }else{
+              setloginError({password:'please enter valid password'})
+              }
+            }catch(error){
+              setloginError({email:'please enter valid emali'})
+            }
 
        }
     }
 
     // register 
   const regichange =(e)=>{
-
+    //  check bocx ni value leva mate 
     if(e.target.name=='isadmin'){
       setregidata({...regisdata,[e.target.name]:e.target.checked})
     }else{
+      // baija badha input field leva  mate 
       const{name,value}=e.target
       setregidata({...regisdata,[name]:value})
     }
@@ -69,8 +81,9 @@ const Loginregister = () => {
   //  resiter uper cilck kari ne submit karsu tayre submit thaye tena mate
   const registersubmit = (e) => {
     e.preventDefault()
-    var re=/^\S+@\S+\.\S+$/
     console.log(regisdata);
+    // validation
+    var re=/^\S+@\S+\.\S+$/
     let validateregister={}
     if(regisdata.name ==''){
       validateregister.name='please enter name'

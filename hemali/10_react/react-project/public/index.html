@@ -37,9 +37,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Allura&amp;display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/plugins/swiper.min.css" type="text/css">
-  <link rel="stylesheet" href="css/plugins/jquery.fancybox.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/plugins/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/plugins/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" type="text/css">
 
   <!-- shop / -->
   <link rel="shortcut icon" href="https://uomo-html.flexkitux.com/images/favicon.ico" type="image/x-icon">
@@ -50,9 +50,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Allura&amp;display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/plugins/swiper.min.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/plugins/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" type="text/css">
   </head>
+  <style>
+    body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+/* Add other styles and media queries as needed */
+
+  </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
@@ -207,6 +217,24 @@
       </symbol>
     </svg>
   
+    <style>
+      .sidebar {
+    position: fixed;
+    top: 6.20%;
+    left: -1.5%;
+    height: 100%;
+    width: 300px; /* Adjust width as needed */
+    background-color: #f8f9fa; /* Sidebar background color */
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    /* border-right: 1px solid #dee2e6; Sidebar border */
+      }
+
+      .content{
+        margin-left: 305px;
+        margin-top: 7%;
+      }
+    </style>
     <script src="%PUBLIC_URL%/js/plugins/jquery.min.js"></script>
       <script src="%PUBLIC_URL%/js/plugins/bootstrap.bundle.min.js"></script>
       <script src="%PUBLIC_URL%/js/plugins/bootstrap-slider.min.js"></script>

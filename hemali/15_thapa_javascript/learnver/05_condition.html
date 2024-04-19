@@ -1,69 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>example of conditional statement</title>
 </head>
+
 <body>
     <script>
         document.write("<h3>example of if satement</h3>")
 
-        var a=10;
-        if(a>=10){
+        var a = 10;
+        if (a >= 10) {
             document.write('learvenrn is awesone!')
         }
         document.write("<br>")
     </script>
 
-<script>
-    document.write("<h3>example of if...else satement</h3>")
+    <script>
+        document.write("<h3>example of if...else satement</h3>")
 
-    var marks=34;
-    if(marks>33){
-        document.write(` ${marks} student has clear the examination`)
-    }else{
-        document.write('student has not cleared the examination')
-    }
-</script>
+        var marks = 34;
+        if (marks > 33) {
+            document.write(` ${marks} student has clear the examination`)
+        } else {
+            document.write('student has not cleared the examination')
+        }
+    </script>
 
 
-<script>
-    document.write("<h3>example of if...else..if...else satement</h3>")
+    <script>
+        document.write("<h3>example of if...else..if...else satement</h3>")
 
-    var days=4 ;
-    if(days==1){
-        document.write("today is moday")
-    }else if(days==2){
-        document.write('today is tuesday')
-    }else if(days==3){
-        document.write('today is wensday')
-    }else if(days==4){
-        document.write('today is tuesaday')
-    }else if(days==5){
-        document.write('today is friday')
-    }else if(days==6){
-        document.write('today is saturday')
-    }else if(days==7){
-        document.write('today is sunday')
-    }else{
-         document.write('please enter a valid input between 1 to 7')
-    }
+        var days = 4;
+        if (days == 1) {
+            document.write("today is moday")
+        } else if (days == 2) {
+            document.write('today is tuesday')
+        } else if (days == 3) {
+            document.write('today is wensday')
+        } else if (days == 4) {
+            document.write('today is tuesaday')
+        } else if (days == 5) {
+            document.write('today is friday')
+        } else if (days == 6) {
+            document.write('today is saturday')
+        } else if (days == 7) {
+            document.write('today is sunday')
+        } else {
+            document.write('please enter a valid input between 1 to 7')
+        }
 
-  document.write("<br>")
+        document.write("<br>")
 
-    // example 2
+        // example 2
 
-    let w=0
-    if(w>0){
-        document.write(' a is positive')
-    }else if(w<0){
-        document.write('a is nagative')
-    }else if(w==0){
-        document.write('a is zero')
-    }else{
-        document.write('please enter a valid input')
-    }
-</script>
+        let w = 0
+        if (w > 0) {
+            document.write(' a is positive')
+        } else if (w < 0) {
+            document.write('a is nagative')
+        } else if (w == 0) {
+            document.write('a is zero')
+        } else {
+            document.write('please enter a valid input')
+        }
+
+   document.write('<br>')
+        // odd even number 
+        let num1=Number(prompt('enter your number odd evne '))
+        if(num1 %2 ===0){
+          document.write(`${num1} is even number`)
+        }else if( num1 %2 ===1){
+            document.write(`${num1} is odd number`)
+        }
+
+    </script>
+
+
+    <script>
+        document.write("<h3>Example of switch case statement</h3>");
+
+        switch (new Date().getDay()) {
+            case 0:
+                document.write('It\'s Sunday');
+                break;
+            case 1:
+                document.write('It\'s Monday');
+                break;
+            case 2:
+                document.write('It\'s Tuesday');
+                break;
+            case 3:
+                document.write('It\'s Wednesday');
+                break;
+            case 4:
+                document.write('It\'s Thursday');
+                break;
+            case 5:
+                document.write('It\'s Friday');
+                break;
+            case 6:
+                document.write('It\'s Saturday');
+                break;
+            default:
+                document.write('Incorrect input');
+        }
+
+        // example 2
+        document.write('<br>')
+        let num = prompt('enter number');
+        switch (true) {
+            case num > 0:
+                document.write('number is positive')
+                break;
+            case num == 0:
+                document.write('number is zero')
+                break;
+            case num < 0:
+                document.write('number is nagtive')
+                break;
+            default:
+                document.write("entered value as not a number");
+        }
+
+        // example 3
+        document.write('<br>')
+        let per=Number(prompt('enter number'))
+        switch (true) {
+            case per > 80:
+                document.write('grade is a A')
+                break
+            case per > 70:
+                document.write('grade is a b')
+                break
+            case per > 60:
+                document.write('grade is a c')
+                break
+            case per > 50:
+                document.write('grade is a d')
+                break
+            case per > 40:
+                document.write('grade is a e')
+                break
+                default:
+                    document.write('no percntage assigned')
+        }
+
+
+
+    </script>
+
 </body>
+
 </html>

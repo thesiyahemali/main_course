@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example object</title>
+</head>
+<body>
+    <script>
+      document.write('<h4> creating an object using object literls</h4>')
+      var person={
+        firstname:'hemali',
+        lastname:'thesiya',
+        age:28,
+        eyecolor:'brown'
+      } 
+
+      document.write(person.firstname+ ' '+person.lastname+' '+person.age+' ')
+    </script>
+
+    <script>
+      document.write('<h4> by creating instance of object </h4>')
+ 
+       var emp=new Object();
+       emp.id=1;
+       emp.name='hemali';
+       emp.salary=100000;
+
+    //    for(value in emp){
+    //     document.writeln(emp[value])
+    //    }
+
+    document.write(emp.id+' '+emp.name+' '+emp.salary+'')
+    </script>
+
+    <script>
+             document.write('<h4> by creating instance of object </h4>')
+
+             function employee(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+
+                var e=new employee(2,'partik patel',20000);
+                document.write(e.id+' '+e.name+' '+e.salary+'')
+                for(value in e){
+                    document.writeln(e[value] + ' ')
+                }
+             }
+    </script>
+
+    <script>
+        //  function ni ander apde kay vastu update karvi hoy to tane funcyion ni ander banvi ne baiju function banvi ne tene update karvu hoy kevi rite update karvu te method thi karvi savi 
+        document.write('<h4>how to define method in javascript </h4>')
+
+        function employee123(ide,namee,salarye){
+            this.ide=ide;
+            this.namee=namee;
+            this.salarye=salarye
+
+            // update karvi se salry tena mate 
+           this. updatesalry=updatesalry
+           function updatesalry(newslary){
+            this.salarye=newslary
+           }
+        }
+
+        var e1=new employee123(3,'hemali',70000)
+        document.writeln('salary of ' +e1.namee+" is :" +e1.salarye)
+       document.write('<br>')
+        e1.updatesalry(1000000)
+        document.writeln('salary of ' +e1.namee+" is :" +e1.salarye)
+    </script>
+</body>
+</html>

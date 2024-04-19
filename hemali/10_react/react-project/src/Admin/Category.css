@@ -1,0 +1,13 @@
+.table tr th {
+    color: black;
+    /* background-color: #e2e0e0; */
+  
+      /* background-color: #f8f9fa; Set the background color of the table */
+    
+    height: 60px;
+    padding-left: 3%;
+  }
+
+  .table{
+    /* background-color:azure; */
+  }

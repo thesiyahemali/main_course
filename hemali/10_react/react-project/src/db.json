@@ -1,116 +1,86 @@
 {
   "user": [
     {
-      "id": "3d20",
+      "id": "ce8e",
       "name": "hemali",
-      "email": "thesiya@gmail.com",
-      "password": "12345",
+      "email": "bbb@gmail.com",
+      "password": "8090",
       "isadmin": true
     },
     {
-      "id": "6ec4",
-      "name": "hemali",
-      "email": "thesiya@gmail.com",
-      "password": "12345",
-      "isadmin": true
-    },
-    {
-      "id": "ff44",
-      "name": "hemali",
-      "email": "thesiya@gmail.com",
-      "password": "123",
-      "isadmin": true
-    },
-    {
-      "id": "8211",
-      "name": "hemali",
-      "email": "thesiya@gmail.com",
-      "password": "1234",
-      "isadmin": true
-    },
-    {
-      "id": "296b",
-      "name": "hemali",
-      "email": "thesiya@gmail.com",
-      "password": "fjehdnfkj",
-      "isadmin": true
-    },
-    {
-      "id": "55d4",
-      "name": "fnvgkjnd",
-      "email": "thesiya@gmail.com",
-      "password": "bghygbju",
-      "isadmin": false
-    },
-    {
-      "id": "faea",
-      "name": "fnvgkjnd",
-      "email": "thesiya@gmail.com",
-      "password": "1234",
-      "isadmin": false
-    },
-    {
-      "id": "f342",
-      "name": "fnvgkjnd",
-      "email": "thesiya@gmail.com",
-      "password": "122ddfgvr",
-      "isadmin": true
-    },
-    {
-      "id": "fdb3",
-      "name": "fnvgkjnd",
-      "email": "thesiya@gmail.com",
-      "password": "cfdsgvs",
-      "isadmin": true
-    },
-    {
-      "id": "8fae",
-      "name": "hemail",
-      "email": "hhggg@ggh.in",
-      "password": "1234",
-      "isadmin": true
-    },
-    {
-      "id": "5b3f",
-      "name": "mirali",
+      "id": "a2c1",
+      "name": "monika",
       "email": "he@gmail.com",
-      "password": "567",
+      "password": "5676",
       "isadmin": true
+    }
+  ],
+  "category": [
+    {
+      "id": "6b68",
+      "name": "kurti"
     },
     {
-      "id": "6a6c",
-      "name": "mirali",
-      "email": "thesiya@gmail.com",
-      "password": "123",
-      "isadmin": true
+      "id": "42ef",
+      "name": "fruntiser"
     },
     {
-      "id": "ee06",
-      "name": "mirali",
-      "email": "hhggg@ggh.in",
-      "password": "123456",
-      "isadmin": false
+      "id": "fa10",
+      "name": "kurti"
     },
     {
-      "id": "f18a",
-      "name": "hemail",
-      "email": "thesiya@gmail.com",
-      "password": "12345",
-      "isadmin": false
+      "id": "f1bb",
+      "name": "kurti"
     },
     {
-      "id": "9c5c",
-      "name": "mirali",
-      "email": "he@gmail.com",
-      "password": "56789",
-      "isadmin": false
+      "id": "3520",
+      "name": "kurti"
     },
     {
-      "id": "dbd8",
-      "name": "hemail",
-      "email": "thesiyahemali999@gmail.com",
-      "password": "789",
-      "isadmin": false
+      "id": "2a77",
+      "name": "jdfvid"
+    },
+    {
+      "id": "64e3",
+      "name": "kurti"
+    },
+    {
+      "id": "83b4",
+      "name": "kurti"
+    }
+  ],
+  "product": [
+    {
+      "id": "1bc6",
+      "productName": "electorinc   laptop",
+      "productPrice": "789",
+      "productQuantity": "-90",
+      "productCategory": "fruntiser",
+      "productUrl": "https://media.gettyimages.com/id/1335669510/vector/vector-isometric-devices-set.jpg?s=612x612&w=gi&k=20&c=XhMrwS5dZ5l7ti8YVvNYeX0y6jgMLYCxJE5KmQ87ZZQ="
+    },
+    {
+      "id": "a446",
+      "productName": "banarsi sadi",
+      "productPrice": "1233",
+      "productQuantity": "5",
+      "productCategory": "fruntiser",
+      "productUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xAA5EAACAQMDAQYEBQMBCQAAAAABAgMABBEFEiExBhMiQVFhBxRxgSMykaGxQsHRFSQlM0NSYnKS4f/EABoBAQACAwEAAAAAAAAAAAAAAAADBAIFBgH/xAAzEQACAQIEAwYGAgIDAQAAAAAAAQIDEQQSITEFIkETUWFxscEUMoGh0fCR4TTxJDNCI//aAAwDAQACEQMRAD8AvGgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoDma/rFvoWlT6jd7jHEOEUjdIx6KuTjJNAUjr3xh7QPfB7FYLC0BICFRIx9yT/AGoZZSc/DT4irrkPyWv3dompFwISngE6npweN3tXh40WOOlenh7QCgFAKAUAoBQCgFAKAUAoBQCgFAVL8cje3s+haLaK6LdSsTMG4zwMfXBNeN2VzKCzOxi7N6d2WsLOaO37q4ntV/HneAu+R1wSOfoKpTcm9WbGMEloiL9rbO0ujb6roToEmk7lwi4YODkfQ1PRb2bK+IWl0foCx3fJQbmLN3a5LdScedTlQz0AoBQCgFAKAUAoBQCgFAKAUAoBQHD7U2cc9kl20avLZyLLGSM45wf2JqOq7RuTUHz27yItLpNl34TTkTvhvfYAuR6/TiqWa5s40pyXKc6+trS6htrG0s0iSS5imCoApdgwwPvxWdKV3YirRUY6ltDpV41Z7QCgFAKAUAoBQCgFAKAUAoBQCgFAYbq3huYWj"
+    },
+    {
+      "id": "4462",
+      "productName": "kurti",
+      "productPrice": "1233",
+      "productQuantity": "67",
+      "productCategory": "kurti",
+      "productUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xAA5EAACAQMDAQYEBQMBCQAAAAABAgMABBEFEiExBhMiQVFhBxRxgSMykaGxQsHRFSQlM0NSYnKS4f/EABoBAQACAwEAAAAAAAAAAAAAAAADBAIFBgH/xAAzEQACAQIEAwYGAgIDAQAAAAAAAQIDEQQSITEFIkETUWFxscEUMoGh0fCR4TTxJDNCI//aAAwDAQACEQMRAD8AvGgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoDma/rFvoWlT6jd7jHEOEUjdIx6KuTjJNAUjr3xh7QPfB7FYLC0BICFRIx9yT/AGoZZSc/DT4irrkPyWv3dompFwISngE6npweN3tXh40WOOlenh7QCgFAKAUAoBQCgFAKAUAoBQCgFAVL8cje3s+haLaK6LdSsTMG4zwMfXBNeN2VzKCzOxi7N6d2WsLOaO37q4ntV/HneAu+R1wSOfoKpTcm9WbGMEloiL9rbO0ujb6roToEmk7lwi4YODkfQ1PRb2bK+IWl0foCx3fJQbmLN3a5LdScedTlQz0AoBQCgFAKAUAoBQCgFAKAUAoBQHD7U2cc9kl20avLZyLLGSM45wf2JqOq7RuTUHz27yItLpNl34TTkTvhvfYAuR6/TiqWa5s40pyXKc6+trS6htrG0s0iSS5imCoApdgwwPvxWdKV3YirRUY6ltDpV41Z7QCgFAKAUAoBQCgFAKAUAoBQCgFAYbq3huYWj"
+    },
+    {
+      "id": "84c2",
+      "productName": "electorinc   laptop",
+      "productPrice": "51998",
+      "productQuantity": "1",
+      "productCategory": "jdfvid",
+      "productUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shopkund.com%2Fembroidered-lace-silk-green-saree-with-blouse-sr23275.html&psig=AOvVaw3tR9fY8HKqx5LHGG-LAiiQ&ust=1713434868054000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODR7beAyYUDFQAAAAAdAAAAABAE"
     }
   ]
 }
