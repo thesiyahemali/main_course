@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=2
+        var y=12.5
+        let x1 = 123e5;
+        var a=new Number(16)
+
+        document.write(x+'<br>')
+        document.write(y+'<br>')
+        document.write(x1+'<br>')
+        document.write(a)
+
+
+        document.writeln('<h3> javascript constsnt </h3>')
+        document.writeln("<h4>MIN_VALUE: "+ + Number.MIN_VALUE+"</h4>");
+        document.writeln("<h4>MAX_VALUE "+ + Number.MAX_VALUE+"</h4>");
+        document.writeln("<h4>POSITIVE_INFINITY: "+ + Number.POSITIVE_INFINITY+"</h4>");
+        document.writeln("<h4>NEGATIVE_INFIITY: "+ + Number.NEGATIVE_INFINITY+"</h4>");
+        document.writeln("<h4>NAN: "+ + Number.isNaN+"</h4>");
+
+
+        document.writeln('<h3> javascript number methods </h3>')
+        document.writeln('<h3> isinfit method</h3>')
+        document.writeln('is 2 a finite? :'+Number.isFinite('2')+'<br>');
+        document.writeln('is h a finite? :'+Number.isFinite('h')+'<br>');
+        document.writeln('is -10 a finite? :'+Number.isFinite('-10')+'<br>');
+        document.writeln('is nan a finite? :'+Number.isFinite(NaN)+'<br>');
+        document.writeln('is (0,10) a finite? :'+Number.isFinite(0,10)+'<br>');
+        document.writeln('is (10,0) a finite? :'+Number.isFinite(10,0));
+
+
+        document.writeln('<h3> isinteger method</h3>')
+        document.writeln('is 2 an integer :'+Number.isInteger(2)+'<br>')
+        document.writeln('is 2 an integer :'+Number.isInteger(2.50)+'<br>')
+        document.writeln('is infinty an integer :'+Number.isInteger(Infinity)+'<br>')
+
+        document.writeln('<h3> parsefolat method</h3>')
+        document.writeln('convert "85" to folat 85 :'+Number.parseFloat(85)+'<br>')
+        document.writeln('convert "Hello" to int 85 :'+Number.parseFloat("Hello")+'<br>')
+        document.writeln('convert "55Hello" to int 85 :'+Number.parseFloat("55Hello")+'<br>')
+
+
+        document.writeln('<h3> parseint method</h3>')
+        document.writeln('convert "85" to int 85 :'+Number.parseInt(85)+'<br>')
+        document.writeln('convert "55Hello" to int 85 :'+Number.parseInt("55Hello")+'<br>')
+        document.writeln('convert "Hello" to int 85 :'+Number.parseInt("Hello")+'<br>')
+
+        document.writeln('<h3> toexponential method</h3>')
+        var a=2;
+        var b=5;
+        document.writeln('convert "2" to expontial number :'+a.toExponential(2)+'<br>')
+        document.writeln('convert "5" to expontial number :'+b.toExponential(5))
+
+        document.writeln('<h3> tofixed method</h3>')
+        document.write('value of pi is :'+ Math.PI.toFixed(2))
+
+        document.writeln('<h3> toprecison method</h3>')
+        document.write('value of pi is in string:'+ Math.PI.toPrecision(3))
+
+
+        document.writeln('<h3> tostring method</h3>')
+        document.write('value of "2" in string:'+ a.toString())
+
+
+
+    </script>
+</body>
+</html>

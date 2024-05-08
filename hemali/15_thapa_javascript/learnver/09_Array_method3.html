@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array m ethod 3</title>
+</head>
+<body>
+    <script>
+         document.write('<h3> of method()</h3>')
+
+          document.writeln('Array using of():'+Array.of(1,5,7,9,34,56))
+          console.log(Array.of(1,5,7,9,34,56));
+    </script>
+
+    <script>
+         document.write('<h3> push method()</h3>')
+          var arra1=[5,9,10,11]
+          arra1.push(12)
+          document.writeln('add using push():'+arra1)
+         
+         document.write('<h3> pop method()</h3>')
+          document.writeln('remove an element using pop():'+arra1.pop())
+          document.write('<br>')
+          document.writeln('remove an element using pop():'+arra1.pop())
+
+    </script>
+
+    <script>
+         document.write('<h3> reverse method()</h3>')
+         document.writeln('revrse an array using reverse():'+arra1.reverse())
+
+         document.write('<h3> reduce(function intial) method()</h3>')
+         var  arr2=[4,9,5,1]
+         var a=arr2.reduce(function(accumulator,cuurentvalue){
+            return accumulator+cuurentvalue;
+         })
+         document.writeln('result after reduce():'+a)
+    </script>
+
+    <script>
+         document.write('<h3> some method()</h3>')
+          var aar3=[51,53,66,77]
+          function test(argument){
+            return argument>50
+          }
+          var result=aar3.some(test)
+          document.writeln('<br> does array arr3 has all values > 50:'+result)
+    </script>
+
+     <script>
+         document.write('<h3> shift method()</h3>')
+          var arr3=['hemali','mirali','mira','avani','monika']
+          document.write(' remvoing the very first element of Array: '+arr3.shift())
+     </script>
+
+     <script>
+         document.write('<h3> slice method()</h3>')
+         var arr4=[1,5,8,0,2,6,9,10,22,55,88,99]
+         var sliceearray=arr4.slice(4,9)
+         document.write('sliced array :'+sliceearray)
+     </script>
+
+     <script>
+         document.write('<h3>  method  5()</h3>')
+
+         document.write('<h3> sort method ()</h3>')
+         var lanug=['html','css','java','paython','android']
+          document.write('sorted array :'+ lanug.sort())
+
+
+         document.write('<h3> splice method ()</h3>')  //array.splice(start,delte,elemnt je add karvo hoy te )
+         var weekdays=['monday','tusday','Thursday','Friday']
+         var addweekdays=weekdays.splice(2,0,'wensday')
+          document.write('add week days:'+weekdays+'<br>')
+
+         var weekdays=['monday','tusday','sturday','sunday','Thursday','Friday']
+         var addweekdays=weekdays.splice(2,2,'wensday')
+         document.write('add week days:'+weekdays)
+
+     </script>
+
+     <script>
+         document.write('<h3> tolocalstring method ()</h3>')
+         var weekdays=['monday','tusday','wensday','Thursday','Friday','saturday']
+         var str=weekdays.toLocaleString()
+         document.write('weekdays in string format:'+str)    
+         
+         document.write('<h3> tostring method ()</h3>')
+         var weekdays=['monday','tusday','sturday','sunday','Thursday','Friday']
+         document.write('weekdays in string format:'+weekdays.toString())    
+         
+     </script>
+
+     <script>
+         document.write('<h3> unshift method ()</h3>')
+           num1=[8,7,9]
+           var unshiftarray = num1.unshift(5)
+           document.write(num1)
+     </script>
+
+     <script>
+         document.write('<h3> values method ()</h3>')
+         var weekdays=['monday','tusday','wensday','Thursday','Friday','saturday']
+         var valuesarray=weekdays.values()
+         document.write('<br> after adding an interator to weekdays arrays:')
+         for(value of valuesarray){
+            document.write(value+'<br>')
+         }
+         console.log(valuesarray);
+
+
+         document.write(valuesarray.next().value+'<br>')
+     </script>
+</body>
+</html>

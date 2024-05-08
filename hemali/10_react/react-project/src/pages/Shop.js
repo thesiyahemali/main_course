@@ -12,7 +12,7 @@ const Shop = () => {
       <div className="background-img" style={{ backgroundColor: "#eeeeee" }}>
         <img
           loading="lazy"
-          src="../images/shop/shop_banner_character1.png"
+          src="https://themewagon.github.io/ultras/images/banner2.jpg"
           width={1759}
           height={420}
           alt="Pattern"

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ document.write('<h3>  string  replace  method </h3>')
+        str1='This Is LernEarn!'
+        document.writeln('Incrrect string is'+str1)
+        document.writeln('<br>corrected string is :'+str1.replace('Earn','vern'))
+
+
+        document.write('<h3>  string  substr  method </h3>')
+        document.writeln('new genrted string is:'+str1.substr(5,11))
+
+
+        document.write('<h3>  string  substring  method </h3>')
+        document.writeln('new genreated substring is:'+str1.substring(0,12))
+
+
+
+        document.write('<h3>  string  slice  method </h3>')
+         document.write('sliced string :'+str1.slice(0))
+         document.write('<br> sliced string :'+str1.slice(0,10))
+
+         document.write('<h3>  string  tolowercse  method </h3>')
+         str2='THIS IS THE LERNING JAVASCRIPT '
+         document.writeln('lowercsed string:'+str2.toLowerCase())
+         
+         document.write('<h3>  string  touppercse  method </h3>')
+         str3='this is uppercase'
+         document.writeln('uppercsed string:'+str3.toUpperCase())
+
+
+         document.write('<h3>  string  valueof  method </h3>')
+          str5=new String('This string  is define using object')
+          document.writeln('the value of str5 using valueof():'+str5.valueOf())
+
+          document.write('<h3>  string  split  method </h3>')
+          document.writeln('splited value of '+str5.split(' '))
+
+
+         document.write('<h3>  string  trim  method </h3>')
+         str6='       this is trim method             '
+         document.writeln( 'trim wthout space::'+str6.trim())
+
+
+         document.write('<h3>  string  padstart  method </h3>')
+        str7='hemali'
+        document.writeln('padstrt method:'+str7.padStart(10,0))
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3> window object method in alert</h3>
+    <input type="button" value="click me ! " onclick="message()" />
+
+    <h3> window object method in confrim</h3>
+    <input type="button" value=" are you sure ! " onclick="message()" />
+
+    <h3> window object method in prompte</h3>
+    <input type="button" value=" what is your age ! " onclick="prompte()" />
+
+    <h3> window object method in open</h3>
+    <input type="button" value="open in new tab ! " onclick="openee()" />
+
+    <h3> window object method in close</h3>
+    <input type="button" value="close ! " onclick="closee()" />
+
+    <h3> window object method in settimeout</h3>
+    <input type="button" value="setTimeout ! " onclick="time()" />
+
+    <input type="button" value="moveto ! " onclick="movetoee()" />
+
+
+  
+    <script>
+        // creating an alert with window object 
+        // window.alert('This is lernvern')
+        // alert('this is lernvern again')
+
+        function message(){
+            var temp=confirm("are you sure")
+            if(temp==true){
+                alert('the value is true')
+            }
+            else{
+                alert('the value is false')
+            }
+        }
+
+
+        function prompte(){
+            var temp1=prompt('What is Your Age?')
+            alert('user age is : '+temp1)
+            // document.write('user age is : '+temp1)
+        }
+
+        function openee(){
+            open("http://www.lernvern.com")
+        }
+
+         function closee()
+         {
+            close()
+         }
+        function time(){
+           setTimeout(
+            function(){
+                alert('this is the setimeout methid run')
+            },2000
+           )
+        }
+
+
+        function movetoee(){
+            moveTo()
+        }
+
+        
+    </script>
+</body>
+</html>

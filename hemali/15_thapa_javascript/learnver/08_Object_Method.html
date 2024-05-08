@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        console.log('<h3> assgin method () </h3>')
+        console.log('<h3> assgin method 1 () </h3>')
         var object1={
             a:1,
             b:2,
@@ -21,5 +21,76 @@
         var object3=Object.assign({c:5,d:6},object1)
         console.log(object1,object3);
     </script>
+
+<script>
+    console.log('<h3> create method 2 () </h3>')
+     function fruit(){
+         this.name='apple'
+     }
+     function fun(){
+        fruit.call(this)
+     }
+     fun.prototype=Object.create(fruit.prototype)
+     const app=new fun();
+      console.log(app );
+</script>
+
+<script>
+    console.log('<h3> freeze method 3 () </h3>')
+     const object5={
+          age:23
+     }
+      const object4=Object.freeze(object5);
+      object4. age =32
+      console.log(object4.age);
+
+      console.log('<h3> isfrozen method 3 () </h3>')// isfrone check karvu se se k nahi te aetle true male se 
+      console.log(Object.isFrozen(object4));
+</script>
+
+ <script>
+    console.log('<h3> is  method 2 () </h3>')
+     const object6={
+        agee:23
+     }
+     const object7={
+        agee:23
+     }
+     console.log(Object.is(object6.age,object7.age));
+    //  console.log(Object.isFrozen(object6)); flase aaeve
+
+ </script>
+
+ <script>
+    console.log('<h3>isExtensible  method 2 () </h3>')
+     const object8={
+
+     }
+     console.log(Object.isExtensible(object8));
+ </script>
+
+ <script>
+    console.log('<h3> seal method 2 () </h3>')
+     const object9={
+        name:'abc'
+     }
+    const object10=Object.seal(object9)
+    object10.name='xyz'
+    console.log(object10.name);
+
+    console.log('<h3> issealed method 2 () </h3>') //uper vala object ne check karo che se seal che k nahi 
+    console.log(Object.isSealed(object10));
+ </script>
+
+
+<script>
+    console.log('<h3> values method 2 () </h3>') 
+    const object11={
+        name:'abc',
+        b:23,
+        c:true
+    }
+    console.log(Object.values(object11));
+</script>
 </body>
 </html>

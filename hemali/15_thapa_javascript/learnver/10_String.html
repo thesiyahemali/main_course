@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- string lakhva na 2 ways se  -->
+    <script>
+      document.write('<h3> by string literal </h3>')
+      var str="hello"
+      var str1="how are you "
+     document.writeln(str+ ' ' + str1)
+
+     document.write('<h3>create string using new keyword </h3>')
+     var str2=new String('i an fine')
+     document.writeln(str2)
+    </script>
+
+
+<script>
+      document.write('<h3>  string method  </h3>')
+
+      document.write('<h3>  string charAt method </h3>')
+      var str='how are you'
+      document.writeln('charcter at 5th positin: '+str.charAt(5))
+
+      document.write('<h3>  string charcodeAt method </h3>')
+      document.writeln('charcter at 5th positin: '+str.charCodeAt(5))
+
+
+      str2='hemali'
+      str3='thesiya'
+      document.write('<h3>  string concat  method </h3>')
+      document.writeln(' conacat string is :'+ str2. concat(str3))
+
+
+      document.write('<h3>  string indexof  method </h3>')
+      document.writeln(' index of   in str 2 is :'+ str2.indexOf('m'))
+
+      document.write('<h3>  string  lastindexof  method </h3>')
+     document.writeln('last index of in str is:'+str.lastIndexOf('o'))
+     
+</script>
+
+<script>
+      document.write('<h3>  string  serch  method </h3>')
+      var str4='we are Learning javascript  .Javascript is a wonderful scripting language'
+      document.writeln('check if javascript exists in str4:'+str4.search('javascript'))
+
+
+      document.write('<h3>  string  match  method </h3>')
+     document.writeln(str4.match('Learning'))
+     document.writeln(' <br> '+str4.match(/learning/i))
+
+</script>
+
+   
+</body>
+</html>

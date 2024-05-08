@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          document.write('<h4> fill method () </h4>')
+        //    aama apde index ny apvi to badhi gaya ae changje thaye jase ane index apsu to jetli index api hase tya je changje thase khali 
+          var languages=['html','css','bostrap']
+        //   var result=languages.fill('javascript',1,3)
+           var result=languages.fill('javascript ')
+          document.writeln(result)
+    </script>
+
+    <script>
+          document.write('<h4> from method () </h4>')
+           const myarr=Array.from('hello')
+           document.writeln(myarr)
+    </script>
+
+    <script>
+          document.write('<h4> filter method () </h4>')
+          var nums=[12,33,44,55,77]
+          function check(value){
+            return value>30
+          }
+          document.writeln(nums.filter(check))
+    </script>
+
+    <script>
+          document.write('<h4> find method () </h4>')
+          var nums1=[12,33,44,55,77]
+           function checke(value){
+            return value>45
+           }
+           document.writeln(nums1.find(checke))
+    </script>
+
+    <script>
+          document.write('<h4> findindex method () </h4>')
+             var numers=[12,55,66,77,90]
+             function checked(value){
+              return value>45
+             }
+             document.writeln(numers.findIndex(checked))
+
+          document.write('<h4> foreach method () </h4>')
+          numers.forEach(function(value){
+            document.writeln(value)
+          })
+
+    </script>
+
+<script>
+      document.write('<h4> method () 3</h4>')
+
+      document.write('<h4> includes method ()</h4>')
+
+        var fruits=['Apple','baanaa','orange','kiwi']
+        var incldes=fruits.includes('apple')
+        document.writeln(incldes)
+</script>
+
+<script>
+      document.write('<h4> indexof method ()</h4>')
+        var cars=['odi','varna','hayundi','dhare']
+        var indeofe=cars.indexOf('dhare')
+        document.writeln(indeofe)
+</script>
+
+<script>
+      document.write('<h4> isarray method ()</h4>')
+       document.writeln(Array.isArray(1,2,34,5,8))
+       document.write("<br>")
+       document.writeln(Array.isArray(cars))
+</script>
+
+<script>
+      document.write('<h4> join method ()</h4>')
+        var carse1=['verna','odfi','hayundi']
+        var joine=carse1.join('  ,')
+        document.writeln(joine)
+
+      document.write('<h4> keys method ()</h4>')
+        var carsee=carse1.keys()
+        for (value of carsee){
+            document.write(value+'<br>')
+        }
+</script>
+
+<script>
+      document.write('<h4> lastindexof method ()</h4>')
+      var cars=['odi','varna','hayundi','dhare']
+        var lastindexof=cars.lastIndexOf('odi')
+        document.writeln(lastindexof)
+
+      document.write('<h4> map method ()</h4>')
+       var aarr=[2,5,7,9]
+       var maparray=aarr.map(value =>value+2)
+       document.write(maparray)
+</script>
+</body>
+</html>

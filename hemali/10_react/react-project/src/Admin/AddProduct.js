@@ -100,6 +100,7 @@ const AddProduct = () => {
                     required
                 >
                     <option value="">Select Category</option>
+                  
                     {cat.map((res) => (
                         <option key={res.id} value={res.name}>{res.name}</option>
                     ))}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        document.write('<h3> using date() </h3>')
+        var d = new Date();
+        document.writeln('today date is :' + d)
+
+        document.write('<h3> using date (year,month,day,hours,minutes,seconds,milliseconde )() </h3>')
+        var d2 = new Date(2018, 11, 1, 12, 56, 5, 50)
+        document.writeln('date :' + d2)
+
+
+        document.write('<h3> using date  date string() </h3>')
+        var d3 = new Date('october 12,2014 12:56:03')
+        document.writeln('date :' + d3)
+
+
+        document.write('<h3> using date  date string() </h3>')
+        var d4 = new Date(-100000)
+        document.writeln('date' + d4)
+    </script>
+
+
+    <script>
+        document.write('<h3> date method() </h3>')
+        document.write('<h3> getDate() </h3>')
+        var d5=new Date();
+        document.writeln('today day is:'+d5.getDay()+'<br>')
+        document.writeln('today date is:'+d5.getDate()+'<br>')
+        document.writeln('today month is:'+d5.getMonth()+'<br>')
+        document.writeln('today fullyear is:'+d5.getFullYear()+'<br>')
+        document.writeln('today hours is:'+d5.getHours()+'<br>')
+        document.writeln('today minutes is:'+d5.getMinutes()+'<br>')
+        document.writeln('today seconds is:'+d5.getSeconds()+'<br>')
+        document.writeln('today millisecods is:'+d5.getMilliseconds()+'<br>')
+
+
+
+        document.writeln('today datestring is:'+d5.toDateString()+'<br>')
+        document.writeln('today tostring is:'+d5.toString()+'<br>')
+        document.writeln('today timestring:'+d5.toTimeString()+'<br>')
+        
+
+    </script>
+
+
+<script>
+    // set method 
+    document.write('<h3> set method() </h3>')
+
+     const t=new Date()
+     t.setFullYear(2002)
+     document.write(t)
+</script>
+
+</body>
+
+</html>

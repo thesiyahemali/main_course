@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example array</title>
+</head>
+<body>
+    <script>
+      document.write('<h3> by array literal  1 ways </h3>')
+      var employee=['abc','def','ghf']
+      for(value of employee){
+        document.writeln(value+'<br>')
+      }
+    </script>
+
+    <script>
+      document.write('<h3> creating array using new keyword 2 ways </h3>')
+       var fruits=new Array();
+       fruits[0]='apple'
+       fruits[1]='banana'
+       fruits[2]='orange'
+
+       for(value of fruits){
+        document.writeln(value+'<br>')
+       }
+    </script>
+
+    <script>
+      document.write('<h3> creating array using constructore </h3>')
+       var cars=new Array('xuv','swift','verna')
+       for(value of cars){
+         document.writeln(value+'<br>')
+       }
+    </script>
+</body>
+</html>

@@ -49,6 +49,8 @@ const Loginregister = () => {
          if(logindata.data[0].password == loginData.password){
             //  local stroge ma store kari ne logout per gaya 
              localStorage.setItem('user',logindata.data[0].name);
+            //  addtocart mate aya localstore ma store karvu se 
+            localStorage.setItem('userid',logindata.data[0].id)
              localStorage.setItem('admin',logindata.data[0].isadmin);
 
              if(logindata.data[0].isadmin){

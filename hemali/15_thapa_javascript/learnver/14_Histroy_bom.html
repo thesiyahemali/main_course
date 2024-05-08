@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h3> histry of method in go</h3>
+    <input type="button" value="got to previous page" onclick="gobackee">
+
+    <h3> histry of method in forward</h3>
+    <input type="button" value="got to next page" onclick="forward">
+
+    
+    <h3> histry of method in forward</h3>
+    <input type="button" value="got to go page" onclick="fungo">
+
+    
+    <script>
+       document.write('<h3> histry of property in length</h3>')
+        document.write('current page history:'+history.length)
+
+
+        function gobackee(){
+            history.back()
+        }
+
+        function forward(){
+            history.forward()
+        }
+
+        function fungo(){
+            history.go(-2)
+        }
+
+    </script>
+</body>
+</html>
