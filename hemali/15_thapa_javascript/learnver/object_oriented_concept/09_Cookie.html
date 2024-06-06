@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie example</title>
+</head>
+<body>
+    <input type="button" value="Set Cookie" onclick="setCookie()" />
+    <input type="button" value="get Cookie" onclick="getCookie()" />
+
+    <script>
+
+        // cookie localstorage ke ni hare kam karvi tayre nathi thaticookie se aetle tema open live server ny karva nu 
+        // cookie ne run karva mate server ni jajur hoy se 
+      function setCookie(){
+        document.cookie="companyName=LernVern"
+      }
+
+      function getCookie(){
+         if(document.cookie.length !=0){
+            alert(document.cookie);
+         }else{
+            alert('Cookie is not set')
+         }
+      }
+    </script>
+</body>
+</html>

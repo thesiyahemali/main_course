@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weakmap method in jav ascript </title>
+</head>
+<body>
+    <script>
+        document.write("<h3>set method </h3>")
+        var wm=new WeakMap();
+        var object1={};
+        var object2={};
+        var object3={};
+
+        wm.set(object1,"HTML");
+        wm.set(object2,"CSS");
+        wm.set(object3,"Javascript");
+
+        // get method no use karo se 
+        // document.writeln(wm.get(object1)+"<br>")
+        // document.writeln(wm.get(object2)+"<br>")
+        // document.writeln(wm.get(object3)+"<br>")
+
+        // has method no use aya karlo se 
+        document.writeln("to check if 'html ' exist or not: "+wm.has(object1)+"<br>")
+    </script>
+
+    <script>
+                document.write("<h3>delete method </h3>")
+        var wm=new WeakMap();
+        var object1={};
+        var object2={};
+        var object3={};
+
+        wm.set(object1,"HTML");
+        wm.set(object2,"CSS");
+        wm.set(object3,"Javascript");
+
+       document.write("Before deleting object2:"+wm.get(object2)+"<br>")
+       wm.delete(object2)
+       document.write("After deleting object2 "+wm.get(object2)+"<br>")
+    </script>
+</body>
+</html>

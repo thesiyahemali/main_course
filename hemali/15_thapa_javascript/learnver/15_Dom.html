@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example document object model</title>
+</head>
+
+<body>
+    <script>
+        function showme() {
+            var name = document.form1.name.value;
+            alert('welcome: ' + name);
+            // document.write('welcome:'+name)
+        }
+
+        //  getElementById tho example karu te function se 
+        function showtele() {
+            var Telephone = document.getElementById("Telephone").value
+            alert('Telephone Number is:' + Telephone)
+        }
+
+        //  getElementByclassname tho example karu te function se 
+        var x = document.getElementsByClassName('abc')
+        alert(x[0].innerText)
+
+        //  getElementByname tho example karu te function se 
+        function showname(){
+            var x=document.getElementsByName('gender')
+            alert('Total Genders availble :'+x.length)
+        }
+        //  getElementBytagname tho example karu te function se 
+        function funcount(){
+            var y=document.getElementsByTagName('p')
+            alert(y.length)
+        }
+      
+    </script>
+
+    <h3>Basic example input mathi value lava te</h3>
+    <form action="action" name="form1">
+        Enter your name:<input type="text" name="name" />
+        <br></br>
+        <input type="button" value="click me !" onclick=" showme()" />
+
+        <br></br>
+        <h3>getElementById example </h3>
+        Enter Telephone Number :<input type="text" id="Telephone" />
+        <br><br>
+        <input type="button" value="Show Concat Number" onclick="showtele()" />
+    </form>
+    <br>
+    <h3>getElementByclassname example </h3>
+    <div class="abc" name="abced">
+        this is a class
+    </div>
+<br><br>
+<h3>getElementByname example </h3>
+    <form action="">
+     Male:<input type="radio" name="gender" value="Male"><br>
+     Female:<input type="radio" name="gender" value="Female"><br><br>
+     <input type="button" value="Show Data" onclick="showname()" />
+    </form>
+    <br>
+    <br>
+
+<h3>getElementsByTagName example </h3>
+
+    <P>THIS IS A P TAGE</P>
+    <P>THIS IS A P TAGE</P>
+    <P>THIS IS A P TAGE</P>
+    <P>THIS IS A P TAGE</P>
+    <P>THIS IS A P TAGE</P>
+
+    <form action="" >
+        <button type="button" value="count tag number" onclick="funcount()">count tag number</button>
+    </form>
+
+</body>
+
+</html>

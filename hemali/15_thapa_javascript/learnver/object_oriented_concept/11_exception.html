@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example try...catch</title>
+</head>
+
+<body>
+  <script>
+    // koy line pachi error hoy to te pachi line na code run na thaye tena mate handle karvo pade se code ne aetle try catch no use karvi siye 
+    //  var a=['a','b','c','d','e','f','g','h','i','j']
+    //  document.write("hello")
+    //  console.log(a);
+    //  console.log(b);
+    //  document.write("error")
+
+
+    try {
+      var a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+      document.write("hello")
+      console.log(a);
+      console.log(b);
+    } catch (e) {
+      alert("Error is :" + e.message)
+    }
+    document.write("hiiii")
+
+  </script>
+
+  <h3>example throw</h3>
+
+  Please Enter a number between 5 to 10
+  <input type="text" id="id1">
+  <button type="button" onclick="OnClick()">Validate</button>
+  <p id="message"></p>
+  <script>
+    function OnClick() {
+      var message = document.getElementById("message");
+      message.innerHTML = ''
+      try {
+        var x = document.getElementById("id1").value
+        if (x == "") throw "is Empty"
+        if (isNaN(x)) throw "is not a number"
+        if (x > 10) throw "number should be greater than 10"
+        if (x < 5) throw "number should be greater than 5"
+
+      } catch (e) {
+        document.getElementById("message").innerHTML = "input" + e;
+      }
+    }
+
+  </script>
+  <br>
+  
+</body>
+
+</html>

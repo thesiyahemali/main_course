@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prtotype example</title>
+</head>
+
+<body>
+    <script>
+        // aa exammple ma function banvu se protype thi 
+        // aa function banvu se 
+        function Employee(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+             
+            // function fullname(){
+            //     return this.firstname + " " + this.lastname;
+            // }
+        }
+        // aa method banvi se prototype thi 
+        Employee.prototype.fullname = function () {
+            return this.firstname + " " + this.lastname
+        }
+
+        // aa object banvelu se 
+        var emp1 = new Employee('hemali', "thesiya")
+        var emp2 = new Employee("mirali", "moradiya")
+        // aa print karvu se 
+        document.write(emp1.fullname()+"<br>")
+        document.write(emp2.fullname() +"<br>")
+
+
+        // aa emaple koy property ray gay hoy incase to aema add karvi hoy to protype ni madade thi thaye se 
+
+ function Employee(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+           
+        }
+        Employee.prototype.company ="Lernvern"
+
+        var emp1 = new Employee('hemali', "thesiya")
+        var emp2 = new Employee("mirali", "moradiya")
+
+        document.write(emp1.firstname+ " "+ emp1.lastname+ " " + emp1.company + "<br>")
+        document.write(emp2.firstname+ " "+ emp2.lastname+ " " + emp2.company + "<br>")
+
+    </script>
+</body>
+
+</html>

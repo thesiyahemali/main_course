@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map method in javascript</title>
+</head>
+<body>
+    
+    <script>
+        document.write("<h3>set get foreach method</h3>")
+        var m=new Map()
+        m.set(1,"HTML")
+        m.set(2,"CSS")
+        m.set(3,"javascript")
+
+        document.write("values:"+m.get(1)+"<br>")
+        document.write("values:"+m.get(2)+"<br>")
+        document.write("values:"+m.get(3)+"<br>")
+      
+        // m.forEach(function(value){
+        //   document.writeln(value)
+        // })
+
+    </script>
+
+<script>
+       document.write("<h3>clear method</h3>")
+        var m1=new Map()
+        m1.set(1,"javascript")
+        m1.set(2,"html")
+        m1.set(3,"react")
+ 
+        document.writeln("size of the map before clear():"+m1.size+"<br>")
+        m1.clear()
+        document.writeln("size of the map after clear():"+m1.size)
+    </script>
+
+     
+<script>
+    document.write("<h3>delet method</h3>")
+     var m2=new Map()
+     m2.set(1,"banana")
+     m2.set(2,"apple")
+     m2.set(3,"mango")
+    //   aama size check kari se 
+     document.writeln("before deleting 'apple' from 'm2':"+m2.size+"<br>")
+     m2.delete(2)
+     document.writeln("after deleting 'apple' from 'm2'():"+m2.size)
+ </script>
+
+<script>
+    document.write("<h3>Enteries method</h3>")
+    var m3=new Map()
+    m3.set(1,"HTML")
+    m3.set(2,"CSS")
+    m3.set(3,"javascript")
+     var iterator=m3.entries();
+     for(let i=0; i<m3.size;i++){
+        document.write(iterator.next().value+"<br>")
+     }
+    </script>
+
+    <script>
+  document.write("<h3>Enteries method</h3>")
+    var m4=new Map()
+    m4.set(1,"HTML")
+    m4.set(2,"CSS")
+    m4.set(3,"javascript")
+    document.write('to check if values "CSS" exist in map "m4" :'+m4.has(2)+"<br>")
+    document.write('to check if values "CSS" exist in map "m4" :'+m4.has(5)+"<br>")
+    </script>
+
+    
+<script>
+    document.write("<h3>keys method</h3>")
+    var m5=new Map()
+    m5.set(1,"HTML")
+    m5.set(2,"CSS")
+    m5.set(3,"javascript")
+     var iterator=m5.keys();
+     for(let i=0; i<m5.size;i++){
+        document.write(iterator.next().value+"<br>")
+     }
+    </script>
+
+    <script>
+        document.write("<h3>values method</h3>")
+    var m6=new Map()
+    m6.set(1,"HTML")
+    m6.set(2,"CSS")
+    m6.set(3,"javascript")
+     var iterator=m6.values();
+     for(let i=0; i<m6.size;i++){
+        document.write(iterator.next().value+"<br>")
+     }
+    </script>
+</body>
+</html>

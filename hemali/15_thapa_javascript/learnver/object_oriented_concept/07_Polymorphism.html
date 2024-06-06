@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ploymorphism example</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write('<h3> simple example polymorphism </h3>')
+        class A {
+            display() {
+                document.write("A class's display method is called ")
+            }
+        }
+        class B extends A {
+
+        }
+        var b = new B()
+        b.display()
+    </script>
+
+    <script>
+        document.write('<h3> array ma object banvi ne create karo </h3>')
+        class A1 {
+            display() {
+                document.write("A class's display method is called ")
+            }
+        }
+        class B1 extends A1 {
+            display() {
+                document.write("B class's display method is callled")
+
+            }
+        }
+        var a = [new A1(), new B1()]
+        a.forEach(function (message) {
+            message.display()
+            document.write('<br>')
+        })
+    </script>
+
+    <script>
+        document.write('<h3> prototype base approch </h3>')
+        function C() {
+
+        }
+        C.prototype.display = function () {
+            return "C clas's display method is called ";
+        }
+        function D() {
+
+        }
+        D.prototype=Object.create(C.prototype); // function ka object banana k liye ceate method nu use thaye 
+        var a=[new C(), new D()];
+        a.forEach(function(message){
+            document.write(message.display() +"<br>")
+        })
+    </script>
+</body>
+
+</html>

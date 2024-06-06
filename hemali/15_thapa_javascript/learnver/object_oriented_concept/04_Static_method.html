@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static method example</title>
+</head>
+<body>
+    <script>
+        document.write('<h3>static method kevi rite creste karvi</h3>')
+        class Test{
+            // aa method banvi se static ni 
+            static display(){
+                 return "A static method is called "
+
+            }
+        }
+        document.write(Test.display())   //aya print karvi se 
+
+        document.write('<h3>static method ek karta vadhre hoy ek class ma </h3>')
+        class Test1{
+            // aa method banvi se static ni 
+            static display1(){
+                 return "A static method 1 is called "
+
+            }
+            static display2(){
+                 return "A static method 2 is called "
+
+            }
+        }
+        document.write(Test1.display1()+"<br>")
+        document.write(Test1.display2()+"<br>")
+
+
+        document.write('<h3>method nu name same hoy static je hoy bey te example</h3>') //last ma hase te call thase aama 
+        class Test2{
+            // aa method banvi se static ni 
+            static display3(){
+                 return "A static method 1 is called "
+
+            }
+            static display3(){
+                 return "A static method 2 is called "
+
+            }
+        }
+        document.write(Test2.display3()+"<br>")
+        
+
+
+        document.write('<h3>class hase construcotre hase staic method hase </h3>') // means k construcotre thi apde staic mehod call karvi savi 
+
+        class Test3{
+
+            constructor(){
+                document.write(Test3.display4()+"<br>")// class thi pan construcotre ko call karva rahe he 
+                document.writeln(this.constructor.display4())   // constructore thi pan display method call karvi savi
+            }
+          
+            static display4(){
+                 return "A static method 1 is called "
+
+            }
+            
+        }
+        var t=new Test3();
+
+        document.write('<h3> ek static methid and non static method</h3>') 
+       class Test4{
+         static display5(){
+            return "static method called"
+         }
+         show(){
+            document.write(Test4.display5()+'<br>')
+            return "non static method called"
+         }
+       }
+       var t=new Test4();
+       t.show()
+
+    </script>
+</body>
+</html>

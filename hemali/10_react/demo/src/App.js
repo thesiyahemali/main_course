@@ -25,10 +25,10 @@ function App() {
   };
   return (
     <>
-    {/* <Head/> */}
-      {/* <Header /> */}
+    {/* <Head/>
+      <Header />
 
-      {/* <Silder/>
+      <Silder/>
        <Card /> */}
       {/* <Head/>
        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aut velit sint explicabo eos culpa eaque commodi consequatur atque mollitia magnam eum, asperiores obcaecati quaerat animi, molestias cum nulla beatae!</h1> */}
@@ -45,7 +45,7 @@ function App() {
         </Route>
       </Routes> */}
       {/* <Viewsatae /> */}
-      {/* <Props webname={name} Props incment={inc} myemail={email} /> */}
+      <Props webname={name} Props incment={inc} myemail={email} />
       {/* <Userrafcnce /> aama khali value chanje thase listing ny thaye todo ni jem userrafcnce thi  */}
       {/* <Todolist/> */}
       {/* <Event/> */}

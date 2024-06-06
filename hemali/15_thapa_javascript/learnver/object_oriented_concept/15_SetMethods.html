@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets Method in javascript</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>Add Method</h3>")
+        var s=new Set();
+        s.add("Html")
+        s.add("CSS")
+        s.add("Javascript")
+        s.add("React")
+        s.add("css") //unqie value se aetle 2 same value add nahi thaye 2 var css add nahi thaye
+        document.write("Size of the set before clear() applied:"+s.size+"<br>")    
+        for(value of s){
+            document.write(value+"<br>")
+        }
+
+        document.write("<h3>Clear Method</h3>")
+
+        s.clear()
+        document.write("Size of the set after clear() applied:"+s.size)    
+
+
+    </script>
+      
+    <script>
+        document.write("<h3>Delet Method</h3>")
+        
+        var s1=new Set();
+        s1.add("C++")
+        s1.add("C")
+        s1.add("laravel")
+        s1.add("PHP" )
+        
+        document.write("Before deleting 'PHP' from set:"+"<br>")    
+        for(value of s1){
+            document.write(value+"<br>")
+        }
+
+        document.write("<br>")
+
+        s1.delete("PHP")
+        document.write("After deleting 'PHP' from set:"+"<br>")    
+        for(value of s1){
+            document.write(value+"<br>")
+        }
+    </script>
+
+    <script>
+        document.write("<h3>Enteries Method</h3>")
+        var s2=new Set();
+
+        s2.add("orange");
+        s2.add("banana");
+        s2.add("apple");
+
+        var iteration=s2.entries()
+        for(value of iteration){
+            document.write(value +"<br>")
+        }
+
+    </script>
+
+    <script>
+         document.write("<h3>ForEach Method</h3>")
+         var s3=new Set();
+         s3.add("grapes");
+         s3.add("mengo");
+         s3.add("fruits");
+         s3.forEach(function(value1,value2,s3){
+           document.writeln("key["+value1+"]=" +value2+"<br>")
+         })
+    </script>
+
+    <script>
+        document.write("<h3>Has Method</h3>")
+         var s4=new Set();
+         s4.add("pan");
+         s4.add("paper");
+         s4.add("books");
+        
+         document.write("To check whther 'paper' exist in set 's4':"+s4.has("paper"))
+    </script>
+
+<script>
+    document.write("<h3>values Method</h3>")
+     var s5=new Set();
+     s5.add("coffe");
+     s5.add("cold");
+     s5.add("hot");
+     var iteratore=s5.values()
+    //  document.write("values in iterator:"+iteratore.next().value+"<br>")
+    //  document.write("values in iterator:"+iteratore.next().value+"<br>")
+    //  document.write("values in iterator:"+iteratore.next().value+"<br>")
+
+     for(let i=0; i<s5.size;i++){
+        document.write("value in iterator:"+iteratore.next().value+"<br>")
+     }
+      
+</script>
+</body>
+</html>

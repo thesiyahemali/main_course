@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example inheritance built-in class</title>
+</head>
+<body>
+    <script>
+        document.write('<h3>built-in class </h3>')  // je jate pelthi banlo hoy se class te date aeno child moment class banvo se 
+        class Momnet extends Date{
+            constructor(){
+                super()
+            }
+        }
+        var m=new Momnet()
+        document.write("Today's Date:"+m.getDate()+" -"+(m.getMonth()+1)+ "-"+m.getFullYear())
+    </script>
+
+    <script>
+        document.write("<h3>custom class</h3>")
+        class Bike{
+            constructor(){
+                this.companyName="Honda"
+            }
+        }
+        class Vehical extends Bike{
+            constructor(name,price){
+                super()
+                this.name=name;
+                this.price=price
+            }
+        }
+        var v1=new Vehical ('Shine',70000)
+        document.writeln("Bike Name:"+v1.name+'<br>')
+        document.writeln("Bike Price:"+v1.price+'<br>')
+        document.writeln("Compant Name:"+v1.companyName+'<br>')
+
+    </script>
+
+    <script>
+        document.write('<h3>prototype based approach example</h3>')
+        function Bikee(company){
+            this.company=company;
+        }
+        Bikee.prototype.getCompany=function(){
+            return this.company
+        }
+        function Vehicall(name,price){
+            this.name=name;
+            this.price=price
+        }
+        var Bike1=new Bikee("honda")
+        Vehicall.prototype=Bike1
+
+        var v2=new Vehicall("shine",70999)
+        document.writeln("Bike Name:"+v2.name+'<br>')
+        document.writeln("Bike Price:"+v2.price+'<br>')
+        document.writeln("Compant:"+v2.company+'<br>')
+    </script>
+</body>
+</html>

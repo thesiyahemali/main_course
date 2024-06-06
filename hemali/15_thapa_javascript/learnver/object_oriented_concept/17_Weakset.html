@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weakset method</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>add has delete method</h3>")
+        var w=new WeakSet();
+        var object1={}
+        var object2={}
+
+        document.writeln("Before deleting object2 <br><br>")
+        w.add(object1)
+        w.add(object2)
+
+        document.writeln("To check id 'object1' exist in weakset 'w' :"+w.has(object1)+"<br>")
+        document.writeln("To check id 'object2' exist in weakset 'w' :"+w.has(object2)+'<br>'+"<br>")
+
+        document.write("After deleting object2 <br><br>")
+        w.delete(object2)
+
+        document.writeln("To check id 'object1' exist in weakset 'w' :"+w.has(object1)+"<br>")
+        document.writeln("To check id 'object2' exist in weakset 'w' :"+w.has(object2))
+
+    </script>
+</body>
+</html>

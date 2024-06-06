@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abstract example</title>
+</head>
+
+<body>
+    <script>
+        // abstract class instance nahi banya jata iska example he means k object ny banajata 
+        // aa example ma error aaevse 
+        function Vehical() {
+            this.Vehical = VehicalName;
+            throw new Error("you cannot create instce of abstrct class")
+        }
+        Vehical.prototype.display = function () {
+            return this.VehicalName;
+        }
+        var v1 = new Vehical()
+    </script>
+
+    <script>
+        // example 2
+        // aa abstrct class bano se 
+        function Vehicale() {  // aa function banu   
+            this.VehicalName = VehicalName;
+            throw new Error("you cannot create instce of abstrct class")
+        }
+        Vehicale.prototype.display = function () { // function banu teni display  method bani
+            return "vehical is :" + this.VehicalName
+        }
+        function Bike(VehicalName) {
+            this.VehicalName = VehicalName;
+        }
+        Bike.prototype = Object.create(Vehicale.prototype)  // vehicle ne parent class banvo se bike no
+        var bikee = new Bike("honda")
+        document.write(bikee.display())
+        document.write("<br>")
+
+    </script>
+
+    <script>
+        //  aa example ma abstrct class se ae kone belong kare se tena mate se child class k parent class ne 
+        function Vehicale() {  // aa function banu   
+            this.VehicalName = VehicalName;
+            throw new Error("you cannot create instce of abstrct class")
+        }
+        Vehicale.prototype.display = function () { // function banu teni display  method bani
+            return "vehical is :" + this.VehicalName
+        }
+        function Bike(VehicalName) {
+            this.VehicalName = VehicalName;
+        }
+        Bike.prototype = Object.create(Vehicale.prototype)  // vehicle ne parent class banvo se bike no
+        var bikee = new Bike("honda")
+        document.write(bikee instanceof Vehical);
+        document.write("<br>")
+        document.write(bikee instanceof Bike);
+
+    </script>
+</body>
+
+</html>

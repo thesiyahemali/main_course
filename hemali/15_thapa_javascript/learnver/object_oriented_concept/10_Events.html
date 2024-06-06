@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event example</title>
+    <style>
+        .rect{
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body onload="MyFunction()" onunload="onunloaded()"  onresize="onResize()">
+   <h3>Keyborad event</h3>
+
+    <input type="button" value="onclick" onclick="changebackgrounde()"/><br><br>
+    <input type="button" value="dbclick" ondblclick="changecolor()"/><br><br>
+
+    <input type="button" value="onMouseDown" onmousedown="onMouseDown()"/><br><br>
+    <input type="button" value="onMouseUp" onmouseup="onMouseUp()"/><br><br>
+
+    <input type="button" value="onmousemove" onmousemove="onMouseMove()"/><br><br>
+
+
+    <div class="rect" onmouseover="onMouseover()"  onmouseout="onMouseOut()"><br><br>
+
+
+
+    </div>
+
+    <script>
+
+       function changebackgrounde(){
+         document.body.style.backgroundColor='yellow'
+       }
+
+       function changecolor(){
+        document.body.style.backgroundColor='red'
+       }
+
+       function onMouseover(){
+        document.body.style.backgroundColor="green"
+       }
+
+       function onMouseOut(){
+        document.body.style.backgroundColor='pink'
+       }
+
+       function onMouseDown(){
+         alert('Mouse Down event is fired')
+       }
+
+       function onMouseUp(){
+         document.body.style.backgroundColor='purple'
+       }
+
+       function onMouseMove(){
+        document.body.style.backgroundColor='black'
+       }
+    </script>
+  <h3>Keyborad event</h3>
+
+   <input type="text"  onkeydown="onKeyDown()" onkeyup="onKeyUP()"><br><br>
+   <input type="text"  onkeypress="myfunction()" >
+
+   <script>
+       function onKeyDown(){
+         document.body.style.backgroundColor='Yellow'
+       }
+
+       function onKeyUP(){
+         document.body.style.backgroundColor='green'
+       }
+
+       function myfunction(){
+        alert('on key press event')
+       }
+   </script>
+
+<h3>form event</h3>
+
+   <form action="" onsubmit="onSubmit()" >
+      <input type="text" onfocus="onFocus()"  onblur="onBlur()">
+
+
+        <select name="" id="mydrop" onchange="onChangje()">
+         <option value="">--select--</option>
+         <option value="">male </option>
+         <option value="">female</option>
+       
+        </select>
+       <input type="submit" value="submit">
+   </form>
+
+<script>
+   function onFocus(){
+      document.body.style.backgroundColor="lightpink"
+   }
+
+   function onBlur(){
+    document.body.style.backgroundColor="white"
+   }
+
+   function onChangje(){
+    document.body.style.backgroundColor="lightgreen"
+   }
+   function onSubmit(){
+    alert("Form submiteed successfully")
+   }
+
+</script>
+
+    <h3>window /document event</h3>
+    <script>
+         function MyFunction(){  // aa function body ma muku se uper kem k jayre bowser load tthase tayre je aa event run thase 
+            alert("Window is loaded")
+         }
+
+         function onunloaded(){  // ama ky run ny thaye kem k close thaye jay se window aetle
+            alert("window is colsed")
+         }
+
+         function onResize(){  // ama minimum kari ne tayre color changje thase
+             document.body.style.backgroundColor="lightgreen"
+         }
+    </script>
+</body>
+</html>

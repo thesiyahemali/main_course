@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .main {
+            text-align: center;
+            border: 1px solid black; /* Or any valid color */
+            background-color: antiquewhite;
+            width: 500px;
+            height: 200px;
+            padding-top: 5px;
+            margin-left: 40%;
+        }
+        form {
+            text-align: center;
+        }
+        #eorretelephone{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Registration Form</h3>
+        <form  name="myform"  onsubmit=" validateForm()">
+           Telephone Number<input type=" text" name="telephone"><br><span id="eorretelephone"></span>
+<br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var telephone=document.myform.telephone.value
+           if( isNaN){
+             document.getElementById('eorretelephone').innerText="Enter Telephone Number is not correct"
+             return false
+           }else{
+            return true
+           }
+            
+        }
+    </script>
+</body>
+</html>

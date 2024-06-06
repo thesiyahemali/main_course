@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Finally</title>
+</head>
+<body>
+    <h3>Example Finally</h3>
+    <p>Please Enter a number between 5 to 10:</p>
+    <input type="text" id="id1">
+    <button type="button" onclick="OnClick()">Validate</button>
+    <p id="message"></p>
+    <p id="input1"></p>
+    <script>
+      function OnClick() {
+        var input = document.getElementById("input1");
+        var message = document.getElementById("message");
+        message.innerHTML = '';
+        var x = document.getElementById("id1").value;
+        try {
+          if (x === "") throw "is empty";
+          if (isNaN(x)) throw "is not a number";
+          x = Number(x); // Convert x to a number for comparison
+          if (x > 10) throw "should be less than or equal to 10";
+          if (x < 5) throw "should be greater than or equal to 5";
+          message.innerHTML = "Input is valid: " + x;
+        } catch (e) {
+          message.innerHTML = "Input " + e;
+        } finally {
+          input.innerHTML = "Input value: " + x;
+        }
+      }
+    </script> 
+</body>
+</html>

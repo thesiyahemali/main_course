@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promise example</title>
+</head>
+
+<body>
+  <p id="result"></p>
+
+  <script>
+    function display(demo) {
+      document.getElementById("result").innerHTML = demo
+    }
+
+    let promise = new Promise(function (myReslove, myReject) {
+      let x = 1;
+      if (x == 1) {
+        myReslove("Ok")
+      } else {
+        myReject("Error")
+      }
+    });
+    promise.then(
+      function (value) { display(value); },
+      function (error) { display(error); }
+    )
+  </script>
+
+  <h3>example 2 in settimeout callbacks thi </h3>
+  <p>The result will be display after 3 seconds</p>
+  <p id="result1"></p>
+  <script>
+    setTimeout(function(){
+      myfuction("Lernvern is awsome ! !")
+    },3000)
+
+     function myfuction(value){
+       document.getElementById("result1").innerHTML=value
+     }
+  </script>
+
+<h3>promise thi example set timeout</h3>
+<p id="result2"></p>
+<script>
+let promisee=new Promise(function(Reslove,Reject){
+    setTimeout(function(){
+      Reslove("Lernvern is awsome ! ! !")
+    },5000)
+})
+
+promisee.then(function(value){
+  document.getElementById("result2").innerHTML=value
+
+}
+)
+</script>
+</body>
+
+</html>

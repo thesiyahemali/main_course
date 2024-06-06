@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emaple of class</title>
+</head>
+
+<body>
+    <script>
+        // aa class se 
+        document.write('<h3>class delcartion</h3>')
+        class Employee {
+
+            //koy class ne access karv MATE object banvo pade 
+            // object banava mate construcotr thi class banse 
+            constructor(id, name) {
+                this.id = id;
+                this.name = name
+            }
+
+            // aya method banse 
+            details() {
+                document.writeln(this.id + " " + this.name + "<br>")
+            }
+        }
+
+        // class ne access karva mate object banvi siye ayaa 
+        // je uper apdo construcotre se tene access karva mate je class nu name hoy te lakhva nu new keyword pachi 
+        //    object1 .details ae apda class no object se details method access kari sakvi 
+        var object1 = new Employee(1, "ABC")
+        object1.details();
+        var object2 = new Employee(2, "DEF" )
+        object2.details()
+
+
+        document.write('<br>')
+
+        //   1  // unnamed class create emaple
+        // aama baiji var object ny bani sake aetle undefine aaevse  
+        document.write('<h3>unnamed class </h3>')
+
+        var abc = class {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+        }
+        // var obj = new abc(1, "Hemali"); 
+        // document.writeln(obj.name + "<br>");
+        document.writeln(abc.name + "<br>")
+        document.writeln(abc.id +'<br>' )
+
+      document.write('<br>')
+        // 2 re-declaring class 
+        // 1 example nunamed class karu toy bane object acces thayu aena mate se 
+        // 2example redeclare mate use thaye se 
+       
+        document.write('<h3> nunamed class karu toy bane object acces thayu aena mate se </h3>')
+        var emp =class {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name
+            }
+            details() {
+                document.writeln(this.id + " " + this.name + "<br>")
+            }
+        }
+        var object1 = new emp(1, "ABC")
+        object1.details();
+        var object2 = new emp(2, "DEF" +"<br>")
+        object2.details()
+// exampl2
+document.write('<h3>redelcring class </h3>')
+        var emp =class {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name
+            }
+            details() {
+                document.writeln(this.id + " " + this.name + "<br>")
+            }
+        }
+        var object1 = new emp(3, "ghf")
+        object1.details();
+        var object2 = new emp(4, "hig")
+        object2.details()
+
+document.write('<br>')
+        // 3 named class expression 
+        document.write('<h3>named class expression </h3>')
+        var abc = class Employeee {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+        }
+        document.write(abc.name)
+        document.write(Employeee.name)
+    </script>
+</body>
+
+</html>

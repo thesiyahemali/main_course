@@ -30,7 +30,7 @@ function App() {
   
      {/* <Forward/>ForwardRef_Hook no use kari ne karvu se example  */}
 
-     {/* <UseMemo/>     */}
+     <UseMemo/>    
      {/* Use_Memo_Hook no use karvu se  */}
 
      {/* <First/> */}

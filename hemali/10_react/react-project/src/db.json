@@ -76,6 +76,20 @@
       "email": "he@gmail.com",
       "password": "12345",
       "isadmin": false
+    },
+    {
+      "id": "cc42",
+      "name": "mirali",
+      "email": "thesiya@gmail.com",
+      "password": "12345",
+      "isadmin": false
+    },
+    {
+      "id": "b524",
+      "name": "monika",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "12345678",
+      "isadmin": true
     }
   ],
   "category": [
@@ -292,6 +306,24 @@
     {
       "id": "1a4a",
       "pid": "f56a",
+      "uid": "51b3",
+      "quntity": 1
+    },
+    {
+      "id": "97d8",
+      "pid": "aa9c",
+      "uid": "51b3",
+      "quntity": 6
+    },
+    {
+      "id": "e948",
+      "pid": "f7dd",
+      "uid": "51b3",
+      "quntity": 1
+    },
+    {
+      "id": "17c2",
+      "pid": "4c08",
       "uid": "51b3",
       "quntity": 1
     }

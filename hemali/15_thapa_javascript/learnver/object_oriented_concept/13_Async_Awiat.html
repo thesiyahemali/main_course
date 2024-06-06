@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_await example</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function display(value){
+            document.getElementById("result").innerText=value;
+        }
+
+       async function myfunction(){
+            return "lernvern is Awsome"
+        }
+        myfunction().then(
+            function(value){display(value)},
+            function(error){display(error)}
+        )
+    </script>
+
+
+<p id="result1"></p>
+
+  <script>
+     async function mydisplay(){
+        let promise=new Promise(function(resolve,reject){
+            setTimeout(function(){resolve("Await pogram is run")},3000)
+        })
+        document.getElementById("result1").innerHTML=await promise
+     }
+     mydisplay()
+  </script>
+</body>
+</html>

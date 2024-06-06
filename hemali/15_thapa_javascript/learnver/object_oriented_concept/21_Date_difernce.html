@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date diferance example</title>
+</head>
+
+<body>
+    <script>
+        // answer aaevse milleseconde ma aaevse
+        var d1 = new Date("08/14/2020");
+        var d2 = new Date("09/14/2020");
+
+        var diferance = d2.getTime() - d1.getTime();
+        var result = diferance / (1000 * 60 * 60 * 24)
+        document.write(result)
+document.write("<br>")
+document.write("<br>")
+
+    </script>
+
+    <script>
+        var d1 = new Date("10/02/1669");
+        var d2 = new Date()
+
+        var diferance = d2.getTime() - d1.getTime();
+
+        var result = diferance/(31536000000).toFixed(0)
+        document.write("different of d2 and d1 is:"+result+"years")
+    </script>
+</body>
+
+</html>

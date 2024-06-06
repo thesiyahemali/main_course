@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typed array method in javascript </title>
+</head>
+<body>
+    <script>
+        document.write("<h3>copyWithin method </h3>")
+        // Syntax 
+        //  arr.copyWithin(target,start,end) 3 mathi game ae api sakay 
+        var arr=[1,2,3,4,5,6,7,8,9,10]
+        arr.copyWithin(2)
+        document.writeln(arr)
+        document.write("<br>")
+        arr.copyWithin(2,3)
+        document.writeln(arr)
+        document.write("<br>")
+        arr.copyWithin(2,3,5)
+        document.writeln(arr)
+    </script>
+
+    <script>
+        document.write("<h3>Entries method</h3>")
+        var arr1=["html","css","javascript"]
+        var result=arr1.entries();
+        document.writeln(result.next().value+"<br>")
+        document.writeln(result.next().value+"<br>")
+        document.writeln(result.next().value+"<br>")
+
+    </script>
+
+    <script>
+        document.write("<h3>fill method"+"<br>")
+            var arr2=[1,2,3,4,5,6,7,8,9,10]
+            // aaevi rite copy within ma pan aaeve 
+        //  arr2.fill(target)
+            // arr2.fill(15)
+            // document.writeln(arr2+"<br>")
+        //   arr2.fill(target,start)
+        // arr2.fill(15,2)
+        // document.writeln(arr2+"<br>")
+        // arr2.fill(target,start,end)
+        arr2.fill(15,2,7)
+        document.writeln(arr2+"<br>")
+    </script>
+
+    <script>
+        document.write("<h3>find method</h3>")
+        var arr3=[1,2,3,4,5,6,7,8,9,10]
+         var result1=arr3.find(serchValue)
+         document.write(result1)
+         function serchValue(value){
+            return value > 5
+         }
+    </script>
+
+<script>
+    document.write("<h3>findindex method</h3>")
+    var arr4=[1,2,3,4,5,6,7,8,9,10]
+     var result2=arr4.findIndex(serchValue)
+     document.write(result2)
+     function serchValue(value){
+        return value > 5
+     }
+</script>
+
+  <script>
+    document.write("<h3>forecah method</h3>")
+    var arr5=[5,10,15,20]
+    var result3=[]
+    arr5.forEach(function(value){
+        result3.push(value*2)
+    })
+    document.writeln(result3)
+  </script>
+
+  <script>
+    document.write("<h3>includes method</h3>")
+    var arr6=[5,60,80,90]
+    document.write(arr6.includes(90))
+
+    document.write("<h3>indexof method</h3>")
+    var arr6=[5,60,80,90]
+    document.write(arr6.indexOf(60))
+  </script>
+
+  <script>
+    document.write("<h3>Join method</h3>")
+    var arr7=["html","css","javascript","Bostrap","react"]
+    document.write(arr7.join("*"))
+
+    document.write("<h3>Keys method</h3>")
+    var arr7=["html","css","javascript","Bostrap","react"]
+    var result4=arr7.keys()
+    document.write(result4.next().value +"<br>")
+    document.write(result4.next().value +"<br>")
+    document.write(result4.next().value +"<br>")
+    document.write(result4.next().value +"<br>")
+    document.write(result4.next().value +"<br>")
+
+  </script>
+
+
+<script>
+    document.write("<h3>Reduce method</h3>")
+    // strting ni value 0 hase passitem ni pachi sum thato jase
+     var arr8=[30,40,50]
+     var result5=arr8.reduce(function(passeditem,item){
+        return passeditem+item
+     },0)
+     document.writeln("sum of array element is"+result5)
+
+</script>
+
+<script>
+      document.write("<h3>Sets method</h3>")
+      var buffer1=new Array(8)
+      var arr9=new Uint8Array(buffer1)
+      arr9.set([1,5,9,6],2)
+      document.writeln(arr9)
+    //   var Arr=new Unit16Array(buffer1)
+    //   var Arr=new Unit32Array(buffer1)
+
+</script>
+
+ <script>
+    document.write("<h3>subarray method</h3>")
+    var arr10=new Uint8Array([17,78,63,42])
+    document.write("array after coping: "+arr10.subarray()+'<br>')
+    document.write("array after coping starting from 2 position:"+arr10.subarray(2)+'<br>')
+    document.write("array after coping staring form 2 position end 3 : "+arr10.subarray(2,3)+'<br>')
+
+ </script>
+</body>
+</html>

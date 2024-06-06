@@ -7,6 +7,11 @@
 </head>
 <body>
     <div id="item"></div>
+
+    <div class="para">
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint aspernatur incidunt architecto doloremque enim debitis perferendis voluptatum dignissimos, officia perspiciatis expedita possimus, aperiam quam dolorem sit beatae obcaecati tempore et!</p>
+    </div>
  
      <script>
         let h=document.createElement('h1')
@@ -43,6 +48,25 @@
         let u=document.createElement('h6')
         u.innerText='hii this is u tag ni h6'
         item.appendChild(u)
+
+        let newbtn=document.createElement('button')
+        newbtn.innerText='click me !'
+        console.log(newbtn);
+        let div=document.querySelector('div')
+        div.before(newbtn)
+        div.after(newbtn)
+        div.prepend(newbtn) // strting ma aaeve div na 
+        div.append(newbtn)
+       
+
+        let para=document.querySelector('.para')
+        para.remove()
      </script>
+
+     <!-- <div >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus maxime accusantium voluptas placeat est commodi repudiandae reiciendis, autem harum aspernatur voluptatum animi dolorum quaerat atque. Necessitatibus ad voluptatum explicabo placeat.
+
+        <p>loremfvnkjfnedfnhuedhuiden fckjdnhfvfrjunhviujerifjvirhji</p>
+     </div> -->
 </body>
 </html>

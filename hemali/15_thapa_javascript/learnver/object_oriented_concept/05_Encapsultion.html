@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example encapsulation</title>
+</head>
+
+<body>
+
+    <script>
+        document.write('<h3>gteer ande setter method thi encapusltion</h3>')
+        class Students {
+            constructor() {
+                var name;
+                var marks;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+
+            getmarks() {
+                return this.marks;
+            }
+
+            setmarks(marks) {
+                this.marks = marks;
+            }
+        }
+
+        var stud = new Students()
+        stud.setName("hemali");
+        stud.setmarks(55)
+        document.write(stud.getName() + " has secured " + stud.getmarks() + " marks")
+
+
+
+        document.write("<h3>prtotype based example</h3>")
+
+        function Student(name, marks) {
+            var sName = name;
+            var sMarks = marks;
+
+            Object.defineProperties(this, {
+                "name": {
+                    get: function () {
+                        return sName;
+                    },
+                    set: function (newName) {
+                        sName = newName;
+                    }
+                },
+                "marks": {
+                    get: function () {
+                        return sMarks;
+                    },
+                    set: function (newMarks) {
+                        sMarks = newMarks;
+                    }
+                }
+            });
+        }
+
+        var std = new Student('hemko', 30);
+        document.write(std.name + " has secured " + std.marks + " marks");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbacks</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>getdata showdata callback example</h3>")
+        // call back lakhu se ae function nu name hold kare se 
+        function getdata(x,y,callback){
+            document.writeln("multipliaction of "+x+" and "+y+" is:"+(x*y)+"<br>")
+
+           callback();
+        }
+        function showdata(){
+            document.writeln("this is statement written through the callback function." +"<br>")
+
+        }
+        getdata(10,20,showdata)
+    </script>
+    
+    <script>
+         function getData(callbacks){
+           var name=prompt("Welcome to lernvern  \n Please enter your Name:")
+           var age=prompt("Please enter your Age:")
+
+            callbacks(name,age)
+         }  
+         
+        //  function showData(name,age){
+        //     alert("Name:"+name+"\nAge:"+age)
+        //  }
+
+         function showDescription(a,b){
+            document.writeln("Name:"+a+"<br>")
+            document.writeln("Age:"+b+"<br>")
+
+         }
+         getData(showDescription)
+
+    </script>
+</body>
+</html>

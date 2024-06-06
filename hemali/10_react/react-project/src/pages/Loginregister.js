@@ -45,7 +45,7 @@ const Loginregister = () => {
           
         let logindata=await axios.get(`http://localhost:8000/user?email=${loginData.email}`)
         console.log(logindata.data[0]);
-
+          
          if(logindata.data[0].password == loginData.password){
             //  local stroge ma store kari ne logout per gaya 
              localStorage.setItem('user',logindata.data[0].name);

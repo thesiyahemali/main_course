@@ -127,8 +127,38 @@
         document.write('<h4> protocol properties</h4>')
         document.write(' protocol propetry: ' + location.protocol)
         console.log(location.protocol);
+
+
+        document.write('<h4> serch properties</h4>')
+        document.write(' search propetry: ' + location.search)
+        console.log(location.search);
+
+
+        document.write('<h4>loaction method </h4>')
+
+         function newfunction(){
+            location.reload()
+         }
+
+
+         function newassgin(){
+            location.assign('https://www.google.com/')
+         }
+
+         function newreplac(){
+            location.replace('https://www.google.com/')
+         }
       
     </script>
+    <h4> reloade method</h4>
+    <button type="button" onclick="newfunction()">reloade</button>
+
+    <h4> assgin method</h4>
+    <button type="button" onclick="newassgin()">assgin</button>
+
+    <h4> replace method</h4>
+    <button type="button" onclick="newreplac()">replace</button>
+
 </body>
 
 </html>

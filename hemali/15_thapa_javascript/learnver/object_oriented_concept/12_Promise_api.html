@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise Api</title>
+</head>
+<body>
+     <!-- promise api aetle k jaja badha promise hoy tene handle karva hoy to tene promise api thi handle karay se  -->
+     <!-- promise all method thi  badha promise access kari sakvi saiy ane aene array format api sakay se aene array format ma je value male se aeni  -->
+
+     <h3>promise.all method</h3>
+     <script>
+        // Promise.all([
+        //     new Promise(reslove=>setTimeout(reslove(1),3000)),
+        //     new Promise(reject=>setTimeout(reject(new Error("its an Error ! !")),2000)),
+        //     new Promise(reslove=>setTimeout(reslove(3),1000)),
+
+        // ]).then(alert)
+     </script>
+
+
+
+<h3>promise.race method</h3>
+<script>
+//    Promise.race([
+//    new Promise(reslove=>setTimeout(reslove(3),1000)),
+//        new Promise(reject=>setTimeout(reject(new Error("its an Error ! !")),2000)),
+//        new Promise(reslove=>setTimeout(reslove(1),3000)),
+
+
+//    ]).then(alert)
+</script>
+
+
+<h3>promise.any method</h3>
+<script>
+   Promise.any([
+    new Promise((reslove,reject)=>setTimeout(reject(new Error("its an Error ! !")),1000)),
+    new Promise((reslove,reject)=>setTimeout(reslove(1),1000)),
+    new Promise((reslove,reject)=>setTimeout(reslove(2),2000)),
+
+
+   ]).then(alert)
+</script>
+
+
+</body>
+</html>

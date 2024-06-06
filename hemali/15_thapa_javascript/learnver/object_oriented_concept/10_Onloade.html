@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onloade example</title>
+</head>
+
+<body onload='onload()'>
+    <!-- // body ma onloade lakhu hoy to niche onloade method no uase nahi kari sakvi game tya ek je jagaya ae use thase  -->
+    <h2>This Is Header</h2>
+    <script>
+        document.onload = alert("this is Document.Onloade Method");
+        document.onload = alert("this is Window.Onloade Method");
+
+        function onload() {
+            alert("this is body tag")
+        }
+    </script>
+
+    <h2>there is a div below</h2>
+    <div id="backgrunde"></div>
+    <!-- example 2 -->
+    <script>
+        window.onload = function () {
+            var x = document.getElementById("backgrunde");
+            x.style.backgroundColor = "cyan";
+            x.style.color = "white";
+            x.style.height = "200px"
+            x.style.width = "200px"
+        }
+    </script>
+</body>
+
+</html>

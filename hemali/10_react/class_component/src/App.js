@@ -22,8 +22,8 @@ function App() {
       {/* <Curd_Form/> */}
       {/* <String_Type fullname={name} /> */}
       {/* <Object_Types list={std}/> */}
-      {/* <Loading/> */}
-      <Hideshow/>
+      <Loading/>
+      {/* <Hideshow/> */}
     </div>
   );
 }

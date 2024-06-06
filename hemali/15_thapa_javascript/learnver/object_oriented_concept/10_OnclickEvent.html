@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick event example</title>
+    <style>
+        /* h4{
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>click event in javascript</h3>
+    <button onclick="Onclick()">Click Me !</button><br><br>
+    <button id="mybutton">Click Me javascript</button><br><br>
+    <button id="mybtn">Click Me addEventListener</button><br><br>
+
+
+    <script>
+        // html ma onclick lakhu se te 
+        function Onclick() {
+            document.body.style.backgroundColor = 'lightgreen'
+        }
+
+        //2 html ma ny javascript ma kevi rite lakhvi se
+        //  aama id thi thaye se 
+        document.getElementById('mybutton').onclick = function () {
+            document.body.style.backgroundColor = 'gray'
+
+        }
+
+        //3 addevent lister thi kevi rite thaye te
+        document.getElementById('mybtn').addEventListener("click", changebackgrounde)
+        function changebackgrounde() {
+            document.body.style.backgroundColor = 'lightgray'
+
+        }
+    </script>
+
+
+    <h3>double click event in javascript</h3>
+    <h4 ondblclick="onDoubleClick()">Double Click on this heading</h4>
+    <p id="p1"></p>
+    <h4 id="heder2">using javascript heading</h4>
+    <p id="p2"></p>
+    <h4 id="heder3">using addEventListener heading</h4>
+    <p id="p3"></p>
+
+    <script>
+        //   double click html 
+        function onDoubleClick() {
+            document.getElementById("p1").innerText = "This is LernVern"
+        }
+
+        //using javascript 
+        document.getElementById("heder2").ondblclick = function () {
+            document.getElementById('p2').innerText = "This is using javascript"
+        }
+
+        //using aadeventlister
+        document.getElementById("heder3").addEventListener("dblclick", onDouble);
+
+        function onDouble() {
+            document.getElementById('p3').innerText = "This is using addEventListener";
+        }
+
+    </script>
+</body>
+
+</html>

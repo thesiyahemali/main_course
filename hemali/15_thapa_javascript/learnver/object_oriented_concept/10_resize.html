@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on resize  html example</title>
+</head>
+<!-- <body onresize="onResize()"> -->
+    <body>
+    <p id="p1"></p>
+
+    <p>This Window Is Resized<span id="s1"> 0</span></p>
+    <script>
+
+        // window ne resize karsu tayre output dekhase
+        // aa example ma body coment karu se te kadhi ne run karvu 
+        var s1=0;
+      function onResize() {
+         document.getElementById("p1").innerHTML="window width ="+window.outerWidth+"window hegit="+window.outerHeight;
+         s1=s1+1
+         document.getElementById("s1").innerHTML=s1 
+      }
+
+      
+    </script>
+    
+    <script>
+//  <!-- on resize example  -->
+        // aama array ma value male se body pachi [0] lakhvu jajuri se 
+       /*  var s1=0;
+        document.getElementsByTagName("BODY")[0].onresize=function(){
+         document.getElementById("p1").innerHTML="window width ="+window.outerWidth+"window hegit="+window.outerHeight;
+         s1=s1+1
+         document.getElementById("s1").innerHTML=s1 
+       
+    } */
+    </script>
+
+
+   
+<script>
+    //  <!-- addeventlisterner  example  -->
+    //  aama id nathi apva ni window method aapva ni se document.getElementById pachi window apvu id ny chale addEventListener ma 
+            var s1=0;
+            window.addEventListener("resize",onResize)
+            
+            function onResize(){
+             document.getElementById("p1").innerHTML="window width ="+window.outerWidth+"window hegit="+window.outerHeight;
+             s1=s1+1
+             document.getElementById("s1").innerHTML=s1 
+           
+        }
+        </script>
+   
+</body>
+</html>

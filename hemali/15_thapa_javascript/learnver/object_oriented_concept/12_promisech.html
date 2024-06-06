@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example promise chainging</title>
+</head>
+<body>
+    <h3>promise chainig</h3> 
+     
+  <script>
+    new Promise(function(Reslove,Reject){
+        setTimeout(function(){Reslove(1)},2000)
+    })
+    .then(function(value){
+        // alert(value);
+        document.write(value)
+        return value*2
+        
+    }).then(function(value){
+        // alert(value);
+        document.write(value)
+        return value*3;
+    }).then(function(value){
+        // alert(value);
+        document.write(value)
+        return value*4;
+    }).then(function(value){
+        document.write(value)
+    })
+
+    // sum ->multi example 1
+
+        // function sum(a, b) {
+        //     return new Promise((reslove, reject) => {
+        //         reslove(a + b)
+        //     })
+        // }
+
+        // function multi(a, b) {
+        //     return new Promise((reslove, reject) => {
+        //         reslove(a * b)
+        //     })
+        // }
+
+        // sum(2, 4)
+        // .then((result) => {
+        //     return multi(result, 3)
+        // })
+        // .then((out)=>{
+        //     console.log(out);
+        // })
+  </script>
+
+<!-- aa example ma throw thi error checkkarvi se 7 lakhu nya koy pan string number api ne check karva nu se  -->
+  <h3>example exception handling in promise</h3>
+  <script>
+    function getUserbyid(id){
+        if(typeof id!=="number" || id<0){
+            throw new Error("Inavlid id number")
+        }
+        return new Promise((Reslove,Reject)=>{
+            Reslove({
+                id:id,
+                username:"admin"
+            })
+        })
+    }
+    getUserbyid(7)
+    .then(user => console.log(user.username))
+        .catch(error => console.log(error));
+  </script>
+</body>
+</html>

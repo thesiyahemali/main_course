@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add event lister</title>
+</head>
+
+<body>
+    <button id="clickbutton"> Click Me !</button>
+    <p id="line1"></p>
+    <p id="line2"></p>
+    
+    <button id="dbclick">Double-click Me!</button>
+    <p id="para"></p>
+
+    <script>
+        document.getElementById("clickbutton").addEventListener("click", changebackgrounde);
+        function changebackgrounde() {
+            document.body.style.backgroundColor = "yellow"
+        }
+    </script>
+
+    <script>
+        document.getElementById("clickbutton").addEventListener("click", changebackgrounde);
+        function changebackgrounde() {
+            document.body.style.backgroundColor = "yellow"
+        }
+
+        document.getElementById("clickbutton").addEventListener("click", upadteline1);
+        function upadteline1() {
+            document.getElementById('line1').innerHTML = "welcome to lernvern"
+        }
+
+
+        document.getElementById("clickbutton").addEventListener("click", upadteline2);
+        function upadteline2() {
+            document.getElementById('line2').innerHTML = "welcome to javascript pogram"
+
+        }
+    </script>
+
+    <script>
+        document.getElementById("dbclick").addEventListener("dblclick",upadteline3)
+        function upadteline3(){
+            document.getElementById('para').innerHTML="welcome to lernvern1"
+            document.body.style.fontSize="25px"
+            document.body.style.color="red"
+        }
+    </script>
+
+</body>
+
+</html>

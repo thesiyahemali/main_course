@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>construcore example</title>
+</head>
+<body>
+   <script>
+
+    // aama only static value je lese kem k aama apde parameter pass nathi kara only static value je api se 
+     class Employeee{
+        constructor(){
+            this.id=100;
+            this.name="hemali"
+        }
+     }
+     var emp=new Employeee();
+     document.write(emp.id+" "+ emp.name)
+
+
+     document.write('<h3>super keyword example </h3>')
+    //  parent class 
+     class companyName{
+        constructor(){
+            this.companyName="Lernvern"
+        }
+     }
+    //  child class 
+    class Employee extends companyName{
+        constructor(id,name){
+            super();
+            this.id=id;
+            this.name=name
+        }
+    }
+
+    var emp=new Employee(100,'amit');
+    document.write(emp.id+" "+emp.name+" "+emp.companyName)
+   </script> 
+</body>
+</html>
