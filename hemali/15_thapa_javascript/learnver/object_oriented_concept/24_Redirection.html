@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirection example</title>
+</head>
+<body>
+    <h2>loction.href method</h2>
+    <h3>click the button to redirect to google.....</h3>
+    <input type="button" value="Redirect" onclick="redirect()"/>
+
+    <h3>example 2</h3>
+    <h3>wait for 5 sec to redirect to lernvern website</h3>
+    <input type="button" value="Redirect" onclick="redirecte()"/>
+
+    <h3>example 3 replace method</h3>
+    <h3>wait for 5 sec to redirect to lernvern website</h3>
+    <input type="button" value="Redirect" onclick="redirecte1()"/>
+
+    <script>
+        function redirect(){
+        //    window.location="https://www.google.com";
+           window.location.href="https://www.google.com";
+
+        }
+    </script>
+
+    <script>
+        function redirecte(){
+           window.location.href="https://www.learnvern.com";
+        }
+        setTimeout("redirecte()",5000)
+    </script>
+
+    <script>
+        function redirecte1(){
+        //    window.location="https://www.google.com";
+           window.location.replace("https://www.learnvern.com");
+
+        }
+    </script>
+</body>
+</html>

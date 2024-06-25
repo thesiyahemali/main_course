@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+</head>
+
+<body align="center">
+    <h4>Create Your Account</h4>
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter your Name" id="name"></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="text" placeholder="Enter your Email" id="email"></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Enter your Password" id="password"></td>  </tr>
+
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" placeholder="Confirm Your Password" id="confirmpassword"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" value="Create" onclick="createAccount()"> </td>
+        </tr>
+    </table>
+
+    <script>
+        function createAccount() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+
+            var letters = /^[A-Za-z]+$/;  // For name validation (optional)
+            var email_value = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (name == "" || email == "" || password == "" || confirmpassword == "") {
+                alert("Enter all the Details");
+            } else if (!email_value.test(email)) {  // Validate email format
+                alert("Email ID is not in the correct format.");
+            } else if (password != confirmpassword) {
+                alert("Passwords do not match.");
+            } else if (password.length > 12) {
+                alert("Maximum password length is 12 characters.");
+            } else if (password.length < 6) {
+                alert("Minimum password length is 6 characters.");
+            } else {
+                alert("Your Account has been created successfully!");
+                // Simulate redirection (replace with actual redirection logic)
+                window.location.href = "https://www.learnvern.com/";
+            }
+        }
+    </script>
+</body>
+
+</html>

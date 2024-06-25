@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>string to number</h3>")
+        var pi="3.14"
+        document.writeln("conversion form string to number:"+Number(pi));
+    </script>
+
+    <script>
+
+        document.write("<h3>number to string </h3>")
+        var pi="3.14"
+        document.writeln("conversion form number to string of 3.14 :"+pi.toString());
+
+    </script>
+
+<script>
+
+    document.write("<h3>Date to Number  </h3>")
+   var d=new Date()
+    document.writeln("conversion form Date to Number :"+Number(d));
+
+</script>
+<script>
+
+    document.write("<h3>Date to string  </h3>")
+   var d=new Date().toString()
+    document.writeln("conversion form Date to Number :"+(d));
+
+</script>
+
+<script>
+
+    document.write("<h3>Booleans to Number </h3>")
+   var t=true;
+   var f=false
+    document.writeln("conversion form  Booleans to Number :"+Number(t)+"<br>");
+    document.writeln("conversion form  Booleans to Number :"+Number(f));
+</script>
+
+<script>
+
+    document.write("<h3>Booleans to string </h3>")
+   var t=true;
+   var f=false
+    document.writeln("conversion form  Booleans to string  using string():"+String(t)+"<br>");
+    document.writeln("conversion form  Booleans to string  using string() :"+String(f));
+</script>
+</body>
+</html>

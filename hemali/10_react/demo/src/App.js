@@ -45,9 +45,9 @@ function App() {
         </Route>
       </Routes> */}
       {/* <Viewsatae /> */}
-      <Props webname={name} Props incment={inc} myemail={email} />
+      {/* <Props webname={name} Props incment={inc} myemail={email} /> */}
       {/* <Userrafcnce /> aama khali value chanje thase listing ny thaye todo ni jem userrafcnce thi  */}
-      {/* <Todolist/> */}
+      <Todolist/>
       {/* <Event/> */}
     </>
   );
