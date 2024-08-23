@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Buttons with Column Text</title>
+    <style>
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .button-container button {
+            writing-mode: vertical-lr;
+            margin: 10px 0; /* Buttons ke beech me space ke liye */
+            transform: rotate(180deg); /* Text ko vertical direction me set karne ke liye */
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button>Web/Interactive</button>
+        <button>Business Creation</button>
+        <button>Strategic Consulting</button>
+        <button>Branding Innovation</button>
+    </div>
+</body>
+</html>

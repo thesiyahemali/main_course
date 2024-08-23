@@ -13,6 +13,7 @@ import Props from "./12_Props";
 import Userrafcnce from "./13_Userrafcnce";
 import Event from "./15_Event";
 import { useState } from "react";
+import Api from "./17_Api";
 const name = "myweb";
 const email = "thesiyahemali999@gmail.com";
 
@@ -47,8 +48,10 @@ function App() {
       {/* <Viewsatae /> */}
       {/* <Props webname={name} Props incment={inc} myemail={email} /> */}
       {/* <Userrafcnce /> aama khali value chanje thase listing ny thaye todo ni jem userrafcnce thi  */}
-      <Todolist/>
+      {/* <Todolist/> */}
       {/* <Event/> */}
+
+       <Api/>
     </>
   );
 }

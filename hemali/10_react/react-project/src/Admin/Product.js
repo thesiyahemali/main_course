@@ -49,14 +49,13 @@ const Product = () => {
           <th scope='col'>Name</th>
           <th scope='col'>Price</th>
           <th scope='col'>Quntity</th>
-          
           <th scope='col'>Category</th>
           <th scope='col'>Action</th>
 
         </tr>
         </thead>
         <tbody>
-          {product.length != 0 && (
+          {product.length > 0 && (
             <>
               {product.map((res) => {
                 return (

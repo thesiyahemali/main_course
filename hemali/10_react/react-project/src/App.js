@@ -19,6 +19,8 @@ import { Category as Cat } from "./User/Category";
 import Viewproduct from "./User/Viewproduct";
 import Cart from "./User/Cart";
 import { UserPrivate } from "./User/UserPrivate";
+import CheckOut from "./User/CheckOut";
+import Confrmation from "./User/Confrmation";
 function App() {
   return (
     <>
@@ -57,6 +59,10 @@ function App() {
             <Route path="/category/:id" element={<Cat />}></Route>
             <Route path="/viwproduct/:id" element={<Viewproduct />}></Route>
             <Route path="/login" element={<Loginregister />}></Route>
+            <Route path="/checkout" element={<CheckOut />}></Route>
+            <Route path="/confirmation" element={<Confrmation />}></Route>
+
+
           </Route>
         </Routes>
       </BrowserRouter>

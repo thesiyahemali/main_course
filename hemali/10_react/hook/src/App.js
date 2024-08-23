@@ -13,6 +13,7 @@ import Render from './Conditional_Render/01_Render';
 import Forward from './ForwardRef_Hook/01_Forward';
 import UseMemo from './Use_Memo_Hook/UseMemo';
 import First from './UseCallback_Hook/First';
+import Hader from './header/Hader';
 
 function App() {
   return (
@@ -30,10 +31,11 @@ function App() {
   
      {/* <Forward/>ForwardRef_Hook no use kari ne karvu se example  */}
 
-     <UseMemo/>    
+     {/* <UseMemo/>     */}
      {/* Use_Memo_Hook no use karvu se  */}
 
      {/* <First/> */}
+      <Hader/>
     </div>
   );
 }

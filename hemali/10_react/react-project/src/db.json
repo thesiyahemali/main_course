@@ -90,6 +90,34 @@
       "email": "thesiyahemali999@gmail.com",
       "password": "12345678",
       "isadmin": true
+    },
+    {
+      "id": "81fb",
+      "name": "hemali",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "123456",
+      "isadmin": true
+    },
+    {
+      "id": "7302",
+      "name": "monika",
+      "email": "monika@gmail.com",
+      "password": "123456",
+      "isadmin": true
+    },
+    {
+      "id": "aa3e",
+      "name": "monika",
+      "email": "he@gmail.com",
+      "password": "1234",
+      "isadmin": false
+    },
+    {
+      "id": "6d35",
+      "name": "avani",
+      "email": "ava@gmail.com",
+      "password": "8907",
+      "isadmin": false
     }
   ],
   "category": [
@@ -325,6 +353,66 @@
       "id": "17c2",
       "pid": "4c08",
       "uid": "51b3",
+      "quntity": 1
+    },
+    {
+      "id": "bb76",
+      "pid": "aa9c",
+      "uid": "41f7",
+      "quntity": 2
+    },
+    {
+      "id": "0e97",
+      "pid": "2d2c",
+      "uid": "41f7",
+      "quntity": 1
+    },
+    {
+      "id": "0a7c",
+      "pid": "ee89",
+      "uid": "41f7",
+      "quntity": 1
+    },
+    {
+      "id": "45b0",
+      "pid": "5174",
+      "uid": "41f7",
+      "quntity": 1
+    },
+    {
+      "id": "de58",
+      "pid": "127c",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "715e",
+      "pid": "7a12",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "7f3b",
+      "pid": "21c4",
+      "uid": "6d35",
+      "quntity": 4
+    },
+    {
+      "id": "2779",
+      "pid": "8912",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "6f30",
+      "pid": "a3d5",
+      "uid": "6d35",
+      "quntity": 2
+    },
+    {
+      "id": "5c3d",
+      "pid": "2d2c",
+      "uid": "6d35",
       "quntity": 1
     }
   ]

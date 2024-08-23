@@ -1,13 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import TopBar from "./common/TopBar";
-import './css/style.css'
-import './css/boostrp.min.css'
+import StopWatch from "./Stopwatch/StopWatch";
 
 function App() {
   return <div className="App">
-    <h1>App</h1>
-    <TopBar/>
+    <StopWatch/>
   </div>;
 }
 
