@@ -3,7 +3,6 @@
 // <!-- koy ek moto array hoy to temathi ek value joti hoy aene var api ne ek vastu lay sakiye  -->
 // <!-- ek ane baiji badhi value joti hoy to extra kari ne badhi value tema aaevi jay -->
 // harke value ko aelge aegle varble ma store karva nu 
-
 // <!-- array destructing -->
 
 let fruit=['apple','banana','mango'];

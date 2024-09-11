@@ -1,0 +1,63 @@
+{
+  "Student": [
+    {
+      "name": "moradiya mirali",
+      "id": "9d2f"
+    }
+  ],
+  "users": [
+    {
+      "id": "0257",
+      "name": "avani123",
+      "email": "avani@gmail.come",
+      "password": "1234567890111",
+      "originalPassword": "1234567890"
+    },
+    {
+      "id": "e995",
+      "name": "hemali",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "7890"
+    },
+    {
+      "id": "281f",
+      "name": "monika",
+      "email": "moni@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "a8d0",
+      "name": "fv cf",
+      "email": "fvdv",
+      "password": "1234"
+    },
+    {
+      "id": "40ef"
+    },
+    {
+      "id": "ae59"
+    },
+    {
+      "id": "9eb9"
+    },
+    {
+      "id": "f3da"
+    },
+    {
+      "id": "ede5"
+    },
+    {
+      "id": "fd72"
+    },
+    {
+      "id": "8a74"
+    },
+    {
+      "id": "a58c"
+    },
+    {
+      "id": "c128"
+    }
+  ],
+  "data": []
+}

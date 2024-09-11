@@ -16,7 +16,7 @@ const Axios_api = () => {
             setdata(result.data)
         })
     }
-     
+         
     const addData=()=>{
         axios.post('http://localhost:8001/std' ,{name:inpt.current.value}).then(()=>{
             getData()
@@ -55,6 +55,12 @@ const Axios_api = () => {
                         <button onClick={()=>{
                             deleteData(result.id)
                         }}>Delte</button>
+
+                        {/* <button onClick={()=>{
+                            updateData()
+                        }}>
+                        Update
+                        </button> */}
                     </tr>
                 </>
             )

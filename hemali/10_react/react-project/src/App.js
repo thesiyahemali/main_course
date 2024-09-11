@@ -51,18 +51,16 @@ function App() {
             </Route>
           </Route>
           <Route path="/" element={<Home />}>
-            {/* change on change outlet */}
-            <Route element={<UserPrivate />}>
-              <Route path="/cart" element={<Cart />}></Route>
-            </Route>
             <Route path="/" element={<Shop />}></Route>
             <Route path="/category/:id" element={<Cat />}></Route>
             <Route path="/viwproduct/:id" element={<Viewproduct />}></Route>
             <Route path="/login" element={<Loginregister />}></Route>
             <Route path="/checkout" element={<CheckOut />}></Route>
             <Route path="/confirmation" element={<Confrmation />}></Route>
-
-
+            {/* change on change outlet */}
+            <Route element={<UserPrivate />}>
+              <Route path="/cart" element={<Cart />}></Route>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

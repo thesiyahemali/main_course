@@ -109,56 +109,7 @@ export const Category =  () => {
                   {catName}
                   {/* // category ne print karvi aya  */}
                 </h2>
-                <ul className="d-flex flex-wrap list-unstyled text-uppercase h6">
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a
-                      href="#"
-                      className="menu-link menu-link_us-s menu-link_active"
-                    >
-                      StayHome
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="#" className="menu-link menu-link_us-s">
-                      New In
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="#" className="menu-link menu-link_us-s">
-                      Jackets
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="#" className="menu-link menu-link_us-s">
-                      Hoodies
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="shop4.html" className="menu-link menu-link_us-s">
-                      Men
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="shop5.html" className="menu-link menu-link_us-s">
-                      Women
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="#" className="menu-link menu-link_us-s">
-                      Trousers
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="shop3.html" className="menu-link menu-link_us-s">
-                      Accessories
-                    </a>
-                  </li>
-                  <li className="me-3 me-xl-4 pe-1">
-                    <a href="#" className="menu-link menu-link_us-s">
-                      Shoes
-                    </a>
-                  </li>
-                </ul>
+              
               </div>
               {/* /.shop-banner__content */}
             </div>

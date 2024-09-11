@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Todolist from './Todolist';
 import Create from './curd/Create';
-import { Route,Routes,BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Read from './curd/Read';
 import Update from './curd/Update';
 import Taske from './task/Taske';
@@ -12,9 +12,10 @@ import Seconde from './Mirali/Seconde'
 import Todo from './Mirali/Todo'
 import User from './Child to Prent/User';
 import Search from './Mirali/Search';
-import { Api } from '@mui/icons-material';
+import Api from './interviwe/Api';
 import Stopwatch from './StopWatch/Stopwatch';
 
+// import 
 
 
 function App() {
@@ -25,14 +26,14 @@ function App() {
 
   return (
     <div className='contianer'>
-    { <BrowserRouter>
-    <Routes>
-      <Route exact path='/' element={<Create/>}></Route>
-      <Route exact path='/read' element={<Read/>}></Route>
-      <Route exact path='/update' element={<Update/>}></Route>
+    {/* // { <BrowserRouter>
+    // <Routes>
+    //   <Route exact path='/' element={<Create/>}></Route>
+    //   <Route exact path='/read' element={<Read/>}></Route>
+    //   <Route exact path='/update' element={<Update/>}></Route>
 
-    </Routes>
-    </BrowserRouter> }
+    // </Routes>
+    // </BrowserRouter> } */}
   
       {/* <Todolist/> */}
 
@@ -48,6 +49,8 @@ function App() {
 
     {/* <Api/> */}
     {/* <Stopwatch/> */}
+
+  
     </div>
 
   );

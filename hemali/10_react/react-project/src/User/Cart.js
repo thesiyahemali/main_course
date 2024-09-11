@@ -92,27 +92,27 @@ const Cart = () => {
         <section className="shop-checkout container">
           <h2 className="page-title">Cart</h2>
           <div className="checkout-steps">
-            <a href="shop_cart.html" className="checkout-steps__item active">
+            <Link to={'/cart'} className="checkout-steps__item active">
               <span className="checkout-steps__item-number">01</span>
               <span className="checkout-steps__item-title">
                 <span>Shopping Bag</span>
                 <em>Manage Your Items List</em>
               </span>
-            </a>
-            <a href="" className="checkout-steps__item">
+            </Link>
+            <Link to={'/checkout'} className="checkout-steps__item">
               <span className="checkout-steps__item-number">02</span>
               <span className="checkout-steps__item-title">
                 <span>Shipping and Checkout</span>
                 <em>Checkout Your Items List</em>
               </span>
-            </a>
-            <a href="shop_order_complete.html" className="checkout-steps__item">
+            </Link>
+            <Link to={'/confirmation'} className="checkout-steps__item">
               <span className="checkout-steps__item-number">03</span>
               <span className="checkout-steps__item-title">
                 <span>Confirmation</span>
                 <em>Review And Submit Your Order</em>
               </span>
-            </a>
+            </Link>
           </div>
           <div className="shopping-cart">
             <div className="cart-table__wrapper">
@@ -142,7 +142,7 @@ const Cart = () => {
                                 <tr>
                                   <td>
                                     <div className="shopping-cart__product-item">
-                                      <a href="product1_simple.html">
+                                      <a >
                                         <img
                                           loading="lazy"
                                           src={result.productUrl}
@@ -156,7 +156,7 @@ const Cart = () => {
                                   <td>
                                     <div className="shopping-cart__product-item__detail">
                                       <h4>
-                                        <a href="product1_simple.html">
+                                        <a href="">
                                           {result.productName}
                                         </a>
                                       </h4>

@@ -13,6 +13,7 @@ const Featch = () => {
       })
     },[])
 
+   
   
   return (
     <div className='container d-flex flex-wrap' style={{height:'400px',width:'100%'}}>

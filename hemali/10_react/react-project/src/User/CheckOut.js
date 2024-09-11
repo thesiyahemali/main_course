@@ -4,11 +4,16 @@ import { render } from "@testing-library/react";
 import { useDispatch, useSelector } from "react-redux"; // delte karva mate KARU se
 import { addToCart, addToCartZero, removeCart as rCart } from "../cartSlice";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const CheckOut = () => {
+  
   const [Subtotal, setSubtotal] = useState(0);
   const [shippingCost, setShippingCost] = useState(0);
+  const navigate = useNavigate();
   // aya total item mali  cart  ni
+  
   const total = useSelector((data) => {
     return data.cart.count;
   });
@@ -17,6 +22,11 @@ const CheckOut = () => {
   const [cart, setcart] = useState([]);
   const [product, setproduct] = useState([]);
   const [rerenderCart, setRender] = useState(false);
+  const [shiping, setshiping] = useState('')
+
+  const shipingType = (e) =>{
+    setshiping(e.target.value)
+}
   //  const [quantity, setQuantity] = useState(1);
   useEffect(() => {
     // cart ni id mathi local host vali id lava
@@ -38,6 +48,8 @@ const CheckOut = () => {
 
       // subtotale cart
       let subtotal = 0;
+
+     
       cartdata.data.forEach((item) => {
         const product = pDATA.find((p) => p.id === item.pid);
         if (product) {
@@ -57,6 +69,24 @@ const CheckOut = () => {
     });
   };
 
+  // paymetngetway
+  const handlePayment = async (amount) => {
+    const options = {
+        key: 'rzp_test_7gC4C1o7Ah01EZ', // Replace with your test key
+        amount: 1000 * 100, // Amount in paise
+        currency: 'INR',
+        name: 'Your Business Name',
+        description: 'Payment Description',
+        handler: (response) => {
+            // Handle successful payment
+            console.log(response);
+        },
+    };
+
+    const rzp = new window.Razorpay(options);
+    rzp.open();
+};
+
   return (
     <>
       <main className="page-wrapper">
@@ -64,27 +94,27 @@ const CheckOut = () => {
         <section className="shop-checkout container">
           <h2 className="page-title">Shipping and Checkout</h2>
           <div className="checkout-steps">
-            <a className="checkout-steps__item  active" href="/shop_cart">
+            <Link to={'/cart'} className="checkout-steps__item  active" >
               <span className="checkout-steps__item-number">01</span>
               <span className="checkout-steps__item-title">
                 <span>Shopping Bag</span>
                 <em>Manage Your Items List</em>
               </span>
-            </a>
-            <a className="checkout-steps__item  active" href="/shop_checkout">
+            </Link>
+            <Link to={'/checkout'} className="checkout-steps__item  active" >
               <span className="checkout-steps__item-number">02</span>
               <span className="checkout-steps__item-title">
                 <span>Shipping and Checkout</span>
                 <em>Checkout Your Items List</em>
               </span>
-            </a>
-            <a className="checkout-steps__item  " href="/shop_order_complete">
+            </Link>
+            <Link to={'/confirmation'} className="checkout-steps__item  " >
               <span className="checkout-steps__item-number">03</span>
               <span className="checkout-steps__item-title">
                 <span>Confirmation</span>
                 <em>Review And Submit Your Order</em>
               </span>
-            </a>
+            </Link>
           </div>
           <form>
             <div className="checkout-form">
@@ -326,6 +356,7 @@ const CheckOut = () => {
                         <tr>
                           <th>SUBTOTAL</th>
                           <td>${Subtotal}</td>
+                          
                         </tr>
                         <tr>
                           <th>SHIPPING</th>
@@ -337,7 +368,8 @@ const CheckOut = () => {
                         </tr>
                         <tr>
                           <th>TOTAL</th>
-                          <td>${Subtotal + 19}</td>
+                          {/* <td>${Subtotal + 19}</td> */}
+                          <td>${Subtotal + shippingCost + 19}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -350,6 +382,8 @@ const CheckOut = () => {
                         type="radio"
                         defaultChecked=""
                         name="checkout_payment_method"
+                        value={'Direct bank transfer'}
+                        onChange={shipingType}
                       />
                       <label
                         className="form-check-label"
@@ -370,6 +404,8 @@ const CheckOut = () => {
                         id="checkout_payment_method_2"
                         type="radio"
                         name="checkout_payment_method"
+                        value={'Check payment'}
+                        onChange={shipingType}
                       />
                       <label
                         className="form-check-label"
@@ -390,6 +426,8 @@ const CheckOut = () => {
                         id="checkout_payment_method_3"
                         type="radio"
                         name="checkout_payment_method"
+                      value={'Cash on delivery'}
+                      onChange={shipingType}
                       />
                       <label
                         className="form-check-label"
@@ -410,6 +448,8 @@ const CheckOut = () => {
                         id="checkout_payment_method_4"
                         type="radio"
                         name="checkout_payment_method"
+                        value={'Paypal'}
+                        onChange={shipingType}
                       />
                       <label
                         className="form-check-label"
@@ -434,9 +474,13 @@ const CheckOut = () => {
                       .
                     </div>
                   </div>
-                  <Link to='/confirmation' className="btn btn-primary btn-checkout">
+                  <button onClick={()=>{
+                     navigate('/confirmation',{state: shiping})
+                     handlePayment()
+                  }} className="btn btn-primary btn-checkout">
+
                     PLACE ORDER
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

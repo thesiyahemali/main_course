@@ -26,7 +26,7 @@ function App() {
      {/* <Featch_Api/> api thi data lava savi  */}
      {/* <Jsonapi/> apde je json server banvu se tena data display karva se tenu example se  */}
      {/* <Useeffect_use/> use effect no use karta sikhvu se  */}
-     {/* <Axios_api/> fetch jevu se axois thi data lava savi  */}
+     <Axios_api/> fetch jevu se axois thi data lava savi 
     {/* <Render/> */}
   
      {/* <Forward/>ForwardRef_Hook no use kari ne karvu se example  */}
@@ -35,7 +35,7 @@ function App() {
      {/* Use_Memo_Hook no use karvu se  */}
 
      {/* <First/> */}
-      <Hader/>
+      {/* <Hader/> */}
     </div>
   );
 }

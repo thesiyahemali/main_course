@@ -1,123 +1,39 @@
 {
   "user": [
     {
-      "id": "ce8e",
-      "name": "hemali",
-      "email": "bbb@gmail.com",
-      "password": "8090",
+      "id": "27f8",
+      "name": "sbced",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "369852",
       "isadmin": true
     },
     {
-      "id": "a2c1",
-      "name": "monika",
-      "email": "he@gmail.com",
-      "password": "5676",
-      "isadmin": true
-    },
-    {
-      "id": "41f7",
-      "name": "mirali",
-      "email": "bbbbbb@gmail.com",
-      "password": "123456",
-      "isadmin": false
-    },
-    {
-      "id": "b2f7",
-      "name": "mirali",
-      "email": "bbbbbb@gmail.com",
-      "password": "123456",
-      "isadmin": false
-    },
-    {
-      "id": "8387",
-      "name": "mirali",
-      "email": "bbbbbb@gmail.com",
-      "password": "123456",
-      "isadmin": true
-    },
-    {
-      "id": "930e",
-      "name": "mirali",
-      "email": "bbbbbb@gmail.com",
-      "password": "123456",
-      "isadmin": true
-    },
-    {
-      "id": "089e",
-      "name": "monika",
-      "email": "bbb@gmail.com",
-      "password": "6789",
-      "isadmin": true
-    },
-    {
-      "id": "52cf",
-      "name": "avni",
-      "email": "hhggg@ggh.in",
-      "password": "8090",
-      "isadmin": true
-    },
-    {
-      "id": "3a2b",
+      "id": "3a57",
       "name": "fnvgkjnd",
-      "email": "bbb@gmail.com",
-      "password": "70439",
+      "email": "bbbbbb@gmail.com",
+      "password": "147852",
       "isadmin": false
     },
     {
-      "id": "51b3",
-      "name": "mirali",
-      "email": "thesiyahemali999@gmail.com",
-      "password": "98791",
+      "id": "ea9a",
+      "name": "fnvgkjnd",
+      "email": "bbbbbb@gmail.com",
+      "password": "147852",
       "isadmin": false
     },
     {
-      "id": "3735",
-      "name": "mirali",
-      "email": "he@gmail.com",
-      "password": "12345",
-      "isadmin": false
-    },
-    {
-      "id": "cc42",
-      "name": "mirali",
-      "email": "thesiya@gmail.com",
-      "password": "12345",
-      "isadmin": false
-    },
-    {
-      "id": "b524",
-      "name": "monika",
-      "email": "thesiyahemali999@gmail.com",
-      "password": "12345678",
-      "isadmin": true
-    },
-    {
-      "id": "81fb",
+      "id": "758a",
       "name": "hemali",
-      "email": "thesiyahemali999@gmail.com",
+      "email": "bbbbbb@gmail.com",
       "password": "123456",
       "isadmin": true
     },
     {
-      "id": "7302",
-      "name": "monika",
-      "email": "monika@gmail.com",
-      "password": "123456",
+      "id": "f824",
+      "name": "nency",
+      "email": "nency@gmsil.com",
+      "password": "852963",
       "isadmin": true
-    },
-    {
-      "id": "aa3e",
-      "name": "monika",
-      "email": "he@gmail.com",
-      "password": "1234",
-      "isadmin": false
-    },
-    {
-      "id": "6d35",
-      "name": "avani",
-      "email": "ava@gmail.com",
-      "password": "8907",
-      "isadmin": false
     }
   ],
   "category": [
@@ -310,6 +226,38 @@
       "productQuantity": "1",
       "productCategory": "Toy",
       "productUrl": "https://i.pinimg.com/564x/e3/b6/89/e3b689bdf1d6fedec2b7bb6f95ab87cd.jpg"
+    },
+    {
+      "id": "439e",
+      "productName": "Toy ",
+      "productPrice": "199",
+      "productQuantity": "-12",
+      "productCategory": "Toy",
+      "productUrl": "https://i.pinimg.com/564x/18/b4/81/18b4814670b734395e8fa2357ce6e543.jpg"
+    },
+    {
+      "id": "36a9",
+      "productName": "Toy 2",
+      "productPrice": "500",
+      "productQuantity": "1",
+      "productCategory": "Toy",
+      "productUrl": "https://i.pinimg.com/564x/47/33/54/47335467ff7fe486053521c79e0917a3.jpg"
+    },
+    {
+      "id": "bc66",
+      "productName": "Black Dog",
+      "productPrice": "299",
+      "productQuantity": "1",
+      "productCategory": "Toy",
+      "productUrl": "https://i.pinimg.com/564x/53/a1/f6/53a1f6d3b46ca7a072cf4ac202fdd88f.jpg"
+    },
+    {
+      "id": "ae1a",
+      "productName": "pet Dog",
+      "productPrice": "200",
+      "productQuantity": "0",
+      "productCategory": "Toy",
+      "productUrl": "https://i.pinimg.com/736x/5a/f0/38/5af0389c3109d1e7cfe710703ce0c339.jpg"
     }
   ],
   "cart": [
@@ -380,39 +328,93 @@
       "quntity": 1
     },
     {
-      "id": "de58",
-      "pid": "127c",
-      "uid": "6d35",
-      "quntity": 1
-    },
-    {
-      "id": "715e",
-      "pid": "7a12",
-      "uid": "6d35",
-      "quntity": 1
-    },
-    {
-      "id": "7f3b",
-      "pid": "21c4",
-      "uid": "6d35",
-      "quntity": 4
-    },
-    {
-      "id": "2779",
-      "pid": "8912",
-      "uid": "6d35",
-      "quntity": 1
-    },
-    {
-      "id": "6f30",
-      "pid": "a3d5",
-      "uid": "6d35",
-      "quntity": 2
-    },
-    {
       "id": "5c3d",
       "pid": "2d2c",
       "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "5a5e",
+      "pid": "ee89",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "2d17",
+      "pid": "f56a",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "34bb",
+      "pid": "21c4",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "3b2e",
+      "pid": "8f40",
+      "uid": "6d35",
+      "quntity": 1
+    },
+    {
+      "id": "9ed7",
+      "pid": "f56a",
+      "uid": "a9c3",
+      "quntity": 1
+    },
+    {
+      "id": "8196",
+      "pid": "21c4",
+      "uid": "a9c3",
+      "quntity": 2
+    },
+    {
+      "id": "8578",
+      "pid": "8f40",
+      "uid": "a9c3",
+      "quntity": 1
+    },
+    {
+      "id": "d53e",
+      "pid": "5174",
+      "uid": "27f8",
+      "quntity": 1
+    },
+    {
+      "id": "9955",
+      "pid": "4c08",
+      "uid": "27f8",
+      "quntity": 1
+    },
+    {
+      "id": "e350",
+      "pid": "f56a",
+      "uid": "3a57",
+      "quntity": 1
+    },
+    {
+      "id": "52c1",
+      "pid": "21c4",
+      "uid": "3a57",
+      "quntity": 1
+    },
+    {
+      "id": "b9fa",
+      "pid": "73d3",
+      "uid": "f824",
+      "quntity": 1
+    },
+    {
+      "id": "2893",
+      "pid": "4c08",
+      "uid": "f824",
+      "quntity": 1
+    },
+    {
+      "id": "7ec7",
+      "pid": "5174",
+      "uid": "f824",
       "quntity": 1
     }
   ]
