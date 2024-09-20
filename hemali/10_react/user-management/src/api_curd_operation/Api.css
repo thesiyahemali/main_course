@@ -1,0 +1,86 @@
+/* Center content and give some space */
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input container for input and button */
+  .input-container {
+    position: relative; /* Needed to position button inside input */
+    display: inline-block;
+    width: 300px; /* Adjust as per requirement */
+  }
+  
+  /* Input box styling */
+  .subject-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Adjust padding to make space for button */
+    font-weight: bold; /* Makes input text bold */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  /* Add button styling (inside input) */
+  .add-button-inside {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Position on the right inside input */
+    transform: translateY(-50%); /* Center vertically */
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+  .add-button-inside:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Subject list styling */
+  .subject-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .subject-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Edit and delete icon styling */
+  .edit-icon, .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    color: #28a745;
+  }
+  
+  .delete-icon {
+    color: #dc3545;
+  }
+  
+  .edit-icon:hover, .delete-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  

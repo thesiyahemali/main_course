@@ -4,6 +4,8 @@ import Login from './Register_Login/Login';
 import DataManagement from './Register_Login/DataManagement';
 import Home from './Register_Login/Home';
 import Comments from './comments_api/Comments';
+import Api from './api_curd_operation/Api';
+import NewApi from './api_curd_operation/NewApi';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
           </Routes>
         </div>
       </Router> */}
- <Comments/>
+ {/* <Comments/>  */}
+ {/* <Api/> */}
+ <NewApi/>
  
     </>
   );

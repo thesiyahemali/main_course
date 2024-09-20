@@ -7,8 +7,10 @@ const Comments = () => {
     // Fetching data from the API
     fetch("https://jsonplaceholder.typicode.com/comments")
       .then((response) => response.json())
-      .then((data) => setComments(data))
-      .catch((error) => console.error("Error fetching comments:", error));
+      .then((data)=>{
+         setComments(data)   
+      })
+    
   }, []); // Empty dependency array to run only once on mount
 
   return (
