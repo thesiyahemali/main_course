@@ -6,6 +6,7 @@ import Home from './Register_Login/Home';
 import Comments from './comments_api/Comments';
 import Api from './api_curd_operation/Api';
 import NewApi from './api_curd_operation/NewApi';
+import VariantsExample from './VariantsExample';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
  {/* <Comments/>  */}
  {/* <Api/> */}
  <NewApi/>
+ {/* <VariantsExample/> */}
  
     </>
   );

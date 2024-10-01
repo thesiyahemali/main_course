@@ -161,23 +161,23 @@ hr {
 }
 
 #SHORT-BY {
-  /* Style our select element */
   padding: 5px;
   font-size: 18px;
   border: none;
   width: 100%;
 }
 
-/* sidebar */
+/* sidebar css*/
 .sidebar-layout {
   display: flex;
   width: 100%;
-  font-family: Simplon Norm;
+  font-family:sans-serif;
+
 }
 .sidebar {
   width: 20%;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 22px;
   border-right: 1px solid #a22020;
 }
 
@@ -188,7 +188,7 @@ hr {
 }
 
 .frist {
-  padding: 10px;
+  padding: 7px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -205,13 +205,13 @@ hr {
 .secound {
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
+  line-height: 30.6px;
 }
 .secound .categoeis {
   display: flex;
   gap: 65px;
   font-size: 15px;
-  justify-content: space-evenly;
+  justify-content:space-between
 }
 
 .secound li {
@@ -227,14 +227,9 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-.secound li .count {
-  margin-left: auto;
-}
-.secound li:hover {
-  background-color: #f7f7f7;
-}
 
 .count {
   font-size: 18px;
@@ -314,9 +309,8 @@ hr {
 /* footer */
 .footer {
   background-color: hsl(0, 4%, 5%);
-
   padding: 20px;
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   font-family: Simplon Norm;
 }
@@ -326,17 +320,16 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
   margin-top: 5px;
   font-size: 13px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 25px;
+  font-weight: 600;
 }
 .up-right input {
-  padding: 5px 20px 5px 20px;
+  padding:11px 50px 8px 20px;
 }
 .up-right button {
-  padding: 6px 20px 6px 20px;
+  padding: 11px 22px 9px 20px;
   background-color: #655d5d;
 }
 .up-left {

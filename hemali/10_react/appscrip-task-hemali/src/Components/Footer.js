@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-last">
-            <p>Copyright © 2024 products. All rights reserved</p>
+            <p>Copyright © 2024 Metta. All rights reserved</p>
           </div>
         </div>
       </div>

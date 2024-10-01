@@ -4,6 +4,7 @@ import {
   faChevronDown,
   faChevronLeft,
   faChevronUp,
+  
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -56,11 +57,11 @@ const Main = () => {
     } else if (SortBy === "low-to-high") {
       return filtered.sort((a, b) => a.price - b.price);
     } else if (SortBy === "newest") {
-      return filtered; // Implement newest logic if available (e.g., by date)
+      return filtered; //
     } else if (SortBy === "recommended") {
-      return filtered; // You can implement your recommended logic here
+      return filtered; 
     }
-    return filtered; // Return filtered products if no sorting
+    return filtered; 
   };
 
   return (
@@ -136,17 +137,19 @@ const Main = () => {
 
                       {isDropdownOpen && (
                         <div>
-                          <li onClick={() => handalCategoryclick("men's clothing")}>
-                            men's clothing <span className="count">(4)</span>
-                          </li>
+                          
                           <li onClick={() => handalCategoryclick("women's clothing")}>
-                            women's clothing <span className="count">(6)</span>
+                            women's 
+                          </li>
+                          <li onClick={() => handalCategoryclick("men's clothing")}>
+                            men's  
+                          </li>
+                        
+                          <li onClick={() => handalCategoryclick("electronics")}>
+                            electronics
                           </li>
                           <li onClick={() => handalCategoryclick("jewelery")}>
-                            jewelery <span className="count">(4)</span>
-                          </li>
-                          <li onClick={() => handalCategoryclick("electronics")}>
-                            electronics <span className="count">(6)</span>
+                            jewelery 
                           </li>
                         </div>
                       )}

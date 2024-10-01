@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaPlus, FaEdit, FaTrash } from 'react-icons/fa'; // Import Font Awesome icons
-import './Api.css'; // Import custom styles
+import { FaPlus, FaEdit, FaTrash } from 'react-icons/fa'; 
+import './Api.css'; 
 
 const Api = () => {
     const [inputs, setInputs] = useState('');
@@ -28,10 +28,16 @@ const Api = () => {
             setSubjects([...subjects, ress])
             setInputs('')
             // console.log(ress);
-            
         })
     }
 
+    const handleDelete=(id)=>{
+        fetch(`http://localhost:8003/Subjects/${id}`,{
+            method: "DELETE",
+        }).then(()=>{
+            setSubjects(subjects.filter((sub)=>sub.id!==id))
+        })
+    }
 
     return (
         <>
@@ -61,7 +67,7 @@ const Api = () => {
                             <li key={sub.id}>
                                 {sub.name}
                                 <FaEdit className="edit-icon" />
-                                <FaTrash className="delete-icon" />
+                                <FaTrash className="delete-icon" onClick={()=>handleDelete(sub.id)} />
                             </li>
                         )
                     })}

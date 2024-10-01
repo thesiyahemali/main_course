@@ -34,6 +34,20 @@
       "email": "nency@gmsil.com",
       "password": "852963",
       "isadmin": true
+    },
+    {
+      "id": "682d",
+      "name": "hemali",
+      "email": "thesiyahemali999@gmail.com",
+      "password": "1234560",
+      "isadmin": false
+    },
+    {
+      "id": "5695",
+      "name": "avani",
+      "email": "he@gmail.com",
+      "password": "567890",
+      "isadmin": false
     }
   ],
   "category": [
@@ -403,18 +417,42 @@
       "id": "b9fa",
       "pid": "73d3",
       "uid": "f824",
-      "quntity": 1
+      "quntity": 2
     },
     {
       "id": "2893",
       "pid": "4c08",
       "uid": "f824",
-      "quntity": 1
+      "quntity": 2
     },
     {
       "id": "7ec7",
       "pid": "5174",
       "uid": "f824",
+      "quntity": 1
+    },
+    {
+      "id": "a2ce",
+      "pid": "f7dd",
+      "uid": "f824",
+      "quntity": 1
+    },
+    {
+      "id": "4ac9",
+      "pid": "2d2c",
+      "uid": "f824",
+      "quntity": 1
+    },
+    {
+      "id": "f7c6",
+      "pid": "aa9c",
+      "uid": "5695",
+      "quntity": 1
+    },
+    {
+      "id": "f255",
+      "pid": "5174",
+      "uid": "5695",
       "quntity": 1
     }
   ]
